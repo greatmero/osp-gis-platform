@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* MapLibre GL base styles */
+@import 'maplibre-gl/dist/maplibre-gl.css';
+
+body {
+  @apply bg-gray-950 text-gray-100;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Scrollbar styling for dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-700 rounded;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}

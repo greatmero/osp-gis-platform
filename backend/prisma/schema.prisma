@@ -1,0 +1,79 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model AssetType {
+  id           Int      @id @default(autoincrement())
+  key          String   @unique
+  label        String
+  geometryKind String
+  icon         String
+  color        String
+  fieldSchema  String   @default("[]")
+  createdAt    DateTime @default(now())
+  assets       Asset[]
+}
+
+model Asset {
+  id          Int      @id @default(autoincrement())
+  assetTypeId Int
+  name        String
+  code        String   @unique
+  status      String   @default("operational")
+  geometry    String
+  attributes  String   @default("{}")
+  parentId    Int?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  assetType       AssetType        @relation(fields: [assetTypeId], references: [id])
+  parent          Asset?           @relation("AssetChildren", fields: [parentId], references: [id])
+  children        Asset[]          @relation("AssetChildren")
+  connectionsFrom Connection[]     @relation("FromAsset")
+  connectionsTo   Connection[]     @relation("ToAsset")
+  cableConnections Connection[]    @relation("CableAsset")
+  incidents       Incident[]
+  maintenance     MaintenanceLog[]
+}
+
+model Connection {
+  id           Int     @id @default(autoincrement())
+  fromAssetId  Int
+  toAssetId    Int
+  cableAssetId Int?
+  fiberCount   Int     @default(0)
+  notes        String?
+
+  fromAsset  Asset  @relation("FromAsset", fields: [fromAssetId], references: [id])
+  toAsset    Asset  @relation("ToAsset", fields: [toAssetId], references: [id])
+  cableAsset Asset? @relation("CableAsset", fields: [cableAssetId], references: [id])
+}
+
+model Incident {
+  id          Int       @id @default(autoincrement())
+  assetId     Int
+  category    String
+  severity    String
+  status      String    @default("open")
+  openedAt    DateTime  @default(now())
+  resolvedAt  DateTime?
+  description String
+
+  asset Asset @relation(fields: [assetId], references: [id])
+}
+
+model MaintenanceLog {
+  id         Int      @id @default(autoincrement())
+  assetId    Int
+  date       DateTime
+  type       String
+  technician String
+  notes      String
+
+  asset Asset @relation(fields: [assetId], references: [id])
+}
