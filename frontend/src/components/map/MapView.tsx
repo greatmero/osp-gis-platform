@@ -397,6 +397,22 @@ export function MapView({ onGeometryReady }: MapViewProps) {
         )}
       </Map>
 
+      {/* Mini status legend */}
+      <div className="absolute bottom-8 left-4 z-10 bg-gray-900/90 border border-gray-700 rounded-lg px-3 py-2 backdrop-blur-sm">
+        <p className="text-xs text-gray-500 font-medium mb-1.5 uppercase tracking-wider">Status</p>
+        {[
+          { color: '#22C55E', label: 'Operational' },
+          { color: '#EAB308', label: 'Degraded' },
+          { color: '#EF4444', label: 'Down' },
+          { color: '#6B7280', label: 'Maintenance' },
+        ].map(({ color, label }) => (
+          <div key={label} className="flex items-center gap-1.5 text-xs text-gray-400 mb-1 last:mb-0">
+            <span className="w-2 h-2 rounded-full shrink-0" style={{ background: color }} />
+            {label}
+          </div>
+        ))}
+      </div>
+
       {/* Basemap switcher */}
       <div className="absolute bottom-8 right-4 flex gap-1 z-10">
         <button

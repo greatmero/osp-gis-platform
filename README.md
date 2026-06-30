@@ -41,6 +41,16 @@ Monorepo with npm workspaces:
 
 Every `Asset` points to an `AssetType`. The `fieldSchema` on the type defines that type's custom fields. Adding a new component type (e.g. "Optical Splitter") requires inserting one `AssetType` row — the map layer, create/edit forms, and hover popup all render automatically.
 
+## Environment variables
+
+Backend reads from `backend/.env` (copy from `backend/.env.example`):
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `DATABASE_URL` | `file:./prisma/dev.db` | SQLite file path |
+| `PORT` | `3001` | Express listen port |
+| `CORS_ORIGIN` | `http://localhost:5173` | Allowed frontend origin |
+
 ## Commands
 
 ```bash
@@ -51,6 +61,16 @@ npm run typecheck    # type-check both workspaces
 npm run test         # test both workspaces
 npm run db:seed      # reseed the demo network
 ```
+
+## Tests
+
+```bash
+npm test -w backend   # vitest + supertest against live SQLite
+npm test -w frontend  # vitest + jsdom + @testing-library/react
+npm test              # run both workspaces
+```
+
+The backend tests are self-contained — they create and clean up their own data, so no separate test database is needed.
 
 ## Migrating to PostgreSQL + PostGIS
 
