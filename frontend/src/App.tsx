@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { Layout } from './components/Layout';
 import { ErrorBoundary } from './components/ErrorBoundary';
+import { DemoBanner } from './components/DemoBanner';
 import { MapPage } from './pages/MapPage';
 import { DashboardPage } from './pages/DashboardPage';
 import { AssetsPage } from './pages/AssetsPage';
@@ -11,6 +12,7 @@ import { IncidentsPage } from './pages/IncidentsPage';
 export function App() {
   return (
     <BrowserRouter>
+      <DemoBanner />
       <ErrorBoundary>
         <Routes>
           <Route element={<Layout />}>

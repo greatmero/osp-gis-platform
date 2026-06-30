@@ -1,0 +1,5848 @@
+[
+  {
+    "id": 2,
+    "assetTypeId": 5,
+    "name": "6 October Industrial Hub",
+    "code": "SITE-IND-001",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        30.9543,
+        29.9189
+      ]
+    },
+    "attributes": {
+      "site_type": "Hub",
+      "owner": "Industry Zone",
+      "capacity_ports": 512,
+      "power_backup": true
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.660Z",
+    "updatedAt": "2026-06-29T10:37:51.660Z",
+    "assetType": {
+      "id": 5,
+      "key": "site",
+      "label": "Site / POP",
+      "geometryKind": "point",
+      "icon": "building",
+      "color": "#3B82F6",
+      "fieldSchema": [
+        {
+          "key": "site_type",
+          "label": "Site Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Exchange",
+            "Data Center",
+            "POP",
+            "Hub"
+          ]
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "capacity_ports",
+          "label": "Port Capacity",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "power_backup",
+          "label": "Power Backup",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 11,
+    "assetTypeId": 5,
+    "name": "Agouza POP",
+    "code": "SITE-AGZ-001",
+    "status": "down",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.2143,
+        30.0636
+      ]
+    },
+    "attributes": {
+      "site_type": "POP",
+      "owner": "ISP Partner",
+      "capacity_ports": 128,
+      "power_backup": false
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.652Z",
+    "updatedAt": "2026-06-29T10:37:51.652Z",
+    "assetType": {
+      "id": 5,
+      "key": "site",
+      "label": "Site / POP",
+      "geometryKind": "point",
+      "icon": "building",
+      "color": "#3B82F6",
+      "fieldSchema": [
+        {
+          "key": "site_type",
+          "label": "Site Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Exchange",
+            "Data Center",
+            "POP",
+            "Hub"
+          ]
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "capacity_ports",
+          "label": "Port Capacity",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "power_backup",
+          "label": "Power Backup",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 95,
+    "assetTypeId": 3,
+    "name": "Agouza — Zamalek Ring",
+    "code": "FC-008",
+    "status": "down",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          31.2143,
+          30.0636
+        ],
+        [
+          31.217,
+          30.0645
+        ],
+        [
+          31.2197,
+          30.0654
+        ]
+      ]
+    },
+    "attributes": {
+      "cable_type": "Underground",
+      "fiber_count": 48,
+      "length_m": 1100,
+      "installation_date": "2021-08-05"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.684Z",
+    "updatedAt": "2026-06-29T10:37:52.684Z",
+    "assetType": {
+      "id": 3,
+      "key": "fiber_cable",
+      "label": "Fiber Cable",
+      "geometryKind": "line",
+      "icon": "cable",
+      "color": "#10B981",
+      "fieldSchema": [
+        {
+          "key": "cable_type",
+          "label": "Cable Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Aerial",
+            "Underground",
+            "Duct",
+            "Direct Burial"
+          ]
+        },
+        {
+          "key": "fiber_count",
+          "label": "Fiber Count",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "length_m",
+          "label": "Length (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "installation_date",
+          "label": "Installation Date",
+          "type": "date",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 13,
+    "assetTypeId": 1,
+    "name": "BTS Giza West",
+    "code": "BTS-GIZ-W",
+    "status": "degraded",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.1654,
+        30.0089
+      ]
+    },
+    "attributes": {
+      "tower_height": 30,
+      "operator": "Etisalat",
+      "technology": "4G"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.792Z",
+    "updatedAt": "2026-06-29T10:37:51.792Z",
+    "assetType": {
+      "id": 1,
+      "key": "bts",
+      "label": "BTS Site",
+      "geometryKind": "point",
+      "icon": "tower-cell",
+      "color": "#8B5CF6",
+      "fieldSchema": [
+        {
+          "key": "tower_height",
+          "label": "Tower Height (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "operator",
+          "label": "Operator",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "technology",
+          "label": "Technology",
+          "type": "select",
+          "required": false,
+          "options": [
+            "2G",
+            "3G",
+            "4G",
+            "5G"
+          ]
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 14,
+    "assetTypeId": 1,
+    "name": "BTS October North",
+    "code": "BTS-OCT-N",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        30.9934,
+        29.9512
+      ]
+    },
+    "attributes": {
+      "tower_height": 40,
+      "operator": "Vodafone",
+      "technology": "4G"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.792Z",
+    "updatedAt": "2026-06-29T10:37:51.792Z",
+    "assetType": {
+      "id": 1,
+      "key": "bts",
+      "label": "BTS Site",
+      "geometryKind": "point",
+      "icon": "tower-cell",
+      "color": "#8B5CF6",
+      "fieldSchema": [
+        {
+          "key": "tower_height",
+          "label": "Tower Height (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "operator",
+          "label": "Operator",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "technology",
+          "label": "Technology",
+          "type": "select",
+          "required": false,
+          "options": [
+            "2G",
+            "3G",
+            "4G",
+            "5G"
+          ]
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 15,
+    "assetTypeId": 1,
+    "name": "BTS Smart Village",
+    "code": "BTS-SV-01",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        30.978,
+        29.9801
+      ]
+    },
+    "attributes": {
+      "tower_height": 35,
+      "operator": "Orange",
+      "technology": "5G"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.792Z",
+    "updatedAt": "2026-06-29T10:37:51.792Z",
+    "assetType": {
+      "id": 1,
+      "key": "bts",
+      "label": "BTS Site",
+      "geometryKind": "point",
+      "icon": "tower-cell",
+      "color": "#8B5CF6",
+      "fieldSchema": [
+        {
+          "key": "tower_height",
+          "label": "Tower Height (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "operator",
+          "label": "Operator",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "technology",
+          "label": "Technology",
+          "type": "select",
+          "required": false,
+          "options": [
+            "2G",
+            "3G",
+            "4G",
+            "5G"
+          ]
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 17,
+    "assetTypeId": 2,
+    "name": "Cabinet DOK-01",
+    "code": "CAB-DOK-001",
+    "status": "degraded",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.2087,
+        30.0489
+      ]
+    },
+    "attributes": {
+      "cabinet_type": "Switch",
+      "port_count": 48,
+      "address": "Dokki St, Giza"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.823Z",
+    "updatedAt": "2026-06-29T10:37:51.823Z",
+    "assetType": {
+      "id": 2,
+      "key": "cabinet",
+      "label": "Street Cabinet",
+      "geometryKind": "point",
+      "icon": "box",
+      "color": "#F59E0B",
+      "fieldSchema": [
+        {
+          "key": "cabinet_type",
+          "label": "Cabinet Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "DSLAM",
+            "OLT",
+            "Switch",
+            "Distribution"
+          ]
+        },
+        {
+          "key": "port_count",
+          "label": "Port Count",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "address",
+          "label": "Street Address",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.508Z"
+    }
+  },
+  {
+    "id": 18,
+    "assetTypeId": 2,
+    "name": "Cabinet GIZ-01",
+    "code": "CAB-GIZ-001",
+    "status": "under_maintenance",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.2012,
+        30.0198
+      ]
+    },
+    "attributes": {
+      "cabinet_type": "OLT",
+      "port_count": 256,
+      "address": "Faisal St, Giza"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.823Z",
+    "updatedAt": "2026-06-29T10:37:51.823Z",
+    "assetType": {
+      "id": 2,
+      "key": "cabinet",
+      "label": "Street Cabinet",
+      "geometryKind": "point",
+      "icon": "box",
+      "color": "#F59E0B",
+      "fieldSchema": [
+        {
+          "key": "cabinet_type",
+          "label": "Cabinet Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "DSLAM",
+            "OLT",
+            "Switch",
+            "Distribution"
+          ]
+        },
+        {
+          "key": "port_count",
+          "label": "Port Count",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "address",
+          "label": "Street Address",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.508Z"
+    }
+  },
+  {
+    "id": 16,
+    "assetTypeId": 2,
+    "name": "Cabinet MOH-01",
+    "code": "CAB-MOH-001",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.1987,
+        30.0601
+      ]
+    },
+    "attributes": {
+      "cabinet_type": "Distribution",
+      "port_count": 64,
+      "address": "Mohandeseen, Giza"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.823Z",
+    "updatedAt": "2026-06-29T10:37:51.823Z",
+    "assetType": {
+      "id": 2,
+      "key": "cabinet",
+      "label": "Street Cabinet",
+      "geometryKind": "point",
+      "icon": "box",
+      "color": "#F59E0B",
+      "fieldSchema": [
+        {
+          "key": "cabinet_type",
+          "label": "Cabinet Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "DSLAM",
+            "OLT",
+            "Switch",
+            "Distribution"
+          ]
+        },
+        {
+          "key": "port_count",
+          "label": "Port Count",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "address",
+          "label": "Street Address",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.508Z"
+    }
+  },
+  {
+    "id": 20,
+    "assetTypeId": 2,
+    "name": "Cabinet OCT-01",
+    "code": "CAB-OCT-001",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        30.9902,
+        29.9411
+      ]
+    },
+    "attributes": {
+      "cabinet_type": "OLT",
+      "port_count": 128,
+      "address": "26 July Corridor, 6th Oct"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.823Z",
+    "updatedAt": "2026-06-29T10:37:51.823Z",
+    "assetType": {
+      "id": 2,
+      "key": "cabinet",
+      "label": "Street Cabinet",
+      "geometryKind": "point",
+      "icon": "box",
+      "color": "#F59E0B",
+      "fieldSchema": [
+        {
+          "key": "cabinet_type",
+          "label": "Cabinet Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "DSLAM",
+            "OLT",
+            "Switch",
+            "Distribution"
+          ]
+        },
+        {
+          "key": "port_count",
+          "label": "Port Count",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "address",
+          "label": "Street Address",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.508Z"
+    }
+  },
+  {
+    "id": 19,
+    "assetTypeId": 2,
+    "name": "Cabinet OCT-02",
+    "code": "CAB-OCT-002",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        30.9812,
+        29.9456
+      ]
+    },
+    "attributes": {
+      "cabinet_type": "DSLAM",
+      "port_count": 96,
+      "address": "Central Axis, 6th Oct"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.823Z",
+    "updatedAt": "2026-06-29T10:37:51.823Z",
+    "assetType": {
+      "id": 2,
+      "key": "cabinet",
+      "label": "Street Cabinet",
+      "geometryKind": "point",
+      "icon": "box",
+      "color": "#F59E0B",
+      "fieldSchema": [
+        {
+          "key": "cabinet_type",
+          "label": "Cabinet Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "DSLAM",
+            "OLT",
+            "Switch",
+            "Distribution"
+          ]
+        },
+        {
+          "key": "port_count",
+          "label": "Port Count",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "address",
+          "label": "Street Address",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.508Z"
+    }
+  },
+  {
+    "id": 9,
+    "assetTypeId": 5,
+    "name": "Dokki Exchange",
+    "code": "SITE-DOK-001",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.2115,
+        30.0444
+      ]
+    },
+    "attributes": {
+      "site_type": "Exchange",
+      "owner": "Telecom Egypt",
+      "capacity_ports": 4096,
+      "power_backup": true
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.652Z",
+    "updatedAt": "2026-06-29T10:37:51.652Z",
+    "assetType": {
+      "id": 5,
+      "key": "site",
+      "label": "Site / POP",
+      "geometryKind": "point",
+      "icon": "building",
+      "color": "#3B82F6",
+      "fieldSchema": [
+        {
+          "key": "site_type",
+          "label": "Site Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Exchange",
+            "Data Center",
+            "POP",
+            "Hub"
+          ]
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "capacity_ports",
+          "label": "Port Capacity",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "power_backup",
+          "label": "Power Backup",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 83,
+    "assetTypeId": 3,
+    "name": "Dokki — Mohandeseen Feeder",
+    "code": "FC-006",
+    "status": "operational",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          31.2115,
+          30.0444
+        ],
+        [
+          31.2072,
+          30.051
+        ],
+        [
+          31.2029,
+          30.0576
+        ]
+      ]
+    },
+    "attributes": {
+      "cable_type": "Duct",
+      "fiber_count": 48,
+      "length_m": 1400,
+      "installation_date": "2022-02-28"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.684Z",
+    "updatedAt": "2026-06-29T10:37:52.684Z",
+    "assetType": {
+      "id": 3,
+      "key": "fiber_cable",
+      "label": "Fiber Cable",
+      "geometryKind": "line",
+      "icon": "cable",
+      "color": "#10B981",
+      "fieldSchema": [
+        {
+          "key": "cable_type",
+          "label": "Cable Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Aerial",
+            "Underground",
+            "Duct",
+            "Direct Burial"
+          ]
+        },
+        {
+          "key": "fiber_count",
+          "label": "Fiber Count",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "length_m",
+          "label": "Length (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "installation_date",
+          "label": "Installation Date",
+          "type": "date",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 81,
+    "assetTypeId": 4,
+    "name": "FDH Dokki-01",
+    "code": "FDH-DOK-001",
+    "status": "degraded",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.2045,
+        30.0512
+      ]
+    },
+    "attributes": {
+      "port_count": 128,
+      "splitter_ratio": "1:32",
+      "address": "Tahrir Sq Access, Dokki"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.615Z",
+    "updatedAt": "2026-06-29T10:37:52.615Z",
+    "assetType": {
+      "id": 4,
+      "key": "fdh",
+      "label": "FDH Cabinet",
+      "geometryKind": "point",
+      "icon": "server",
+      "color": "#06B6D4",
+      "fieldSchema": [
+        {
+          "key": "port_count",
+          "label": "Port Count",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "splitter_ratio",
+          "label": "Splitter Ratio",
+          "type": "select",
+          "required": false,
+          "options": [
+            "1:8",
+            "1:16",
+            "1:32",
+            "1:64"
+          ]
+        },
+        {
+          "key": "address",
+          "label": "Street Address",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 79,
+    "assetTypeId": 4,
+    "name": "FDH Giza-01",
+    "code": "FDH-GIZ-001",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.2001,
+        30.0089
+      ]
+    },
+    "attributes": {
+      "port_count": 192,
+      "splitter_ratio": "1:64",
+      "address": "Faisal/Pyramids Rd, Giza"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.615Z",
+    "updatedAt": "2026-06-29T10:37:52.615Z",
+    "assetType": {
+      "id": 4,
+      "key": "fdh",
+      "label": "FDH Cabinet",
+      "geometryKind": "point",
+      "icon": "server",
+      "color": "#06B6D4",
+      "fieldSchema": [
+        {
+          "key": "port_count",
+          "label": "Port Count",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "splitter_ratio",
+          "label": "Splitter Ratio",
+          "type": "select",
+          "required": false,
+          "options": [
+            "1:8",
+            "1:16",
+            "1:32",
+            "1:64"
+          ]
+        },
+        {
+          "key": "address",
+          "label": "Street Address",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 80,
+    "assetTypeId": 4,
+    "name": "FDH October-01",
+    "code": "FDH-OCT-001",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        30.9945,
+        29.9478
+      ]
+    },
+    "attributes": {
+      "port_count": 96,
+      "splitter_ratio": "1:32",
+      "address": "Al Hayy Al Mutamayez, 6th Oct"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.616Z",
+    "updatedAt": "2026-06-29T10:37:52.616Z",
+    "assetType": {
+      "id": 4,
+      "key": "fdh",
+      "label": "FDH Cabinet",
+      "geometryKind": "point",
+      "icon": "server",
+      "color": "#06B6D4",
+      "fieldSchema": [
+        {
+          "key": "port_count",
+          "label": "Port Count",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "splitter_ratio",
+          "label": "Splitter Ratio",
+          "type": "select",
+          "required": false,
+          "options": [
+            "1:8",
+            "1:16",
+            "1:32",
+            "1:64"
+          ]
+        },
+        {
+          "key": "address",
+          "label": "Street Address",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 82,
+    "assetTypeId": 4,
+    "name": "FDH October-02",
+    "code": "FDH-OCT-002",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0067,
+        29.9534
+      ]
+    },
+    "attributes": {
+      "port_count": 64,
+      "splitter_ratio": "1:16",
+      "address": "Al Andalus St, 6th Oct"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.615Z",
+    "updatedAt": "2026-06-29T10:37:52.615Z",
+    "assetType": {
+      "id": 4,
+      "key": "fdh",
+      "label": "FDH Cabinet",
+      "geometryKind": "point",
+      "icon": "server",
+      "color": "#06B6D4",
+      "fieldSchema": [
+        {
+          "key": "port_count",
+          "label": "Port Count",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "splitter_ratio",
+          "label": "Splitter Ratio",
+          "type": "select",
+          "required": false,
+          "options": [
+            "1:8",
+            "1:16",
+            "1:32",
+            "1:64"
+          ]
+        },
+        {
+          "key": "address",
+          "label": "Street Address",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 85,
+    "assetTypeId": 3,
+    "name": "Giza DC — Dokki Backbone",
+    "code": "FC-009",
+    "status": "operational",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          31.1987,
+          30.0131
+        ],
+        [
+          31.2,
+          30.02
+        ],
+        [
+          31.2045,
+          30.03
+        ],
+        [
+          31.2115,
+          30.0444
+        ]
+      ]
+    },
+    "attributes": {
+      "cable_type": "Underground",
+      "fiber_count": 576,
+      "length_m": 8900,
+      "installation_date": "2019-01-20"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.701Z",
+    "updatedAt": "2026-06-29T10:37:52.701Z",
+    "assetType": {
+      "id": 3,
+      "key": "fiber_cable",
+      "label": "Fiber Cable",
+      "geometryKind": "line",
+      "icon": "cable",
+      "color": "#10B981",
+      "fieldSchema": [
+        {
+          "key": "cable_type",
+          "label": "Cable Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Aerial",
+            "Underground",
+            "Duct",
+            "Direct Burial"
+          ]
+        },
+        {
+          "key": "fiber_count",
+          "label": "Fiber Count",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "length_m",
+          "label": "Length (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "installation_date",
+          "label": "Installation Date",
+          "type": "date",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 84,
+    "assetTypeId": 3,
+    "name": "Giza DC — Haram St Feeder",
+    "code": "FC-010",
+    "status": "operational",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          31.1987,
+          30.0131
+        ],
+        [
+          31.19,
+          30.011
+        ],
+        [
+          31.185,
+          30.0082
+        ],
+        [
+          31.1798,
+          30.0065
+        ]
+      ]
+    },
+    "attributes": {
+      "cable_type": "Duct",
+      "fiber_count": 96,
+      "length_m": 6200,
+      "installation_date": "2020-07-15"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.691Z",
+    "updatedAt": "2026-06-29T10:37:52.691Z",
+    "assetType": {
+      "id": 3,
+      "key": "fiber_cable",
+      "label": "Fiber Cable",
+      "geometryKind": "line",
+      "icon": "cable",
+      "color": "#10B981",
+      "fieldSchema": [
+        {
+          "key": "cable_type",
+          "label": "Cable Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Aerial",
+            "Underground",
+            "Duct",
+            "Direct Burial"
+          ]
+        },
+        {
+          "key": "fiber_count",
+          "label": "Fiber Count",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "length_m",
+          "label": "Length (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "installation_date",
+          "label": "Installation Date",
+          "type": "date",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 8,
+    "assetTypeId": 5,
+    "name": "Giza Data Center",
+    "code": "SITE-GIZ-DC",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.1987,
+        30.0131
+      ]
+    },
+    "attributes": {
+      "site_type": "Data Center",
+      "owner": "DCM Egypt",
+      "capacity_ports": 8192,
+      "power_backup": true
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.652Z",
+    "updatedAt": "2026-06-29T10:37:51.652Z",
+    "assetType": {
+      "id": 5,
+      "key": "site",
+      "label": "Site / POP",
+      "geometryKind": "point",
+      "icon": "building",
+      "color": "#3B82F6",
+      "fieldSchema": [
+        {
+          "key": "site_type",
+          "label": "Site Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Exchange",
+            "Data Center",
+            "POP",
+            "Hub"
+          ]
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "capacity_ports",
+          "label": "Port Capacity",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "power_backup",
+          "label": "Power Backup",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 51,
+    "assetTypeId": 9,
+    "name": "Handhole 001",
+    "code": "HH-001",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0015,
+        29.9415
+      ]
+    },
+    "attributes": {
+      "size": "Small",
+      "material": "Concrete"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.231Z",
+    "updatedAt": "2026-06-29T10:37:52.231Z",
+    "assetType": {
+      "id": 9,
+      "key": "handhole",
+      "label": "Handhole",
+      "geometryKind": "point",
+      "icon": "square",
+      "color": "#9CA3AF",
+      "fieldSchema": [
+        {
+          "key": "size",
+          "label": "Size",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 53,
+    "assetTypeId": 9,
+    "name": "Handhole 002",
+    "code": "HH-002",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0087,
+        29.9445
+      ]
+    },
+    "attributes": {
+      "size": "Medium",
+      "material": "HDPE"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.244Z",
+    "updatedAt": "2026-06-29T10:37:52.244Z",
+    "assetType": {
+      "id": 9,
+      "key": "handhole",
+      "label": "Handhole",
+      "geometryKind": "point",
+      "icon": "square",
+      "color": "#9CA3AF",
+      "fieldSchema": [
+        {
+          "key": "size",
+          "label": "Size",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 59,
+    "assetTypeId": 9,
+    "name": "Handhole 003",
+    "code": "HH-003",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0145,
+        29.947
+      ]
+    },
+    "attributes": {
+      "size": "Large",
+      "material": "Concrete"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.231Z",
+    "updatedAt": "2026-06-29T10:37:52.231Z",
+    "assetType": {
+      "id": 9,
+      "key": "handhole",
+      "label": "Handhole",
+      "geometryKind": "point",
+      "icon": "square",
+      "color": "#9CA3AF",
+      "fieldSchema": [
+        {
+          "key": "size",
+          "label": "Size",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 60,
+    "assetTypeId": 9,
+    "name": "Handhole 004",
+    "code": "HH-004",
+    "status": "degraded",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0223,
+        29.951
+      ]
+    },
+    "attributes": {
+      "size": "Small",
+      "material": "HDPE"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.231Z",
+    "updatedAt": "2026-06-29T10:37:52.231Z",
+    "assetType": {
+      "id": 9,
+      "key": "handhole",
+      "label": "Handhole",
+      "geometryKind": "point",
+      "icon": "square",
+      "color": "#9CA3AF",
+      "fieldSchema": [
+        {
+          "key": "size",
+          "label": "Size",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 58,
+    "assetTypeId": 9,
+    "name": "Handhole 005",
+    "code": "HH-005",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0312,
+        29.9565
+      ]
+    },
+    "attributes": {
+      "size": "Medium",
+      "material": "Concrete"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.231Z",
+    "updatedAt": "2026-06-29T10:37:52.231Z",
+    "assetType": {
+      "id": 9,
+      "key": "handhole",
+      "label": "Handhole",
+      "geometryKind": "point",
+      "icon": "square",
+      "color": "#9CA3AF",
+      "fieldSchema": [
+        {
+          "key": "size",
+          "label": "Size",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 54,
+    "assetTypeId": 9,
+    "name": "Handhole 006",
+    "code": "HH-006",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0478,
+        29.9612
+      ]
+    },
+    "attributes": {
+      "size": "Large",
+      "material": "HDPE"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.231Z",
+    "updatedAt": "2026-06-29T10:37:52.231Z",
+    "assetType": {
+      "id": 9,
+      "key": "handhole",
+      "label": "Handhole",
+      "geometryKind": "point",
+      "icon": "square",
+      "color": "#9CA3AF",
+      "fieldSchema": [
+        {
+          "key": "size",
+          "label": "Size",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 52,
+    "assetTypeId": 9,
+    "name": "Handhole 007",
+    "code": "HH-007",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0634,
+        29.9745
+      ]
+    },
+    "attributes": {
+      "size": "Small",
+      "material": "Concrete"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.231Z",
+    "updatedAt": "2026-06-29T10:37:52.231Z",
+    "assetType": {
+      "id": 9,
+      "key": "handhole",
+      "label": "Handhole",
+      "geometryKind": "point",
+      "icon": "square",
+      "color": "#9CA3AF",
+      "fieldSchema": [
+        {
+          "key": "size",
+          "label": "Size",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 57,
+    "assetTypeId": 9,
+    "name": "Handhole 008",
+    "code": "HH-008",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.1078,
+        30.001
+      ]
+    },
+    "attributes": {
+      "size": "Medium",
+      "material": "HDPE"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.231Z",
+    "updatedAt": "2026-06-29T10:37:52.231Z",
+    "assetType": {
+      "id": 9,
+      "key": "handhole",
+      "label": "Handhole",
+      "geometryKind": "point",
+      "icon": "square",
+      "color": "#9CA3AF",
+      "fieldSchema": [
+        {
+          "key": "size",
+          "label": "Size",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 55,
+    "assetTypeId": 9,
+    "name": "Handhole 009",
+    "code": "HH-009",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.1567,
+        30.0168
+      ]
+    },
+    "attributes": {
+      "size": "Large",
+      "material": "Concrete"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.231Z",
+    "updatedAt": "2026-06-29T10:37:52.231Z",
+    "assetType": {
+      "id": 9,
+      "key": "handhole",
+      "label": "Handhole",
+      "geometryKind": "point",
+      "icon": "square",
+      "color": "#9CA3AF",
+      "fieldSchema": [
+        {
+          "key": "size",
+          "label": "Size",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 56,
+    "assetTypeId": 9,
+    "name": "Handhole 010",
+    "code": "HH-010",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.1989,
+        30.0201
+      ]
+    },
+    "attributes": {
+      "size": "Small",
+      "material": "HDPE"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.238Z",
+    "updatedAt": "2026-06-29T10:37:52.238Z",
+    "assetType": {
+      "id": 9,
+      "key": "handhole",
+      "label": "Handhole",
+      "geometryKind": "point",
+      "icon": "square",
+      "color": "#9CA3AF",
+      "fieldSchema": [
+        {
+          "key": "size",
+          "label": "Size",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 86,
+    "assetTypeId": 3,
+    "name": "Haram St — Giza Axis",
+    "code": "FC-011",
+    "status": "under_maintenance",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          31.1798,
+          30.0065
+        ],
+        [
+          31.1875,
+          30.005
+        ],
+        [
+          31.1987,
+          30.0131
+        ]
+      ]
+    },
+    "attributes": {
+      "cable_type": "Underground",
+      "fiber_count": 48,
+      "length_m": 4100,
+      "installation_date": "2020-03-22"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.709Z",
+    "updatedAt": "2026-06-29T10:37:52.709Z",
+    "assetType": {
+      "id": 3,
+      "key": "fiber_cable",
+      "label": "Fiber Cable",
+      "geometryKind": "line",
+      "icon": "cable",
+      "color": "#10B981",
+      "fieldSchema": [
+        {
+          "key": "cable_type",
+          "label": "Cable Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Aerial",
+            "Underground",
+            "Duct",
+            "Direct Burial"
+          ]
+        },
+        {
+          "key": "fiber_count",
+          "label": "Fiber Count",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "length_m",
+          "label": "Length (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "installation_date",
+          "label": "Installation Date",
+          "type": "date",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 6,
+    "assetTypeId": 5,
+    "name": "Haram Street POP",
+    "code": "SITE-HRM-001",
+    "status": "under_maintenance",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.1798,
+        30.0065
+      ]
+    },
+    "attributes": {
+      "site_type": "POP",
+      "owner": "Telecom Egypt",
+      "capacity_ports": 256,
+      "power_backup": false
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.652Z",
+    "updatedAt": "2026-06-29T10:37:51.652Z",
+    "assetType": {
+      "id": 5,
+      "key": "site",
+      "label": "Site / POP",
+      "geometryKind": "point",
+      "icon": "building",
+      "color": "#3B82F6",
+      "fieldSchema": [
+        {
+          "key": "site_type",
+          "label": "Site Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Exchange",
+            "Data Center",
+            "POP",
+            "Hub"
+          ]
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "capacity_ports",
+          "label": "Port Capacity",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "power_backup",
+          "label": "Power Backup",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 87,
+    "assetTypeId": 3,
+    "name": "Industrial Hub — OCT Exchange Link",
+    "code": "FC-012",
+    "status": "operational",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          30.9543,
+          29.9189
+        ],
+        [
+          30.962,
+          29.925
+        ],
+        [
+          30.971,
+          29.931
+        ],
+        [
+          30.9876,
+          29.9387
+        ]
+      ]
+    },
+    "attributes": {
+      "cable_type": "Direct Burial",
+      "fiber_count": 24,
+      "length_m": 3800,
+      "installation_date": "2022-09-01"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.716Z",
+    "updatedAt": "2026-06-29T10:37:52.716Z",
+    "assetType": {
+      "id": 3,
+      "key": "fiber_cable",
+      "label": "Fiber Cable",
+      "geometryKind": "line",
+      "icon": "cable",
+      "color": "#10B981",
+      "fieldSchema": [
+        {
+          "key": "cable_type",
+          "label": "Cable Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Aerial",
+            "Underground",
+            "Duct",
+            "Direct Burial"
+          ]
+        },
+        {
+          "key": "fiber_count",
+          "label": "Fiber Count",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "length_m",
+          "label": "Length (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "installation_date",
+          "label": "Installation Date",
+          "type": "date",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 5,
+    "assetTypeId": 5,
+    "name": "Juhayna Square Hub",
+    "code": "SITE-JUH-001",
+    "status": "degraded",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0123,
+        29.9521
+      ]
+    },
+    "attributes": {
+      "site_type": "Hub",
+      "owner": "Telecom Egypt",
+      "capacity_ports": 256,
+      "power_backup": false
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.680Z",
+    "updatedAt": "2026-06-29T10:37:51.680Z",
+    "assetType": {
+      "id": 5,
+      "key": "site",
+      "label": "Site / POP",
+      "geometryKind": "point",
+      "icon": "building",
+      "color": "#3B82F6",
+      "fieldSchema": [
+        {
+          "key": "site_type",
+          "label": "Site Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Exchange",
+            "Data Center",
+            "POP",
+            "Hub"
+          ]
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "capacity_ports",
+          "label": "Port Capacity",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "power_backup",
+          "label": "Power Backup",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 97,
+    "assetTypeId": 3,
+    "name": "Juhayna — Shooting Club Trunk",
+    "code": "FC-004",
+    "status": "operational",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          31.0123,
+          29.9521
+        ],
+        [
+          31.023,
+          29.962
+        ],
+        [
+          31.035,
+          29.975
+        ],
+        [
+          31.045,
+          29.989
+        ],
+        [
+          31.0342,
+          30.0612
+        ]
+      ]
+    },
+    "attributes": {
+      "cable_type": "Underground",
+      "fiber_count": 144,
+      "length_m": 12400,
+      "installation_date": "2020-06-01"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.684Z",
+    "updatedAt": "2026-06-29T10:37:52.684Z",
+    "assetType": {
+      "id": 3,
+      "key": "fiber_cable",
+      "label": "Fiber Cable",
+      "geometryKind": "line",
+      "icon": "cable",
+      "color": "#10B981",
+      "fieldSchema": [
+        {
+          "key": "cable_type",
+          "label": "Cable Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Aerial",
+            "Underground",
+            "Duct",
+            "Direct Burial"
+          ]
+        },
+        {
+          "key": "fiber_count",
+          "label": "Fiber Count",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "length_m",
+          "label": "Length (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "installation_date",
+          "label": "Installation Date",
+          "type": "date",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 21,
+    "assetTypeId": 8,
+    "name": "Manhole 001",
+    "code": "MH-001",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        30.9876,
+        29.935
+      ]
+    },
+    "attributes": {
+      "depth_m": 1.2,
+      "cover_type": "Cast Iron",
+      "duct_count": 2
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.887Z",
+    "updatedAt": "2026-06-29T10:37:51.887Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 47,
+    "assetTypeId": 8,
+    "name": "Manhole 002",
+    "code": "MH-002",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        30.9901,
+        29.933
+      ]
+    },
+    "attributes": {
+      "depth_m": 1.5,
+      "cover_type": "Concrete",
+      "duct_count": 3
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.887Z",
+    "updatedAt": "2026-06-29T10:37:51.887Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 43,
+    "assetTypeId": 8,
+    "name": "Manhole 003",
+    "code": "MH-003",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        30.993,
+        29.931
+      ]
+    },
+    "attributes": {
+      "depth_m": 1.7999999999999998,
+      "cover_type": "Composite",
+      "duct_count": 4
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.055Z",
+    "updatedAt": "2026-06-29T10:37:52.055Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 48,
+    "assetTypeId": 8,
+    "name": "Manhole 004",
+    "code": "MH-004",
+    "status": "degraded",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        30.996,
+        29.9295
+      ]
+    },
+    "attributes": {
+      "depth_m": 2.0999999999999996,
+      "cover_type": "Cast Iron",
+      "duct_count": 5
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.887Z",
+    "updatedAt": "2026-06-29T10:37:51.887Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 41,
+    "assetTypeId": 8,
+    "name": "Manhole 005",
+    "code": "MH-005",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        30.999,
+        29.928
+      ]
+    },
+    "attributes": {
+      "depth_m": 2.4,
+      "cover_type": "Concrete",
+      "duct_count": 2
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.041Z",
+    "updatedAt": "2026-06-29T10:37:52.041Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 49,
+    "assetTypeId": 8,
+    "name": "Manhole 006",
+    "code": "MH-006",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.002,
+        29.927
+      ]
+    },
+    "attributes": {
+      "depth_m": 1.2,
+      "cover_type": "Composite",
+      "duct_count": 3
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.887Z",
+    "updatedAt": "2026-06-29T10:37:51.887Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 42,
+    "assetTypeId": 8,
+    "name": "Manhole 007",
+    "code": "MH-007",
+    "status": "under_maintenance",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.005,
+        29.9275
+      ]
+    },
+    "attributes": {
+      "depth_m": 1.5,
+      "cover_type": "Cast Iron",
+      "duct_count": 4
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.048Z",
+    "updatedAt": "2026-06-29T10:37:52.048Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 46,
+    "assetTypeId": 8,
+    "name": "Manhole 008",
+    "code": "MH-008",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.008,
+        29.928
+      ]
+    },
+    "attributes": {
+      "depth_m": 1.7999999999999998,
+      "cover_type": "Concrete",
+      "duct_count": 5
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.887Z",
+    "updatedAt": "2026-06-29T10:37:51.887Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 39,
+    "assetTypeId": 8,
+    "name": "Manhole 009",
+    "code": "MH-009",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.011,
+        29.93
+      ]
+    },
+    "attributes": {
+      "depth_m": 2.0999999999999996,
+      "cover_type": "Composite",
+      "duct_count": 2
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.026Z",
+    "updatedAt": "2026-06-29T10:37:52.026Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 31,
+    "assetTypeId": 8,
+    "name": "Manhole 010",
+    "code": "MH-010",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.014,
+        29.932
+      ]
+    },
+    "attributes": {
+      "depth_m": 2.4,
+      "cover_type": "Cast Iron",
+      "duct_count": 3
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.887Z",
+    "updatedAt": "2026-06-29T10:37:51.887Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 32,
+    "assetTypeId": 8,
+    "name": "Manhole 011",
+    "code": "MH-011",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.017,
+        29.934
+      ]
+    },
+    "attributes": {
+      "depth_m": 1.2,
+      "cover_type": "Concrete",
+      "duct_count": 4
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.963Z",
+    "updatedAt": "2026-06-29T10:37:51.963Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 33,
+    "assetTypeId": 8,
+    "name": "Manhole 012",
+    "code": "MH-012",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.02,
+        29.936
+      ]
+    },
+    "attributes": {
+      "depth_m": 1.5,
+      "cover_type": "Composite",
+      "duct_count": 5
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.970Z",
+    "updatedAt": "2026-06-29T10:37:51.970Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 44,
+    "assetTypeId": 8,
+    "name": "Manhole 013",
+    "code": "MH-013",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.025,
+        29.94
+      ]
+    },
+    "attributes": {
+      "depth_m": 1.7999999999999998,
+      "cover_type": "Cast Iron",
+      "duct_count": 2
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.887Z",
+    "updatedAt": "2026-06-29T10:37:51.887Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 38,
+    "assetTypeId": 8,
+    "name": "Manhole 014",
+    "code": "MH-014",
+    "status": "degraded",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.032,
+        29.945
+      ]
+    },
+    "attributes": {
+      "depth_m": 2.0999999999999996,
+      "cover_type": "Concrete",
+      "duct_count": 3
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.020Z",
+    "updatedAt": "2026-06-29T10:37:52.020Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 50,
+    "assetTypeId": 8,
+    "name": "Manhole 015",
+    "code": "MH-015",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.039,
+        29.949
+      ]
+    },
+    "attributes": {
+      "depth_m": 2.4,
+      "cover_type": "Composite",
+      "duct_count": 4
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.887Z",
+    "updatedAt": "2026-06-29T10:37:51.887Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 40,
+    "assetTypeId": 8,
+    "name": "Manhole 016",
+    "code": "MH-016",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.045,
+        29.955
+      ]
+    },
+    "attributes": {
+      "depth_m": 1.2,
+      "cover_type": "Cast Iron",
+      "duct_count": 5
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.033Z",
+    "updatedAt": "2026-06-29T10:37:52.033Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 22,
+    "assetTypeId": 8,
+    "name": "Manhole 017",
+    "code": "MH-017",
+    "status": "under_maintenance",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.056,
+        29.963
+      ]
+    },
+    "attributes": {
+      "depth_m": 1.5,
+      "cover_type": "Concrete",
+      "duct_count": 2
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.894Z",
+    "updatedAt": "2026-06-29T10:37:51.894Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 23,
+    "assetTypeId": 8,
+    "name": "Manhole 018",
+    "code": "MH-018",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.068,
+        29.972
+      ]
+    },
+    "attributes": {
+      "depth_m": 1.7999999999999998,
+      "cover_type": "Composite",
+      "duct_count": 3
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.901Z",
+    "updatedAt": "2026-06-29T10:37:51.901Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 24,
+    "assetTypeId": 8,
+    "name": "Manhole 019",
+    "code": "MH-019",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.08,
+        29.982
+      ]
+    },
+    "attributes": {
+      "depth_m": 2.0999999999999996,
+      "cover_type": "Cast Iron",
+      "duct_count": 4
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.907Z",
+    "updatedAt": "2026-06-29T10:37:51.907Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 25,
+    "assetTypeId": 8,
+    "name": "Manhole 020",
+    "code": "MH-020",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.095,
+        29.992
+      ]
+    },
+    "attributes": {
+      "depth_m": 2.4,
+      "cover_type": "Concrete",
+      "duct_count": 5
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.914Z",
+    "updatedAt": "2026-06-29T10:37:51.914Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 26,
+    "assetTypeId": 8,
+    "name": "Manhole 021",
+    "code": "MH-021",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.11,
+        30.002
+      ]
+    },
+    "attributes": {
+      "depth_m": 1.2,
+      "cover_type": "Composite",
+      "duct_count": 2
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.920Z",
+    "updatedAt": "2026-06-29T10:37:51.920Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 27,
+    "assetTypeId": 8,
+    "name": "Manhole 022",
+    "code": "MH-022",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.125,
+        30.009
+      ]
+    },
+    "attributes": {
+      "depth_m": 1.5,
+      "cover_type": "Cast Iron",
+      "duct_count": 3
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.927Z",
+    "updatedAt": "2026-06-29T10:37:51.927Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 28,
+    "assetTypeId": 8,
+    "name": "Manhole 023",
+    "code": "MH-023",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.14,
+        30.012
+      ]
+    },
+    "attributes": {
+      "depth_m": 1.7999999999999998,
+      "cover_type": "Concrete",
+      "duct_count": 4
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.935Z",
+    "updatedAt": "2026-06-29T10:37:51.935Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 29,
+    "assetTypeId": 8,
+    "name": "Manhole 024",
+    "code": "MH-024",
+    "status": "degraded",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.155,
+        30.014
+      ]
+    },
+    "attributes": {
+      "depth_m": 2.0999999999999996,
+      "cover_type": "Composite",
+      "duct_count": 5
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.942Z",
+    "updatedAt": "2026-06-29T10:37:51.942Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 30,
+    "assetTypeId": 8,
+    "name": "Manhole 025",
+    "code": "MH-025",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.17,
+        30.0145
+      ]
+    },
+    "attributes": {
+      "depth_m": 2.4,
+      "cover_type": "Cast Iron",
+      "duct_count": 2
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.949Z",
+    "updatedAt": "2026-06-29T10:37:51.949Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 45,
+    "assetTypeId": 8,
+    "name": "Manhole 026",
+    "code": "MH-026",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.185,
+        30.0148
+      ]
+    },
+    "attributes": {
+      "depth_m": 1.2,
+      "cover_type": "Concrete",
+      "duct_count": 3
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.956Z",
+    "updatedAt": "2026-06-29T10:37:51.956Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 34,
+    "assetTypeId": 8,
+    "name": "Manhole 027",
+    "code": "MH-027",
+    "status": "under_maintenance",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.195,
+        30.015
+      ]
+    },
+    "attributes": {
+      "depth_m": 1.5,
+      "cover_type": "Composite",
+      "duct_count": 4
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.993Z",
+    "updatedAt": "2026-06-29T10:37:51.993Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 35,
+    "assetTypeId": 8,
+    "name": "Manhole 028",
+    "code": "MH-028",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.202,
+        30.0155
+      ]
+    },
+    "attributes": {
+      "depth_m": 1.7999999999999998,
+      "cover_type": "Cast Iron",
+      "duct_count": 5
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.000Z",
+    "updatedAt": "2026-06-29T10:37:52.000Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 36,
+    "assetTypeId": 8,
+    "name": "Manhole 029",
+    "code": "MH-029",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.208,
+        30.02
+      ]
+    },
+    "attributes": {
+      "depth_m": 2.0999999999999996,
+      "cover_type": "Concrete",
+      "duct_count": 2
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.006Z",
+    "updatedAt": "2026-06-29T10:37:52.006Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 37,
+    "assetTypeId": 8,
+    "name": "Manhole 030",
+    "code": "MH-030",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.21,
+        30.028
+      ]
+    },
+    "attributes": {
+      "depth_m": 2.4,
+      "cover_type": "Composite",
+      "duct_count": 3
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.013Z",
+    "updatedAt": "2026-06-29T10:37:52.013Z",
+    "assetType": {
+      "id": 8,
+      "key": "manhole",
+      "label": "Manhole",
+      "geometryKind": "point",
+      "icon": "circle",
+      "color": "#6B7280",
+      "fieldSchema": [
+        {
+          "key": "depth_m",
+          "label": "Depth (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "cover_type",
+          "label": "Cover Type",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Cast Iron",
+            "Concrete",
+            "Composite"
+          ]
+        },
+        {
+          "key": "duct_count",
+          "label": "Duct Count",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 88,
+    "assetTypeId": 3,
+    "name": "Media City — Smart Village Spur",
+    "code": "FC-013",
+    "status": "degraded",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          30.9651,
+          29.9864
+        ],
+        [
+          30.968,
+          29.982
+        ],
+        [
+          30.971,
+          29.979
+        ],
+        [
+          30.9718,
+          29.9754
+        ]
+      ]
+    },
+    "attributes": {
+      "cable_type": "Aerial",
+      "fiber_count": 12,
+      "length_m": 2900,
+      "installation_date": "2021-12-05"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.723Z",
+    "updatedAt": "2026-06-29T10:37:52.723Z",
+    "assetType": {
+      "id": 3,
+      "key": "fiber_cable",
+      "label": "Fiber Cable",
+      "geometryKind": "line",
+      "icon": "cable",
+      "color": "#10B981",
+      "fieldSchema": [
+        {
+          "key": "cable_type",
+          "label": "Cable Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Aerial",
+            "Underground",
+            "Duct",
+            "Direct Burial"
+          ]
+        },
+        {
+          "key": "fiber_count",
+          "label": "Fiber Count",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "length_m",
+          "label": "Length (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "installation_date",
+          "label": "Installation Date",
+          "type": "date",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 3,
+    "assetTypeId": 5,
+    "name": "Media Production City POP",
+    "code": "SITE-MPC-001",
+    "status": "degraded",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        30.9651,
+        29.9864
+      ]
+    },
+    "attributes": {
+      "site_type": "POP",
+      "owner": "MPC",
+      "capacity_ports": 256,
+      "power_backup": true
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.667Z",
+    "updatedAt": "2026-06-29T10:37:51.667Z",
+    "assetType": {
+      "id": 5,
+      "key": "site",
+      "label": "Site / POP",
+      "geometryKind": "point",
+      "icon": "building",
+      "color": "#3B82F6",
+      "fieldSchema": [
+        {
+          "key": "site_type",
+          "label": "Site Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Exchange",
+            "Data Center",
+            "POP",
+            "Hub"
+          ]
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "capacity_ports",
+          "label": "Port Capacity",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "power_backup",
+          "label": "Power Backup",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 12,
+    "assetTypeId": 5,
+    "name": "Mohandeseen Hub",
+    "code": "SITE-MOH-001",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.2029,
+        30.0576
+      ]
+    },
+    "attributes": {
+      "site_type": "Hub",
+      "owner": "Telecom Egypt",
+      "capacity_ports": 512,
+      "power_backup": true
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.674Z",
+    "updatedAt": "2026-06-29T10:37:51.674Z",
+    "assetType": {
+      "id": 5,
+      "key": "site",
+      "label": "Site / POP",
+      "geometryKind": "point",
+      "icon": "building",
+      "color": "#3B82F6",
+      "fieldSchema": [
+        {
+          "key": "site_type",
+          "label": "Site Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Exchange",
+            "Data Center",
+            "POP",
+            "Hub"
+          ]
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "capacity_ports",
+          "label": "Port Capacity",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "power_backup",
+          "label": "Power Backup",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 96,
+    "assetTypeId": 3,
+    "name": "Mohandeseen — Agouza Link",
+    "code": "FC-007",
+    "status": "operational",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          31.2029,
+          30.0576
+        ],
+        [
+          31.2086,
+          30.0606
+        ],
+        [
+          31.2143,
+          30.0636
+        ]
+      ]
+    },
+    "attributes": {
+      "cable_type": "Duct",
+      "fiber_count": 24,
+      "length_m": 800,
+      "installation_date": "2022-04-10"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.684Z",
+    "updatedAt": "2026-06-29T10:37:52.684Z",
+    "assetType": {
+      "id": 3,
+      "key": "fiber_cable",
+      "label": "Fiber Cable",
+      "geometryKind": "line",
+      "icon": "cable",
+      "color": "#10B981",
+      "fieldSchema": [
+        {
+          "key": "cable_type",
+          "label": "Cable Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Aerial",
+            "Underground",
+            "Duct",
+            "Direct Burial"
+          ]
+        },
+        {
+          "key": "fiber_count",
+          "label": "Fiber Count",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "length_m",
+          "label": "Length (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "installation_date",
+          "label": "Installation Date",
+          "type": "date",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 91,
+    "assetTypeId": 3,
+    "name": "OCT Exchange — Smart Village Ring",
+    "code": "FC-001",
+    "status": "operational",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          30.9876,
+          29.9387
+        ],
+        [
+          30.98,
+          29.955
+        ],
+        [
+          30.9718,
+          29.9754
+        ]
+      ]
+    },
+    "attributes": {
+      "cable_type": "Underground",
+      "fiber_count": 96,
+      "length_m": 4200,
+      "installation_date": "2021-03-15"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.684Z",
+    "updatedAt": "2026-06-29T10:37:52.684Z",
+    "assetType": {
+      "id": 3,
+      "key": "fiber_cable",
+      "label": "Fiber Cable",
+      "geometryKind": "line",
+      "icon": "cable",
+      "color": "#10B981",
+      "fieldSchema": [
+        {
+          "key": "cable_type",
+          "label": "Cable Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Aerial",
+            "Underground",
+            "Duct",
+            "Direct Burial"
+          ]
+        },
+        {
+          "key": "fiber_count",
+          "label": "Fiber Count",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "length_m",
+          "label": "Length (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "installation_date",
+          "label": "Installation Date",
+          "type": "date",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 89,
+    "assetTypeId": 3,
+    "name": "OCT Ring — South Loop",
+    "code": "FC-014",
+    "status": "operational",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          30.9876,
+          29.9387
+        ],
+        [
+          30.98,
+          29.93
+        ],
+        [
+          30.972,
+          29.921
+        ],
+        [
+          30.9651,
+          29.918
+        ],
+        [
+          30.9543,
+          29.9189
+        ]
+      ]
+    },
+    "attributes": {
+      "cable_type": "Underground",
+      "fiber_count": 48,
+      "length_m": 5100,
+      "installation_date": "2023-01-18"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.731Z",
+    "updatedAt": "2026-06-29T10:37:52.731Z",
+    "assetType": {
+      "id": 3,
+      "key": "fiber_cable",
+      "label": "Fiber Cable",
+      "geometryKind": "line",
+      "icon": "cable",
+      "color": "#10B981",
+      "fieldSchema": [
+        {
+          "key": "cable_type",
+          "label": "Cable Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Aerial",
+            "Underground",
+            "Duct",
+            "Direct Burial"
+          ]
+        },
+        {
+          "key": "fiber_count",
+          "label": "Fiber Count",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "length_m",
+          "label": "Length (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "installation_date",
+          "label": "Installation Date",
+          "type": "date",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 92,
+    "assetTypeId": 3,
+    "name": "OCT — Juhayna Corridor",
+    "code": "FC-002",
+    "status": "operational",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          30.9876,
+          29.9387
+        ],
+        [
+          30.995,
+          29.943
+        ],
+        [
+          31.005,
+          29.947
+        ],
+        [
+          31.0123,
+          29.9521
+        ]
+      ]
+    },
+    "attributes": {
+      "cable_type": "Underground",
+      "fiber_count": 48,
+      "length_m": 3100,
+      "installation_date": "2021-05-20"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.684Z",
+    "updatedAt": "2026-06-29T10:37:52.684Z",
+    "assetType": {
+      "id": 3,
+      "key": "fiber_cable",
+      "label": "Fiber Cable",
+      "geometryKind": "line",
+      "icon": "cable",
+      "color": "#10B981",
+      "fieldSchema": [
+        {
+          "key": "cable_type",
+          "label": "Cable Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Aerial",
+            "Underground",
+            "Duct",
+            "Direct Burial"
+          ]
+        },
+        {
+          "key": "fiber_count",
+          "label": "Fiber Count",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "length_m",
+          "label": "Length (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "installation_date",
+          "label": "Installation Date",
+          "type": "date",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 10,
+    "assetTypeId": 5,
+    "name": "October City Exchange",
+    "code": "SITE-OCT-001",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        30.9876,
+        29.9387
+      ]
+    },
+    "attributes": {
+      "site_type": "Exchange",
+      "owner": "Telecom Egypt",
+      "capacity_ports": 2048,
+      "power_backup": true
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.652Z",
+    "updatedAt": "2026-06-29T10:37:51.652Z",
+    "assetType": {
+      "id": 5,
+      "key": "site",
+      "label": "Site / POP",
+      "geometryKind": "point",
+      "icon": "building",
+      "color": "#3B82F6",
+      "fieldSchema": [
+        {
+          "key": "site_type",
+          "label": "Site Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Exchange",
+            "Data Center",
+            "POP",
+            "Hub"
+          ]
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "capacity_ports",
+          "label": "Port Capacity",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "power_backup",
+          "label": "Power Backup",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 71,
+    "assetTypeId": 6,
+    "name": "Pole 001",
+    "code": "POLE-001",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        30.9888,
+        29.9405
+      ]
+    },
+    "attributes": {
+      "height_m": 8,
+      "material": "Steel",
+      "condition": "Good"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.481Z",
+    "updatedAt": "2026-06-29T10:37:52.481Z",
+    "assetType": {
+      "id": 6,
+      "key": "pole",
+      "label": "Pole",
+      "geometryKind": "point",
+      "icon": "minus-square",
+      "color": "#D97706",
+      "fieldSchema": [
+        {
+          "key": "height_m",
+          "label": "Height (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Wood",
+            "Steel",
+            "Concrete"
+          ]
+        },
+        {
+          "key": "condition",
+          "label": "Condition",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Good",
+            "Fair",
+            "Poor"
+          ]
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 69,
+    "assetTypeId": 6,
+    "name": "Pole 002",
+    "code": "POLE-002",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        30.9921,
+        29.9432
+      ]
+    },
+    "attributes": {
+      "height_m": 10,
+      "material": "Concrete",
+      "condition": "Good"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.481Z",
+    "updatedAt": "2026-06-29T10:37:52.481Z",
+    "assetType": {
+      "id": 6,
+      "key": "pole",
+      "label": "Pole",
+      "geometryKind": "point",
+      "icon": "minus-square",
+      "color": "#D97706",
+      "fieldSchema": [
+        {
+          "key": "height_m",
+          "label": "Height (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Wood",
+            "Steel",
+            "Concrete"
+          ]
+        },
+        {
+          "key": "condition",
+          "label": "Condition",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Good",
+            "Fair",
+            "Poor"
+          ]
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 78,
+    "assetTypeId": 6,
+    "name": "Pole 003",
+    "code": "POLE-003",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        30.9956,
+        29.9418
+      ]
+    },
+    "attributes": {
+      "height_m": 12,
+      "material": "Wood",
+      "condition": "Good"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.481Z",
+    "updatedAt": "2026-06-29T10:37:52.481Z",
+    "assetType": {
+      "id": 6,
+      "key": "pole",
+      "label": "Pole",
+      "geometryKind": "point",
+      "icon": "minus-square",
+      "color": "#D97706",
+      "fieldSchema": [
+        {
+          "key": "height_m",
+          "label": "Height (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Wood",
+            "Steel",
+            "Concrete"
+          ]
+        },
+        {
+          "key": "condition",
+          "label": "Condition",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Good",
+            "Fair",
+            "Poor"
+          ]
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 73,
+    "assetTypeId": 6,
+    "name": "Pole 004",
+    "code": "POLE-004",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0034,
+        29.939
+      ]
+    },
+    "attributes": {
+      "height_m": 14,
+      "material": "Steel",
+      "condition": "Good"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.481Z",
+    "updatedAt": "2026-06-29T10:37:52.481Z",
+    "assetType": {
+      "id": 6,
+      "key": "pole",
+      "label": "Pole",
+      "geometryKind": "point",
+      "icon": "minus-square",
+      "color": "#D97706",
+      "fieldSchema": [
+        {
+          "key": "height_m",
+          "label": "Height (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Wood",
+            "Steel",
+            "Concrete"
+          ]
+        },
+        {
+          "key": "condition",
+          "label": "Condition",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Good",
+            "Fair",
+            "Poor"
+          ]
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 72,
+    "assetTypeId": 6,
+    "name": "Pole 005",
+    "code": "POLE-005",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0112,
+        29.9365
+      ]
+    },
+    "attributes": {
+      "height_m": 8,
+      "material": "Concrete",
+      "condition": "Good"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.481Z",
+    "updatedAt": "2026-06-29T10:37:52.481Z",
+    "assetType": {
+      "id": 6,
+      "key": "pole",
+      "label": "Pole",
+      "geometryKind": "point",
+      "icon": "minus-square",
+      "color": "#D97706",
+      "fieldSchema": [
+        {
+          "key": "height_m",
+          "label": "Height (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Wood",
+            "Steel",
+            "Concrete"
+          ]
+        },
+        {
+          "key": "condition",
+          "label": "Condition",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Good",
+            "Fair",
+            "Poor"
+          ]
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 74,
+    "assetTypeId": 6,
+    "name": "Pole 006",
+    "code": "POLE-006",
+    "status": "under_maintenance",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0201,
+        29.948
+      ]
+    },
+    "attributes": {
+      "height_m": 10,
+      "material": "Wood",
+      "condition": "Good"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.481Z",
+    "updatedAt": "2026-06-29T10:37:52.481Z",
+    "assetType": {
+      "id": 6,
+      "key": "pole",
+      "label": "Pole",
+      "geometryKind": "point",
+      "icon": "minus-square",
+      "color": "#D97706",
+      "fieldSchema": [
+        {
+          "key": "height_m",
+          "label": "Height (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Wood",
+            "Steel",
+            "Concrete"
+          ]
+        },
+        {
+          "key": "condition",
+          "label": "Condition",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Good",
+            "Fair",
+            "Poor"
+          ]
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 77,
+    "assetTypeId": 6,
+    "name": "Pole 007",
+    "code": "POLE-007",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0389,
+        29.9611
+      ]
+    },
+    "attributes": {
+      "height_m": 12,
+      "material": "Steel",
+      "condition": "Good"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.481Z",
+    "updatedAt": "2026-06-29T10:37:52.481Z",
+    "assetType": {
+      "id": 6,
+      "key": "pole",
+      "label": "Pole",
+      "geometryKind": "point",
+      "icon": "minus-square",
+      "color": "#D97706",
+      "fieldSchema": [
+        {
+          "key": "height_m",
+          "label": "Height (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Wood",
+            "Steel",
+            "Concrete"
+          ]
+        },
+        {
+          "key": "condition",
+          "label": "Condition",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Good",
+            "Fair",
+            "Poor"
+          ]
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 76,
+    "assetTypeId": 6,
+    "name": "Pole 008",
+    "code": "POLE-008",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0678,
+        29.9789
+      ]
+    },
+    "attributes": {
+      "height_m": 14,
+      "material": "Concrete",
+      "condition": "Fair"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.481Z",
+    "updatedAt": "2026-06-29T10:37:52.481Z",
+    "assetType": {
+      "id": 6,
+      "key": "pole",
+      "label": "Pole",
+      "geometryKind": "point",
+      "icon": "minus-square",
+      "color": "#D97706",
+      "fieldSchema": [
+        {
+          "key": "height_m",
+          "label": "Height (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Wood",
+            "Steel",
+            "Concrete"
+          ]
+        },
+        {
+          "key": "condition",
+          "label": "Condition",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Good",
+            "Fair",
+            "Poor"
+          ]
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 75,
+    "assetTypeId": 6,
+    "name": "Pole 009",
+    "code": "POLE-009",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.1089,
+        30.0045
+      ]
+    },
+    "attributes": {
+      "height_m": 8,
+      "material": "Wood",
+      "condition": "Fair"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.482Z",
+    "updatedAt": "2026-06-29T10:37:52.482Z",
+    "assetType": {
+      "id": 6,
+      "key": "pole",
+      "label": "Pole",
+      "geometryKind": "point",
+      "icon": "minus-square",
+      "color": "#D97706",
+      "fieldSchema": [
+        {
+          "key": "height_m",
+          "label": "Height (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Wood",
+            "Steel",
+            "Concrete"
+          ]
+        },
+        {
+          "key": "condition",
+          "label": "Condition",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Good",
+            "Fair",
+            "Poor"
+          ]
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 70,
+    "assetTypeId": 6,
+    "name": "Pole 010",
+    "code": "POLE-010",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.1678,
+        30.0201
+      ]
+    },
+    "attributes": {
+      "height_m": 10,
+      "material": "Steel",
+      "condition": "Fair"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.488Z",
+    "updatedAt": "2026-06-29T10:37:52.488Z",
+    "assetType": {
+      "id": 6,
+      "key": "pole",
+      "label": "Pole",
+      "geometryKind": "point",
+      "icon": "minus-square",
+      "color": "#D97706",
+      "fieldSchema": [
+        {
+          "key": "height_m",
+          "label": "Height (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Wood",
+            "Steel",
+            "Concrete"
+          ]
+        },
+        {
+          "key": "condition",
+          "label": "Condition",
+          "type": "select",
+          "required": false,
+          "options": [
+            "Good",
+            "Fair",
+            "Poor"
+          ]
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 4,
+    "assetTypeId": 5,
+    "name": "Shooting Club POP",
+    "code": "SITE-SC-001",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0342,
+        30.0612
+      ]
+    },
+    "attributes": {
+      "site_type": "POP",
+      "owner": "Private",
+      "capacity_ports": 128,
+      "power_backup": true
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.652Z",
+    "updatedAt": "2026-06-29T10:37:51.652Z",
+    "assetType": {
+      "id": 5,
+      "key": "site",
+      "label": "Site / POP",
+      "geometryKind": "point",
+      "icon": "building",
+      "color": "#3B82F6",
+      "fieldSchema": [
+        {
+          "key": "site_type",
+          "label": "Site Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Exchange",
+            "Data Center",
+            "POP",
+            "Hub"
+          ]
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "capacity_ports",
+          "label": "Port Capacity",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "power_backup",
+          "label": "Power Backup",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 94,
+    "assetTypeId": 3,
+    "name": "Shooting Club — Dokki Trunk",
+    "code": "FC-005",
+    "status": "operational",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          31.0342,
+          30.0612
+        ],
+        [
+          31.065,
+          30.058
+        ],
+        [
+          31.095,
+          30.053
+        ],
+        [
+          31.12,
+          30.05
+        ],
+        [
+          31.2115,
+          30.0444
+        ]
+      ]
+    },
+    "attributes": {
+      "cable_type": "Underground",
+      "fiber_count": 288,
+      "length_m": 15600,
+      "installation_date": "2019-09-14"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.684Z",
+    "updatedAt": "2026-06-29T10:37:52.684Z",
+    "assetType": {
+      "id": 3,
+      "key": "fiber_cable",
+      "label": "Fiber Cable",
+      "geometryKind": "line",
+      "icon": "cable",
+      "color": "#10B981",
+      "fieldSchema": [
+        {
+          "key": "cable_type",
+          "label": "Cable Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Aerial",
+            "Underground",
+            "Duct",
+            "Direct Burial"
+          ]
+        },
+        {
+          "key": "fiber_count",
+          "label": "Fiber Count",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "length_m",
+          "label": "Length (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "installation_date",
+          "label": "Installation Date",
+          "type": "date",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 90,
+    "assetTypeId": 3,
+    "name": "Shooting Club — Mohandeseen Direct",
+    "code": "FC-015",
+    "status": "operational",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          31.0342,
+          30.0612
+        ],
+        [
+          31.068,
+          30.06
+        ],
+        [
+          31.1,
+          30.0588
+        ],
+        [
+          31.14,
+          30.058
+        ],
+        [
+          31.2029,
+          30.0576
+        ]
+      ]
+    },
+    "attributes": {
+      "cable_type": "Underground",
+      "fiber_count": 96,
+      "length_m": 9200,
+      "installation_date": "2022-06-30"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.739Z",
+    "updatedAt": "2026-06-29T10:37:52.739Z",
+    "assetType": {
+      "id": 3,
+      "key": "fiber_cable",
+      "label": "Fiber Cable",
+      "geometryKind": "line",
+      "icon": "cable",
+      "color": "#10B981",
+      "fieldSchema": [
+        {
+          "key": "cable_type",
+          "label": "Cable Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Aerial",
+            "Underground",
+            "Duct",
+            "Direct Burial"
+          ]
+        },
+        {
+          "key": "fiber_count",
+          "label": "Fiber Count",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "length_m",
+          "label": "Length (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "installation_date",
+          "label": "Installation Date",
+          "type": "date",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 7,
+    "assetTypeId": 5,
+    "name": "Smart Village POP",
+    "code": "SITE-SV-001",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        30.9718,
+        29.9754
+      ]
+    },
+    "attributes": {
+      "site_type": "POP",
+      "owner": "Smart Village Co",
+      "capacity_ports": 512,
+      "power_backup": true
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.652Z",
+    "updatedAt": "2026-06-29T10:37:51.652Z",
+    "assetType": {
+      "id": 5,
+      "key": "site",
+      "label": "Site / POP",
+      "geometryKind": "point",
+      "icon": "building",
+      "color": "#3B82F6",
+      "fieldSchema": [
+        {
+          "key": "site_type",
+          "label": "Site Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Exchange",
+            "Data Center",
+            "POP",
+            "Hub"
+          ]
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "capacity_ports",
+          "label": "Port Capacity",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "power_backup",
+          "label": "Power Backup",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 93,
+    "assetTypeId": 3,
+    "name": "Smart Village — Juhayna Link",
+    "code": "FC-003",
+    "status": "degraded",
+    "geometry": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          30.9718,
+          29.9754
+        ],
+        [
+          30.985,
+          29.97
+        ],
+        [
+          30.998,
+          29.961
+        ],
+        [
+          31.0123,
+          29.9521
+        ]
+      ]
+    },
+    "attributes": {
+      "cable_type": "Aerial",
+      "fiber_count": 24,
+      "length_m": 5800,
+      "installation_date": "2020-11-10"
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:52.684Z",
+    "updatedAt": "2026-06-29T10:37:52.684Z",
+    "assetType": {
+      "id": 3,
+      "key": "fiber_cable",
+      "label": "Fiber Cable",
+      "geometryKind": "line",
+      "icon": "cable",
+      "color": "#10B981",
+      "fieldSchema": [
+        {
+          "key": "cable_type",
+          "label": "Cable Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Aerial",
+            "Underground",
+            "Duct",
+            "Direct Burial"
+          ]
+        },
+        {
+          "key": "fiber_count",
+          "label": "Fiber Count",
+          "type": "number",
+          "required": true
+        },
+        {
+          "key": "length_m",
+          "label": "Length (m)",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "installation_date",
+          "label": "Installation Date",
+          "type": "date",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 63,
+    "assetTypeId": 7,
+    "name": "Splice Closure SC-001",
+    "code": "SC-001",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        30.9935,
+        29.9312
+      ]
+    },
+    "attributes": {
+      "closure_type": "Dome",
+      "splice_count": 48,
+      "capacity": 96
+    },
+    "parentId": 43,
+    "createdAt": "2026-06-29T10:37:52.356Z",
+    "updatedAt": "2026-06-29T10:37:52.356Z",
+    "assetType": {
+      "id": 7,
+      "key": "splice_closure",
+      "label": "Splice Closure",
+      "geometryKind": "point",
+      "icon": "circle-dot",
+      "color": "#EF4444",
+      "fieldSchema": [
+        {
+          "key": "closure_type",
+          "label": "Closure Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Dome",
+            "Inline",
+            "Butt"
+          ]
+        },
+        {
+          "key": "splice_count",
+          "label": "Splice Count",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "capacity",
+          "label": "Capacity (fibers)",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 67,
+    "assetTypeId": 7,
+    "name": "Splice Closure SC-002",
+    "code": "SC-002",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0082,
+        29.9282
+      ]
+    },
+    "attributes": {
+      "closure_type": "Inline",
+      "splice_count": 96,
+      "capacity": 192
+    },
+    "parentId": 46,
+    "createdAt": "2026-06-29T10:37:52.356Z",
+    "updatedAt": "2026-06-29T10:37:52.356Z",
+    "assetType": {
+      "id": 7,
+      "key": "splice_closure",
+      "label": "Splice Closure",
+      "geometryKind": "point",
+      "icon": "circle-dot",
+      "color": "#EF4444",
+      "fieldSchema": [
+        {
+          "key": "closure_type",
+          "label": "Closure Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Dome",
+            "Inline",
+            "Butt"
+          ]
+        },
+        {
+          "key": "splice_count",
+          "label": "Splice Count",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "capacity",
+          "label": "Capacity (fibers)",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 66,
+    "assetTypeId": 7,
+    "name": "Splice Closure SC-003",
+    "code": "SC-003",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0252,
+        29.9402
+      ]
+    },
+    "attributes": {
+      "closure_type": "Dome",
+      "splice_count": 48,
+      "capacity": 96
+    },
+    "parentId": 44,
+    "createdAt": "2026-06-29T10:37:52.356Z",
+    "updatedAt": "2026-06-29T10:37:52.356Z",
+    "assetType": {
+      "id": 7,
+      "key": "splice_closure",
+      "label": "Splice Closure",
+      "geometryKind": "point",
+      "icon": "circle-dot",
+      "color": "#EF4444",
+      "fieldSchema": [
+        {
+          "key": "closure_type",
+          "label": "Closure Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Dome",
+            "Inline",
+            "Butt"
+          ]
+        },
+        {
+          "key": "splice_count",
+          "label": "Splice Count",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "capacity",
+          "label": "Capacity (fibers)",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 61,
+    "assetTypeId": 7,
+    "name": "Splice Closure SC-004",
+    "code": "SC-004",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.0682,
+        29.9722
+      ]
+    },
+    "attributes": {
+      "closure_type": "Butt",
+      "splice_count": 24,
+      "capacity": 48
+    },
+    "parentId": 23,
+    "createdAt": "2026-06-29T10:37:52.356Z",
+    "updatedAt": "2026-06-29T10:37:52.356Z",
+    "assetType": {
+      "id": 7,
+      "key": "splice_closure",
+      "label": "Splice Closure",
+      "geometryKind": "point",
+      "icon": "circle-dot",
+      "color": "#EF4444",
+      "fieldSchema": [
+        {
+          "key": "closure_type",
+          "label": "Closure Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Dome",
+            "Inline",
+            "Butt"
+          ]
+        },
+        {
+          "key": "splice_count",
+          "label": "Splice Count",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "capacity",
+          "label": "Capacity (fibers)",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 64,
+    "assetTypeId": 7,
+    "name": "Splice Closure SC-005",
+    "code": "SC-005",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.1102,
+        30.0022
+      ]
+    },
+    "attributes": {
+      "closure_type": "Dome",
+      "splice_count": 96,
+      "capacity": 192
+    },
+    "parentId": 26,
+    "createdAt": "2026-06-29T10:37:52.356Z",
+    "updatedAt": "2026-06-29T10:37:52.356Z",
+    "assetType": {
+      "id": 7,
+      "key": "splice_closure",
+      "label": "Splice Closure",
+      "geometryKind": "point",
+      "icon": "circle-dot",
+      "color": "#EF4444",
+      "fieldSchema": [
+        {
+          "key": "closure_type",
+          "label": "Closure Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Dome",
+            "Inline",
+            "Butt"
+          ]
+        },
+        {
+          "key": "splice_count",
+          "label": "Splice Count",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "capacity",
+          "label": "Capacity (fibers)",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 65,
+    "assetTypeId": 7,
+    "name": "Splice Closure SC-006",
+    "code": "SC-006",
+    "status": "degraded",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.1702,
+        30.0147
+      ]
+    },
+    "attributes": {
+      "closure_type": "Inline",
+      "splice_count": 48,
+      "capacity": 96
+    },
+    "parentId": 30,
+    "createdAt": "2026-06-29T10:37:52.356Z",
+    "updatedAt": "2026-06-29T10:37:52.356Z",
+    "assetType": {
+      "id": 7,
+      "key": "splice_closure",
+      "label": "Splice Closure",
+      "geometryKind": "point",
+      "icon": "circle-dot",
+      "color": "#EF4444",
+      "fieldSchema": [
+        {
+          "key": "closure_type",
+          "label": "Closure Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Dome",
+            "Inline",
+            "Butt"
+          ]
+        },
+        {
+          "key": "splice_count",
+          "label": "Splice Count",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "capacity",
+          "label": "Capacity (fibers)",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 62,
+    "assetTypeId": 7,
+    "name": "Splice Closure SC-007",
+    "code": "SC-007",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.2022,
+        30.0157
+      ]
+    },
+    "attributes": {
+      "closure_type": "Dome",
+      "splice_count": 144,
+      "capacity": 288
+    },
+    "parentId": 35,
+    "createdAt": "2026-06-29T10:37:52.356Z",
+    "updatedAt": "2026-06-29T10:37:52.356Z",
+    "assetType": {
+      "id": 7,
+      "key": "splice_closure",
+      "label": "Splice Closure",
+      "geometryKind": "point",
+      "icon": "circle-dot",
+      "color": "#EF4444",
+      "fieldSchema": [
+        {
+          "key": "closure_type",
+          "label": "Closure Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Dome",
+            "Inline",
+            "Butt"
+          ]
+        },
+        {
+          "key": "splice_count",
+          "label": "Splice Count",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "capacity",
+          "label": "Capacity (fibers)",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 68,
+    "assetTypeId": 7,
+    "name": "Splice Closure SC-008",
+    "code": "SC-008",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.2102,
+        30.0282
+      ]
+    },
+    "attributes": {
+      "closure_type": "Butt",
+      "splice_count": 48,
+      "capacity": 96
+    },
+    "parentId": 37,
+    "createdAt": "2026-06-29T10:37:52.357Z",
+    "updatedAt": "2026-06-29T10:37:52.357Z",
+    "assetType": {
+      "id": 7,
+      "key": "splice_closure",
+      "label": "Splice Closure",
+      "geometryKind": "point",
+      "icon": "circle-dot",
+      "color": "#EF4444",
+      "fieldSchema": [
+        {
+          "key": "closure_type",
+          "label": "Closure Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Dome",
+            "Inline",
+            "Butt"
+          ]
+        },
+        {
+          "key": "splice_count",
+          "label": "Splice Count",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "capacity",
+          "label": "Capacity (fibers)",
+          "type": "number",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  },
+  {
+    "id": 1,
+    "assetTypeId": 5,
+    "name": "Zamalek Exchange",
+    "code": "SITE-ZAM-001",
+    "status": "operational",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        31.2197,
+        30.0654
+      ]
+    },
+    "attributes": {
+      "site_type": "Exchange",
+      "owner": "Telecom Egypt",
+      "capacity_ports": 1024,
+      "power_backup": true
+    },
+    "parentId": null,
+    "createdAt": "2026-06-29T10:37:51.652Z",
+    "updatedAt": "2026-06-29T10:37:51.652Z",
+    "assetType": {
+      "id": 5,
+      "key": "site",
+      "label": "Site / POP",
+      "geometryKind": "point",
+      "icon": "building",
+      "color": "#3B82F6",
+      "fieldSchema": [
+        {
+          "key": "site_type",
+          "label": "Site Type",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Exchange",
+            "Data Center",
+            "POP",
+            "Hub"
+          ]
+        },
+        {
+          "key": "owner",
+          "label": "Owner",
+          "type": "text",
+          "required": false
+        },
+        {
+          "key": "capacity_ports",
+          "label": "Port Capacity",
+          "type": "number",
+          "required": false
+        },
+        {
+          "key": "power_backup",
+          "label": "Power Backup",
+          "type": "boolean",
+          "required": false
+        }
+      ],
+      "createdAt": "2026-06-29T10:37:51.486Z"
+    }
+  }
+]

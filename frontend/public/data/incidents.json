@@ -1,0 +1,227 @@
+[
+  {
+    "id": 15,
+    "assetId": 95,
+    "category": "Physical Damage",
+    "severity": "high",
+    "status": "open",
+    "openedAt": "2026-06-28T10:37:53.037Z",
+    "resolvedAt": null,
+    "description": "Fiber cut on Agouza—Zamalek link, construction crew accident.",
+    "asset": {
+      "id": 95,
+      "name": "Agouza — Zamalek Ring",
+      "code": "FC-008"
+    }
+  },
+  {
+    "id": 12,
+    "assetId": 11,
+    "category": "Power",
+    "severity": "critical",
+    "status": "open",
+    "openedAt": "2026-06-27T10:37:53.037Z",
+    "resolvedAt": null,
+    "description": "Site completely down — UPS failure, no power backup available.",
+    "asset": {
+      "id": 11,
+      "name": "Agouza POP",
+      "code": "SITE-AGZ-001"
+    }
+  },
+  {
+    "id": 14,
+    "assetId": 5,
+    "category": "Performance",
+    "severity": "medium",
+    "status": "open",
+    "openedAt": "2026-06-25T10:37:53.037Z",
+    "resolvedAt": null,
+    "description": "High packet loss on Juhayna Square aggregation — possible card failure.",
+    "asset": {
+      "id": 5,
+      "name": "Juhayna Square Hub",
+      "code": "SITE-JUH-001"
+    }
+  },
+  {
+    "id": 7,
+    "assetId": 65,
+    "category": "Physical Damage",
+    "severity": "medium",
+    "status": "open",
+    "openedAt": "2026-06-23T10:37:53.037Z",
+    "resolvedAt": null,
+    "description": "Splice closure cover cracked after road works.",
+    "asset": {
+      "id": 65,
+      "name": "Splice Closure SC-006",
+      "code": "SC-006"
+    }
+  },
+  {
+    "id": 10,
+    "assetId": 13,
+    "category": "Performance",
+    "severity": "low",
+    "status": "open",
+    "openedAt": "2026-06-21T10:37:53.037Z",
+    "resolvedAt": null,
+    "description": "Elevated BER on Giza West BTS, monitoring.",
+    "asset": {
+      "id": 13,
+      "name": "BTS Giza West",
+      "code": "BTS-GIZ-W"
+    }
+  },
+  {
+    "id": 1,
+    "assetId": 6,
+    "category": "Power",
+    "severity": "high",
+    "status": "investigating",
+    "openedAt": "2026-06-20T10:37:53.037Z",
+    "resolvedAt": null,
+    "description": "Generator failure during grid outage — site on battery backup.",
+    "asset": {
+      "id": 6,
+      "name": "Haram Street POP",
+      "code": "SITE-HRM-001"
+    }
+  },
+  {
+    "id": 8,
+    "assetId": 93,
+    "category": "Performance",
+    "severity": "medium",
+    "status": "investigating",
+    "openedAt": "2026-06-17T10:37:53.037Z",
+    "resolvedAt": null,
+    "description": "Intermittent signal loss on Smart Village—Juhayna aerial span.",
+    "asset": {
+      "id": 93,
+      "name": "Smart Village — Juhayna Link",
+      "code": "FC-003"
+    }
+  },
+  {
+    "id": 3,
+    "assetId": 17,
+    "category": "Performance",
+    "severity": "low",
+    "status": "investigating",
+    "openedAt": "2026-06-15T10:37:53.037Z",
+    "resolvedAt": null,
+    "description": "Cabinet DOK-01 temperature alarm — cooling fan degraded.",
+    "asset": {
+      "id": 17,
+      "name": "Cabinet DOK-01",
+      "code": "CAB-DOK-001"
+    }
+  },
+  {
+    "id": 11,
+    "assetId": 50,
+    "category": "Physical",
+    "severity": "low",
+    "status": "investigating",
+    "openedAt": "2026-06-11T10:37:53.037Z",
+    "resolvedAt": null,
+    "description": "Manhole flooded after heavy rain, access restricted.",
+    "asset": {
+      "id": 50,
+      "name": "Manhole 015",
+      "code": "MH-015"
+    }
+  },
+  {
+    "id": 9,
+    "assetId": 86,
+    "category": "Performance",
+    "severity": "medium",
+    "status": "investigating",
+    "openedAt": "2026-06-09T10:37:53.037Z",
+    "resolvedAt": null,
+    "description": "High OTDR reflection on Haram St loop, suspected splice issue.",
+    "asset": {
+      "id": 86,
+      "name": "Haram St — Giza Axis",
+      "code": "FC-011"
+    }
+  },
+  {
+    "id": 13,
+    "assetId": 3,
+    "category": "Performance",
+    "severity": "medium",
+    "status": "resolved",
+    "openedAt": "2026-05-30T10:37:53.037Z",
+    "resolvedAt": "2026-06-01T10:37:53.037Z",
+    "description": "Media Production City POP — route flap on core link, BGP restarted.",
+    "asset": {
+      "id": 3,
+      "name": "Media Production City POP",
+      "code": "SITE-MPC-001"
+    }
+  },
+  {
+    "id": 2,
+    "assetId": 91,
+    "category": "Physical Damage",
+    "severity": "high",
+    "status": "resolved",
+    "openedAt": "2026-05-15T10:37:53.037Z",
+    "resolvedAt": "2026-05-17T10:37:53.037Z",
+    "description": "Micro-crack in OCT—SV underground section, OTDR-located and spliced.",
+    "asset": {
+      "id": 91,
+      "name": "OCT Exchange — Smart Village Ring",
+      "code": "FC-001"
+    }
+  },
+  {
+    "id": 5,
+    "assetId": 9,
+    "category": "Power",
+    "severity": "high",
+    "status": "resolved",
+    "openedAt": "2026-05-05T10:37:53.037Z",
+    "resolvedAt": "2026-05-06T10:37:53.037Z",
+    "description": "Dokki Exchange UPS battery replacement completed — 4-hour maintenance window.",
+    "asset": {
+      "id": 9,
+      "name": "Dokki Exchange",
+      "code": "SITE-DOK-001"
+    }
+  },
+  {
+    "id": 4,
+    "assetId": 74,
+    "category": "Physical",
+    "severity": "low",
+    "status": "resolved",
+    "openedAt": "2026-04-30T10:37:53.037Z",
+    "resolvedAt": "2026-05-01T10:37:53.037Z",
+    "description": "Pole lean exceeding 5° — contractor re-straightened and concrete base repaired.",
+    "asset": {
+      "id": 74,
+      "name": "Pole 006",
+      "code": "POLE-006"
+    }
+  },
+  {
+    "id": 6,
+    "assetId": 94,
+    "category": "Performance",
+    "severity": "medium",
+    "status": "resolved",
+    "openedAt": "2026-04-20T10:37:53.037Z",
+    "resolvedAt": "2026-04-22T10:37:53.037Z",
+    "description": "SC—Dokki trunk DWDM alarm, amplifier card replaced.",
+    "asset": {
+      "id": 94,
+      "name": "Shooting Club — Dokki Trunk",
+      "code": "FC-005"
+    }
+  }
+]

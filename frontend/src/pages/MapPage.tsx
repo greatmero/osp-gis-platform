@@ -1,5 +1,7 @@
 import { useState, useCallback } from 'react';
 import { MapView } from '../components/map/MapView';
+
+const DEMO = import.meta.env.VITE_DEMO_MODE === 'true';
 import { LayerControl } from '../components/map/LayerControl';
 import { AssetDetailPanel } from '../components/map/AssetDetailPanel';
 import { AssetSearch } from '../components/map/AssetSearch';
@@ -36,9 +38,9 @@ export function MapPage() {
 
       <AssetSearch />
       <LayerControl />
-      <AddAssetToolbar />
+      {!DEMO && <AddAssetToolbar />}
       <AssetDetailPanel />
-      <ConnectionForm />
+      {!DEMO && <ConnectionForm />}
 
       {pending && pendingAssetType && (
         <AssetForm

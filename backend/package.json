@@ -10,6 +10,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "seed": "ts-node prisma/seed.ts",
+    "export-demo": "ts-node src/scripts/exportDemoData.ts",
     "db:migrate": "prisma migrate dev"
   },
   "dependencies": {

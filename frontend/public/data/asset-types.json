@@ -1,0 +1,324 @@
+[
+  {
+    "id": 1,
+    "key": "bts",
+    "label": "BTS Site",
+    "geometryKind": "point",
+    "icon": "tower-cell",
+    "color": "#8B5CF6",
+    "fieldSchema": [
+      {
+        "key": "tower_height",
+        "label": "Tower Height (m)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "operator",
+        "label": "Operator",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "technology",
+        "label": "Technology",
+        "type": "select",
+        "required": false,
+        "options": [
+          "2G",
+          "3G",
+          "4G",
+          "5G"
+        ]
+      }
+    ],
+    "createdAt": "2026-06-29T10:37:51.486Z"
+  },
+  {
+    "id": 4,
+    "key": "fdh",
+    "label": "FDH Cabinet",
+    "geometryKind": "point",
+    "icon": "server",
+    "color": "#06B6D4",
+    "fieldSchema": [
+      {
+        "key": "port_count",
+        "label": "Port Count",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "splitter_ratio",
+        "label": "Splitter Ratio",
+        "type": "select",
+        "required": false,
+        "options": [
+          "1:8",
+          "1:16",
+          "1:32",
+          "1:64"
+        ]
+      },
+      {
+        "key": "address",
+        "label": "Street Address",
+        "type": "text",
+        "required": false
+      }
+    ],
+    "createdAt": "2026-06-29T10:37:51.486Z"
+  },
+  {
+    "id": 3,
+    "key": "fiber_cable",
+    "label": "Fiber Cable",
+    "geometryKind": "line",
+    "icon": "cable",
+    "color": "#10B981",
+    "fieldSchema": [
+      {
+        "key": "cable_type",
+        "label": "Cable Type",
+        "type": "select",
+        "required": true,
+        "options": [
+          "Aerial",
+          "Underground",
+          "Duct",
+          "Direct Burial"
+        ]
+      },
+      {
+        "key": "fiber_count",
+        "label": "Fiber Count",
+        "type": "number",
+        "required": true
+      },
+      {
+        "key": "length_m",
+        "label": "Length (m)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "installation_date",
+        "label": "Installation Date",
+        "type": "date",
+        "required": false
+      }
+    ],
+    "createdAt": "2026-06-29T10:37:51.486Z"
+  },
+  {
+    "id": 9,
+    "key": "handhole",
+    "label": "Handhole",
+    "geometryKind": "point",
+    "icon": "square",
+    "color": "#9CA3AF",
+    "fieldSchema": [
+      {
+        "key": "size",
+        "label": "Size",
+        "type": "select",
+        "required": false,
+        "options": [
+          "Small",
+          "Medium",
+          "Large"
+        ]
+      },
+      {
+        "key": "material",
+        "label": "Material",
+        "type": "text",
+        "required": false
+      }
+    ],
+    "createdAt": "2026-06-29T10:37:51.486Z"
+  },
+  {
+    "id": 8,
+    "key": "manhole",
+    "label": "Manhole",
+    "geometryKind": "point",
+    "icon": "circle",
+    "color": "#6B7280",
+    "fieldSchema": [
+      {
+        "key": "depth_m",
+        "label": "Depth (m)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "cover_type",
+        "label": "Cover Type",
+        "type": "select",
+        "required": false,
+        "options": [
+          "Cast Iron",
+          "Concrete",
+          "Composite"
+        ]
+      },
+      {
+        "key": "duct_count",
+        "label": "Duct Count",
+        "type": "number",
+        "required": false
+      }
+    ],
+    "createdAt": "2026-06-29T10:37:51.486Z"
+  },
+  {
+    "id": 6,
+    "key": "pole",
+    "label": "Pole",
+    "geometryKind": "point",
+    "icon": "minus-square",
+    "color": "#D97706",
+    "fieldSchema": [
+      {
+        "key": "height_m",
+        "label": "Height (m)",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "material",
+        "label": "Material",
+        "type": "select",
+        "required": false,
+        "options": [
+          "Wood",
+          "Steel",
+          "Concrete"
+        ]
+      },
+      {
+        "key": "condition",
+        "label": "Condition",
+        "type": "select",
+        "required": false,
+        "options": [
+          "Good",
+          "Fair",
+          "Poor"
+        ]
+      }
+    ],
+    "createdAt": "2026-06-29T10:37:51.486Z"
+  },
+  {
+    "id": 5,
+    "key": "site",
+    "label": "Site / POP",
+    "geometryKind": "point",
+    "icon": "building",
+    "color": "#3B82F6",
+    "fieldSchema": [
+      {
+        "key": "site_type",
+        "label": "Site Type",
+        "type": "select",
+        "required": true,
+        "options": [
+          "Exchange",
+          "Data Center",
+          "POP",
+          "Hub"
+        ]
+      },
+      {
+        "key": "owner",
+        "label": "Owner",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "capacity_ports",
+        "label": "Port Capacity",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "power_backup",
+        "label": "Power Backup",
+        "type": "boolean",
+        "required": false
+      }
+    ],
+    "createdAt": "2026-06-29T10:37:51.486Z"
+  },
+  {
+    "id": 7,
+    "key": "splice_closure",
+    "label": "Splice Closure",
+    "geometryKind": "point",
+    "icon": "circle-dot",
+    "color": "#EF4444",
+    "fieldSchema": [
+      {
+        "key": "closure_type",
+        "label": "Closure Type",
+        "type": "select",
+        "required": true,
+        "options": [
+          "Dome",
+          "Inline",
+          "Butt"
+        ]
+      },
+      {
+        "key": "splice_count",
+        "label": "Splice Count",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "capacity",
+        "label": "Capacity (fibers)",
+        "type": "number",
+        "required": false
+      }
+    ],
+    "createdAt": "2026-06-29T10:37:51.486Z"
+  },
+  {
+    "id": 2,
+    "key": "cabinet",
+    "label": "Street Cabinet",
+    "geometryKind": "point",
+    "icon": "box",
+    "color": "#F59E0B",
+    "fieldSchema": [
+      {
+        "key": "cabinet_type",
+        "label": "Cabinet Type",
+        "type": "select",
+        "required": true,
+        "options": [
+          "DSLAM",
+          "OLT",
+          "Switch",
+          "Distribution"
+        ]
+      },
+      {
+        "key": "port_count",
+        "label": "Port Count",
+        "type": "number",
+        "required": false
+      },
+      {
+        "key": "address",
+        "label": "Street Address",
+        "type": "text",
+        "required": false
+      }
+    ],
+    "createdAt": "2026-06-29T10:37:51.508Z"
+  }
+]

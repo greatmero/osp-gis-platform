@@ -220,8 +220,8 @@ export function AssetDetailPanel() {
           )}
         </div>
 
-        {/* Actions */}
-        {asset && assetType && (
+        {/* Actions — hidden in demo mode */}
+        {asset && assetType && import.meta.env.VITE_DEMO_MODE !== 'true' && (
           <div className="px-4 py-3 border-t border-gray-700 flex gap-2 shrink-0">
             <button
               onClick={() => setEditOpen(true)}

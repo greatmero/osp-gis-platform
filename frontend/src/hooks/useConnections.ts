@@ -2,7 +2,9 @@ import { useQuery } from '@tanstack/react-query';
 import { api, Asset } from '../api/client';
 import { useAllAssets } from './useAssetGeoJSON';
 
-// Looser GeoJSON type for connection lines (properties don't match asset GeoProperties)
+const DEMO = import.meta.env.VITE_DEMO_MODE === 'true';
+const BASE_URL = import.meta.env.BASE_URL;
+
 interface ConnectionFeatureCollection {
   type: 'FeatureCollection';
   features: Array<{
@@ -26,7 +28,9 @@ interface Connection {
 export function useRawConnections() {
   return useQuery<Connection[]>({
     queryKey: ['connections'],
-    queryFn: () => api.get<Connection[]>('/connections'),
+    queryFn: DEMO
+      ? () => fetch(`${BASE_URL}data/connections.json`).then((r) => r.json())
+      : () => api.get<Connection[]>('/connections'),
     staleTime: 30_000,
   });
 }
@@ -34,7 +38,7 @@ export function useRawConnections() {
 function getCoords(asset: Asset): [number, number] | null {
   try {
     const geom = asset.geometry as { type: string; coordinates: unknown };
-    if (geom.type === 'Point') return (geom.coordinates as [number, number]);
+    if (geom.type === 'Point') return geom.coordinates as [number, number];
     if (geom.type === 'LineString') {
       const coords = geom.coordinates as [number, number][];
       return coords[Math.floor(coords.length / 2)];
@@ -63,10 +67,7 @@ export function useConnectionsGeoJSON(): ConnectionFeatureCollection {
       if (!fromCoord || !toCoord) return null;
       return {
         type: 'Feature' as const,
-        geometry: {
-          type: 'LineString' as const,
-          coordinates: [fromCoord, toCoord],
-        },
+        geometry: { type: 'LineString' as const, coordinates: [fromCoord, toCoord] },
         properties: {
           id: c.id,
           fromName: c.fromAsset.name,
