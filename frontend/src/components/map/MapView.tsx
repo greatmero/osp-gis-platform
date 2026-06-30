@@ -10,6 +10,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import { useUIStore } from '../../store/ui';
 import { useAssetTypes } from '../../hooks/useAssetTypes';
 import { useAssetGeoJSON, GeoFeatureCollection, GeoProperties } from '../../hooks/useAssetGeoJSON';
+import { useConnectionsGeoJSON } from '../../hooks/useConnections';
 import { AssetType } from '../../api/client';
 import { HoverPopup } from './HoverPopup';
 
@@ -18,7 +19,6 @@ const STYLES = {
   light: 'https://tiles.openfreemap.org/styles/positron',
 };
 
-// Point types that get clustering due to high density
 const CLUSTERED_TYPES = new Set(['manhole', 'handhole', 'pole', 'splice_closure']);
 
 interface HoveredFeature {
@@ -30,12 +30,9 @@ interface HoveredFeature {
 interface AssetLayerProps {
   assetType: AssetType;
   visible: boolean;
-  onHover: (f: HoveredFeature | null) => void;
-  onClickFeature: (id: number) => void;
-  onClickCluster: (longitude: number, latitude: number, zoom: number) => void;
 }
 
-function AssetLayer({ assetType, visible, onHover, onClickFeature, onClickCluster }: AssetLayerProps) {
+function AssetLayer({ assetType, visible }: AssetLayerProps) {
   const { data } = useAssetGeoJSON(assetType.key, visible);
   const empty: GeoFeatureCollection = { type: 'FeatureCollection', features: [] };
   const geojson = data ?? empty;
@@ -44,12 +41,6 @@ function AssetLayer({ assetType, visible, onHover, onClickFeature, onClickCluste
   const layerId = `layer-${assetType.key}`;
   const clusterLayerId = `cluster-${assetType.key}`;
   const clusterCountId = `cluster-count-${assetType.key}`;
-
-  // Attach event handlers via map events (handled in parent MapView)
-  // We expose layer IDs so the parent knows which layers to query
-  void onHover;
-  void onClickFeature;
-  void onClickCluster;
 
   if (assetType.geometryKind === 'point') {
     return (
@@ -61,7 +52,6 @@ function AssetLayer({ assetType, visible, onHover, onClickFeature, onClickCluste
         clusterMaxZoom={14}
         clusterRadius={50}
       >
-        {/* Cluster circles */}
         {isClustered && (
           <Layer
             id={clusterLayerId}
@@ -77,7 +67,6 @@ function AssetLayer({ assetType, visible, onHover, onClickFeature, onClickCluste
             layout={{ visibility }}
           />
         )}
-        {/* Cluster count label */}
         {isClustered && (
           <Layer
             id={clusterCountId}
@@ -92,7 +81,6 @@ function AssetLayer({ assetType, visible, onHover, onClickFeature, onClickCluste
             paint={{ 'text-color': '#fff' }}
           />
         )}
-        {/* Individual points */}
         <Layer
           id={layerId}
           type="circle"
@@ -127,7 +115,6 @@ function AssetLayer({ assetType, visible, onHover, onClickFeature, onClickCluste
     );
   }
 
-  // polygon
   return (
     <Source id={assetType.key} type="geojson" data={geojson}>
       <Layer
@@ -146,23 +133,51 @@ function AssetLayer({ assetType, visible, onHover, onClickFeature, onClickCluste
   );
 }
 
-export function MapView() {
+interface MapViewProps {
+  onGeometryReady: (
+    geometry: Record<string, unknown>,
+    assetTypeId: number,
+    assetTypeKey: string
+  ) => void;
+}
+
+export function MapView({ onGeometryReady }: MapViewProps) {
   const mapRef = useRef<MapRef>(null);
   const [basemap, setBasemap] = useState<'dark' | 'light'>('dark');
   const [hoveredFeature, setHoveredFeature] = useState<HoveredFeature | null>(null);
 
-  const { activeLayers, setSelectedAssetId, setFlyToAsset } = useUIStore();
-  const { data: assetTypes = [] } = useAssetTypes();
+  const {
+    activeLayers,
+    setSelectedAssetId,
+    setFlyToAsset,
+    drawMode,
+    drawCoords,
+    addDrawCoord,
+    clearDraw,
+    connectionMode,
+    connectionAssetIds,
+    addConnectionAsset,
+  } = useUIStore();
 
-  // Register flyToAsset callback in Zustand so search can use it
+  const { data: assetTypes = [] } = useAssetTypes();
+  const connectionsGeoJSON = useConnectionsGeoJSON();
+
+  // Disable map double-click zoom while drawing so dblclick can finish line/polygon
+  useEffect(() => {
+    const map = mapRef.current?.getMap();
+    if (!map) return;
+    if (drawMode) {
+      map.doubleClickZoom.disable();
+    } else {
+      map.doubleClickZoom.enable();
+    }
+  }, [drawMode]);
+
+  // Register flyToAsset callback in Zustand
   useEffect(() => {
     setFlyToAsset((id: number) => {
-      // Find coordinates from any loaded GeoJSON source (best-effort)
-      // The search component calls this with the asset id; we fly to it
-      // by asking the map to query the source features
       const map = mapRef.current?.getMap();
       if (!map) return;
-      // Query all rendered features to find the one with matching id
       const features = map.queryRenderedFeatures(undefined, {
         filter: ['==', ['get', 'id'], id],
       });
@@ -180,36 +195,33 @@ export function MapView() {
     return () => setFlyToAsset(null);
   }, [setFlyToAsset]);
 
-  // Build set of all interactive layer IDs (non-cluster point layers + line layers)
   const interactiveLayerIds = assetTypes.map((t) => `layer-${t.key}`);
   const clusterLayerIds = assetTypes
     .filter((t) => CLUSTERED_TYPES.has(t.key))
     .map((t) => `cluster-${t.key}`);
 
-  const handleMouseMove = useCallback(
-    (e: MapLayerMouseEvent) => {
-      if (e.features && e.features.length > 0) {
-        const f = e.features[0];
-        const props = f.properties as GeoProperties;
-        if (props?.id) {
-          setHoveredFeature({
-            properties: {
-              ...props,
-              attributes:
-                typeof props.attributes === 'string'
-                  ? JSON.parse(props.attributes)
-                  : (props.attributes ?? {}),
-            },
-            longitude: e.lngLat.lng,
-            latitude: e.lngLat.lat,
-          });
-          return;
-        }
+  const handleMouseMove = useCallback((e: MapLayerMouseEvent) => {
+    if (drawMode || connectionMode) { setHoveredFeature(null); return; }
+    if (e.features && e.features.length > 0) {
+      const f = e.features[0];
+      const props = f.properties as GeoProperties;
+      if (props?.id) {
+        setHoveredFeature({
+          properties: {
+            ...props,
+            attributes:
+              typeof props.attributes === 'string'
+                ? JSON.parse(props.attributes)
+                : (props.attributes ?? {}),
+          },
+          longitude: e.lngLat.lng,
+          latitude: e.lngLat.lat,
+        });
+        return;
       }
-      setHoveredFeature(null);
-    },
-    []
-  );
+    }
+    setHoveredFeature(null);
+  }, [drawMode, connectionMode]);
 
   const handleMouseLeave = useCallback(() => setHoveredFeature(null), []);
 
@@ -218,70 +230,174 @@ export function MapView() {
       const map = mapRef.current?.getMap();
       if (!map) return;
 
-      // Check cluster first
-      const clusterFeatures = map.queryRenderedFeatures(e.point, {
-        layers: clusterLayerIds,
-      });
+      // Drawing mode
+      if (drawMode) {
+        const { lng, lat } = e.lngLat;
+        if (drawMode.geometryKind === 'point') {
+          onGeometryReady(
+            { type: 'Point', coordinates: [lng, lat] },
+            drawMode.assetTypeId,
+            drawMode.assetTypeKey
+          );
+          clearDraw();
+        } else {
+          addDrawCoord([lng, lat]);
+        }
+        return;
+      }
+
+      // Connection mode — pick asset by click
+      if (connectionMode) {
+        const features = map.queryRenderedFeatures(e.point, { layers: interactiveLayerIds });
+        if (features.length > 0) {
+          const props = features[0].properties as { id?: number };
+          if (props?.id && !connectionAssetIds.includes(props.id)) {
+            addConnectionAsset(props.id);
+          }
+        }
+        return;
+      }
+
+      // Normal: cluster zoom or feature select
+      const clusterFeatures = map.queryRenderedFeatures(e.point, { layers: clusterLayerIds });
       if (clusterFeatures.length > 0) {
         const zoom = map.getZoom();
         map.easeTo({ center: e.lngLat, zoom: zoom + 2, duration: 500 });
         return;
       }
 
-      // Check regular feature
-      const features = map.queryRenderedFeatures(e.point, {
-        layers: interactiveLayerIds,
-      });
+      const features = map.queryRenderedFeatures(e.point, { layers: interactiveLayerIds });
       if (features.length > 0) {
         const props = features[0].properties as { id?: number };
-        if (props?.id) {
-          setSelectedAssetId(props.id);
-        }
+        if (props?.id) setSelectedAssetId(props.id);
       } else {
-        // Click on empty space closes the panel
         setSelectedAssetId(null);
       }
     },
-    [clusterLayerIds, interactiveLayerIds, setSelectedAssetId]
+    [
+      drawMode, connectionMode, connectionAssetIds,
+      addDrawCoord, addConnectionAsset, clearDraw, onGeometryReady,
+      clusterLayerIds, interactiveLayerIds, setSelectedAssetId,
+    ]
   );
+
+  // Finish line/polygon on double-click
+  const handleDblClick = useCallback(
+    (e: MapLayerMouseEvent) => {
+      if (!drawMode) return;
+      e.preventDefault();
+      // The second single-click of the dblclick already added a duplicate coord; exclude it
+      const finalCoords = drawCoords.slice(0, -1);
+      if (drawMode.geometryKind === 'line' && finalCoords.length >= 2) {
+        onGeometryReady(
+          { type: 'LineString', coordinates: finalCoords },
+          drawMode.assetTypeId,
+          drawMode.assetTypeKey
+        );
+        clearDraw();
+      } else if (drawMode.geometryKind === 'polygon' && finalCoords.length >= 3) {
+        onGeometryReady(
+          { type: 'Polygon', coordinates: [[...finalCoords, finalCoords[0]]] },
+          drawMode.assetTypeId,
+          drawMode.assetTypeKey
+        );
+        clearDraw();
+      }
+    },
+    [drawMode, drawCoords, onGeometryReady, clearDraw]
+  );
+
+  // Build draw preview GeoJSON (loose typing — Source accepts generic GeoJSON)
+  const previewLineGeoJSON = {
+    type: 'FeatureCollection' as const,
+    features:
+      drawCoords.length >= 2
+        ? [{ type: 'Feature' as const, geometry: { type: 'LineString' as const, coordinates: drawCoords }, properties: null }]
+        : [],
+  };
+  const previewPointsGeoJSON = {
+    type: 'FeatureCollection' as const,
+    features: drawCoords.map((c) => ({
+      type: 'Feature' as const,
+      geometry: { type: 'Point' as const, coordinates: c },
+      properties: null,
+    })),
+  };
+
+  const cursor = drawMode || connectionMode ? 'crosshair' : hoveredFeature ? 'pointer' : 'grab';
 
   return (
     <div className="relative w-full h-full">
       <Map
         ref={mapRef}
-        initialViewState={{
-          longitude: 30.9876,
-          latitude: 29.9387,
-          zoom: 11,
-        }}
+        initialViewState={{ longitude: 30.9876, latitude: 29.9387, zoom: 11 }}
         style={{ width: '100%', height: '100%' }}
         mapStyle={STYLES[basemap]}
         interactiveLayerIds={[...interactiveLayerIds, ...clusterLayerIds]}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         onClick={handleClick}
-        cursor={hoveredFeature ? 'pointer' : 'grab'}
+        onDblClick={handleDblClick}
+        cursor={cursor}
       >
+        {/* Asset layers */}
         {assetTypes.map((type) => (
           <AssetLayer
             key={type.key}
             assetType={type}
             visible={activeLayers[type.key] !== false}
-            onHover={setHoveredFeature}
-            onClickFeature={setSelectedAssetId}
-            onClickCluster={() => {}}
           />
         ))}
 
-        {hoveredFeature && (
-          <HoverPopup
-            feature={hoveredFeature}
-            assetTypes={assetTypes}
+        {/* Connection lines */}
+        <Source id="connections" type="geojson" data={connectionsGeoJSON}>
+          <Layer
+            id="connections-layer"
+            type="line"
+            paint={{
+              'line-color': '#6B7280',
+              'line-width': 1.5,
+              'line-opacity': 0.6,
+              'line-dasharray': [3, 2],
+            }}
           />
+        </Source>
+
+        {/* Draw preview */}
+        {drawCoords.length > 0 && (
+          <>
+            <Source id="draw-preview-line" type="geojson" data={previewLineGeoJSON}>
+              <Layer
+                id="draw-preview-line-layer"
+                type="line"
+                paint={{
+                  'line-color': '#60A5FA',
+                  'line-width': 2,
+                  'line-dasharray': [2, 2],
+                }}
+              />
+            </Source>
+            <Source id="draw-preview-points" type="geojson" data={previewPointsGeoJSON}>
+              <Layer
+                id="draw-preview-points-layer"
+                type="circle"
+                paint={{
+                  'circle-color': '#60A5FA',
+                  'circle-radius': 5,
+                  'circle-stroke-width': 2,
+                  'circle-stroke-color': '#fff',
+                }}
+              />
+            </Source>
+          </>
+        )}
+
+        {hoveredFeature && !drawMode && !connectionMode && (
+          <HoverPopup feature={hoveredFeature} assetTypes={assetTypes} />
         )}
       </Map>
 
-      {/* Basemap switcher — bottom right */}
+      {/* Basemap switcher */}
       <div className="absolute bottom-8 right-4 flex gap-1 z-10">
         <button
           onClick={() => setBasemap('dark')}
