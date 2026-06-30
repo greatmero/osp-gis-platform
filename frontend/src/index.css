@@ -24,3 +24,16 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-gray-500;
 }
+
+/* Strip MapLibre popup default white background */
+.maplibregl-popup-content,
+.mapboxgl-popup-content {
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+.maplibregl-popup-tip,
+.mapboxgl-popup-tip {
+  display: none !important;
+}

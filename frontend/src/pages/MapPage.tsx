@@ -1,11 +1,18 @@
+import { MapView } from '../components/map/MapView';
+import { LayerControl } from '../components/map/LayerControl';
+import { AssetDetailPanel } from '../components/map/AssetDetailPanel';
+import { AssetSearch } from '../components/map/AssetSearch';
+
 export function MapPage() {
   return (
-    <div className="h-full flex items-center justify-center bg-gray-950">
-      <div className="text-center">
-        <div className="text-6xl mb-4">🗺️</div>
-        <h2 className="text-xl font-semibold text-white mb-2">Network Map</h2>
-        <p className="text-gray-400">Interactive map with asset layers — coming in Phase 1</p>
-      </div>
+    <div className="h-full overflow-hidden relative">
+      {/* Full-height map */}
+      <MapView />
+
+      {/* Overlays */}
+      <AssetSearch />
+      <LayerControl />
+      <AssetDetailPanel />
     </div>
   );
 }
