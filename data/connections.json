@@ -1,0 +1,236 @@
+[
+  {
+    "id": 1,
+    "fromAssetId": 1,
+    "toAssetId": 4,
+    "cableAssetId": 83,
+    "fiberCount": 96,
+    "notes": "Fiber link via OCT Exchange — Smart Village Ring",
+    "fromAsset": {
+      "id": 1,
+      "name": "October City Exchange",
+      "code": "SITE-OCT-001"
+    },
+    "toAsset": {
+      "id": 4,
+      "name": "Smart Village POP",
+      "code": "SITE-SV-001"
+    }
+  },
+  {
+    "id": 2,
+    "fromAssetId": 1,
+    "toAssetId": 8,
+    "cableAssetId": 97,
+    "fiberCount": 48,
+    "notes": "Fiber link via OCT — Juhayna Corridor",
+    "fromAsset": {
+      "id": 1,
+      "name": "October City Exchange",
+      "code": "SITE-OCT-001"
+    },
+    "toAsset": {
+      "id": 8,
+      "name": "Juhayna Square Hub",
+      "code": "SITE-JUH-001"
+    }
+  },
+  {
+    "id": 3,
+    "fromAssetId": 3,
+    "toAssetId": 7,
+    "cableAssetId": 88,
+    "fiberCount": 48,
+    "notes": "Fiber link via Agouza — Zamalek Ring",
+    "fromAsset": {
+      "id": 3,
+      "name": "Agouza POP",
+      "code": "SITE-AGZ-001"
+    },
+    "toAsset": {
+      "id": 7,
+      "name": "Zamalek Exchange",
+      "code": "SITE-ZAM-001"
+    }
+  },
+  {
+    "id": 4,
+    "fromAssetId": 8,
+    "toAssetId": 10,
+    "cableAssetId": 89,
+    "fiberCount": 144,
+    "notes": "Fiber link via Juhayna — Shooting Club Trunk",
+    "fromAsset": {
+      "id": 8,
+      "name": "Juhayna Square Hub",
+      "code": "SITE-JUH-001"
+    },
+    "toAsset": {
+      "id": 10,
+      "name": "Shooting Club POP",
+      "code": "SITE-SC-001"
+    }
+  },
+  {
+    "id": 5,
+    "fromAssetId": 1,
+    "toAssetId": 11,
+    "cableAssetId": 91,
+    "fiberCount": 24,
+    "notes": "Fiber link via Industrial Hub — OCT Exchange Link",
+    "fromAsset": {
+      "id": 1,
+      "name": "October City Exchange",
+      "code": "SITE-OCT-001"
+    },
+    "toAsset": {
+      "id": 11,
+      "name": "6 October Industrial Hub",
+      "code": "SITE-IND-001"
+    }
+  },
+  {
+    "id": 6,
+    "fromAssetId": 5,
+    "toAssetId": 2,
+    "cableAssetId": 85,
+    "fiberCount": 576,
+    "notes": "Fiber link via Giza DC — Dokki Backbone",
+    "fromAsset": {
+      "id": 5,
+      "name": "Giza Data Center",
+      "code": "SITE-GIZ-DC"
+    },
+    "toAsset": {
+      "id": 2,
+      "name": "Dokki Exchange",
+      "code": "SITE-DOK-001"
+    }
+  },
+  {
+    "id": 7,
+    "fromAssetId": 10,
+    "toAssetId": 12,
+    "cableAssetId": 94,
+    "fiberCount": 96,
+    "notes": "Fiber link via Shooting Club — Mohandeseen Direct",
+    "fromAsset": {
+      "id": 10,
+      "name": "Shooting Club POP",
+      "code": "SITE-SC-001"
+    },
+    "toAsset": {
+      "id": 12,
+      "name": "Mohandeseen Hub",
+      "code": "SITE-MOH-001"
+    }
+  },
+  {
+    "id": 8,
+    "fromAssetId": 4,
+    "toAssetId": 8,
+    "cableAssetId": 90,
+    "fiberCount": 24,
+    "notes": "Fiber link via Smart Village — Juhayna Link",
+    "fromAsset": {
+      "id": 4,
+      "name": "Smart Village POP",
+      "code": "SITE-SV-001"
+    },
+    "toAsset": {
+      "id": 8,
+      "name": "Juhayna Square Hub",
+      "code": "SITE-JUH-001"
+    }
+  },
+  {
+    "id": 9,
+    "fromAssetId": 10,
+    "toAssetId": 2,
+    "cableAssetId": 96,
+    "fiberCount": 288,
+    "notes": "Fiber link via Shooting Club — Dokki Trunk",
+    "fromAsset": {
+      "id": 10,
+      "name": "Shooting Club POP",
+      "code": "SITE-SC-001"
+    },
+    "toAsset": {
+      "id": 2,
+      "name": "Dokki Exchange",
+      "code": "SITE-DOK-001"
+    }
+  },
+  {
+    "id": 10,
+    "fromAssetId": 2,
+    "toAssetId": 12,
+    "cableAssetId": 84,
+    "fiberCount": 48,
+    "notes": "Fiber link via Dokki — Mohandeseen Feeder",
+    "fromAsset": {
+      "id": 2,
+      "name": "Dokki Exchange",
+      "code": "SITE-DOK-001"
+    },
+    "toAsset": {
+      "id": 12,
+      "name": "Mohandeseen Hub",
+      "code": "SITE-MOH-001"
+    }
+  },
+  {
+    "id": 11,
+    "fromAssetId": 5,
+    "toAssetId": 6,
+    "cableAssetId": 87,
+    "fiberCount": 96,
+    "notes": "Fiber link via Giza DC — Haram St Feeder",
+    "fromAsset": {
+      "id": 5,
+      "name": "Giza Data Center",
+      "code": "SITE-GIZ-DC"
+    },
+    "toAsset": {
+      "id": 6,
+      "name": "Haram Street POP",
+      "code": "SITE-HRM-001"
+    }
+  },
+  {
+    "id": 12,
+    "fromAssetId": 4,
+    "toAssetId": 9,
+    "cableAssetId": 92,
+    "fiberCount": 12,
+    "notes": "Fiber link via Media City — Smart Village Spur",
+    "fromAsset": {
+      "id": 4,
+      "name": "Smart Village POP",
+      "code": "SITE-SV-001"
+    },
+    "toAsset": {
+      "id": 9,
+      "name": "Media Production City POP",
+      "code": "SITE-MPC-001"
+    }
+  },
+  {
+    "id": 13,
+    "fromAssetId": 12,
+    "toAssetId": 3,
+    "cableAssetId": 86,
+    "fiberCount": 24,
+    "notes": "Fiber link via Mohandeseen — Agouza Link",
+    "fromAsset": {
+      "id": 12,
+      "name": "Mohandeseen Hub",
+      "code": "SITE-MOH-001"
+    },
+    "toAsset": {
+      "id": 3,
+      "name": "Agouza POP",
+      "code": "SITE-AGZ-001"
+    }
+  }
+]

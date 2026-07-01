@@ -1,0 +1,163 @@
+{
+  "totalAssets": 97,
+  "assetsByType": [
+    {
+      "key": "bts",
+      "label": "BTS Site",
+      "color": "#8B5CF6",
+      "count": 3
+    },
+    {
+      "key": "fdh",
+      "label": "FDH Cabinet",
+      "color": "#06B6D4",
+      "count": 4
+    },
+    {
+      "key": "fiber_cable",
+      "label": "Fiber Cable",
+      "color": "#10B981",
+      "count": 15
+    },
+    {
+      "key": "handhole",
+      "label": "Handhole",
+      "color": "#9CA3AF",
+      "count": 10
+    },
+    {
+      "key": "manhole",
+      "label": "Manhole",
+      "color": "#6B7280",
+      "count": 30
+    },
+    {
+      "key": "pole",
+      "label": "Pole",
+      "color": "#D97706",
+      "count": 10
+    },
+    {
+      "key": "site",
+      "label": "Site / POP",
+      "color": "#3B82F6",
+      "count": 12
+    },
+    {
+      "key": "splice_closure",
+      "label": "Splice Closure",
+      "color": "#EF4444",
+      "count": 8
+    },
+    {
+      "key": "cabinet",
+      "label": "Street Cabinet",
+      "color": "#F59E0B",
+      "count": 5
+    }
+  ],
+  "assetsByStatus": [
+    {
+      "status": "operational",
+      "count": 76
+    },
+    {
+      "status": "down",
+      "count": 2
+    },
+    {
+      "status": "degraded",
+      "count": 12
+    },
+    {
+      "status": "under_maintenance",
+      "count": 7
+    }
+  ],
+  "totalFiberKm": 79.6,
+  "openIncidents": 10,
+  "resolvedIncidents": 5,
+  "mttrHours": 38.4,
+  "networkAvailabilityPct": 78.4,
+  "incidentTrend": [
+    {
+      "week": "2026-04-15",
+      "count": 0
+    },
+    {
+      "week": "2026-04-22",
+      "count": 1
+    },
+    {
+      "week": "2026-04-29",
+      "count": 1
+    },
+    {
+      "week": "2026-05-06",
+      "count": 1
+    },
+    {
+      "week": "2026-05-13",
+      "count": 1
+    },
+    {
+      "week": "2026-05-20",
+      "count": 0
+    },
+    {
+      "week": "2026-05-27",
+      "count": 1
+    },
+    {
+      "week": "2026-06-03",
+      "count": 0
+    },
+    {
+      "week": "2026-06-10",
+      "count": 2
+    },
+    {
+      "week": "2026-06-17",
+      "count": 4
+    },
+    {
+      "week": "2026-06-24",
+      "count": 4
+    },
+    {
+      "week": "2026-07-01",
+      "count": 0
+    }
+  ],
+  "topSitesByAssets": [
+    {
+      "id": 11,
+      "name": "6 October Industrial Hub",
+      "assetCount": 0
+    },
+    {
+      "id": 3,
+      "name": "Agouza POP",
+      "assetCount": 0
+    },
+    {
+      "id": 2,
+      "name": "Dokki Exchange",
+      "assetCount": 0
+    },
+    {
+      "id": 5,
+      "name": "Giza Data Center",
+      "assetCount": 0
+    },
+    {
+      "id": 6,
+      "name": "Haram Street POP",
+      "assetCount": 0
+    }
+  ],
+  "fiberCapacity": {
+    "usedFibers": 914,
+    "totalFibers": 1524
+  }
+}
