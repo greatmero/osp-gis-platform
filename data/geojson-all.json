@@ -11,7 +11,7 @@
         ]
       },
       "properties": {
-        "id": 11,
+        "id": 6,
         "name": "6 October Industrial Hub",
         "code": "SITE-IND-001",
         "status": "operational",
@@ -37,7 +37,7 @@
         ]
       },
       "properties": {
-        "id": 3,
+        "id": 9,
         "name": "Agouza POP",
         "code": "SITE-AGZ-001",
         "status": "down",
@@ -73,7 +73,7 @@
         ]
       },
       "properties": {
-        "id": 88,
+        "id": 85,
         "name": "Agouza — Zamalek Ring",
         "code": "FC-008",
         "status": "down",
@@ -99,7 +99,7 @@
         ]
       },
       "properties": {
-        "id": 13,
+        "id": 15,
         "name": "BTS Giza West",
         "code": "BTS-GIZ-W",
         "status": "degraded",
@@ -124,7 +124,7 @@
         ]
       },
       "properties": {
-        "id": 15,
+        "id": 13,
         "name": "BTS October North",
         "code": "BTS-OCT-N",
         "status": "operational",
@@ -199,7 +199,7 @@
         ]
       },
       "properties": {
-        "id": 16,
+        "id": 20,
         "name": "Cabinet GIZ-01",
         "code": "CAB-GIZ-001",
         "status": "under_maintenance",
@@ -249,7 +249,7 @@
         ]
       },
       "properties": {
-        "id": 20,
+        "id": 16,
         "name": "Cabinet OCT-01",
         "code": "CAB-OCT-001",
         "status": "operational",
@@ -299,7 +299,7 @@
         ]
       },
       "properties": {
-        "id": 2,
+        "id": 12,
         "name": "Dokki Exchange",
         "code": "SITE-DOK-001",
         "status": "operational",
@@ -335,7 +335,7 @@
         ]
       },
       "properties": {
-        "id": 84,
+        "id": 88,
         "name": "Dokki — Mohandeseen Feeder",
         "code": "FC-006",
         "status": "operational",
@@ -361,7 +361,7 @@
         ]
       },
       "properties": {
-        "id": 82,
+        "id": 80,
         "name": "FDH Dokki-01",
         "code": "FDH-DOK-001",
         "status": "degraded",
@@ -386,7 +386,7 @@
         ]
       },
       "properties": {
-        "id": 80,
+        "id": 81,
         "name": "FDH Giza-01",
         "code": "FDH-GIZ-001",
         "status": "operational",
@@ -411,7 +411,7 @@
         ]
       },
       "properties": {
-        "id": 81,
+        "id": 79,
         "name": "FDH October-01",
         "code": "FDH-OCT-001",
         "status": "operational",
@@ -436,7 +436,7 @@
         ]
       },
       "properties": {
-        "id": 79,
+        "id": 82,
         "name": "FDH October-02",
         "code": "FDH-OCT-002",
         "status": "operational",
@@ -475,7 +475,7 @@
         ]
       },
       "properties": {
-        "id": 85,
+        "id": 96,
         "name": "Giza DC — Dokki Backbone",
         "code": "FC-009",
         "status": "operational",
@@ -515,7 +515,7 @@
         ]
       },
       "properties": {
-        "id": 87,
+        "id": 94,
         "name": "Giza DC — Haram St Feeder",
         "code": "FC-010",
         "status": "operational",
@@ -541,7 +541,7 @@
         ]
       },
       "properties": {
-        "id": 5,
+        "id": 3,
         "name": "Giza Data Center",
         "code": "SITE-GIZ-DC",
         "status": "operational",
@@ -567,7 +567,7 @@
         ]
       },
       "properties": {
-        "id": 51,
+        "id": 52,
         "name": "Handhole 001",
         "code": "HH-001",
         "status": "operational",
@@ -591,7 +591,7 @@
         ]
       },
       "properties": {
-        "id": 58,
+        "id": 59,
         "name": "Handhole 002",
         "code": "HH-002",
         "status": "operational",
@@ -615,7 +615,7 @@
         ]
       },
       "properties": {
-        "id": 57,
+        "id": 51,
         "name": "Handhole 003",
         "code": "HH-003",
         "status": "operational",
@@ -639,7 +639,7 @@
         ]
       },
       "properties": {
-        "id": 52,
+        "id": 56,
         "name": "Handhole 004",
         "code": "HH-004",
         "status": "degraded",
@@ -687,7 +687,7 @@
         ]
       },
       "properties": {
-        "id": 54,
+        "id": 57,
         "name": "Handhole 006",
         "code": "HH-006",
         "status": "operational",
@@ -711,7 +711,7 @@
         ]
       },
       "properties": {
-        "id": 56,
+        "id": 53,
         "name": "Handhole 007",
         "code": "HH-007",
         "status": "operational",
@@ -735,7 +735,7 @@
         ]
       },
       "properties": {
-        "id": 53,
+        "id": 54,
         "name": "Handhole 008",
         "code": "HH-008",
         "status": "operational",
@@ -759,7 +759,7 @@
         ]
       },
       "properties": {
-        "id": 59,
+        "id": 58,
         "name": "Handhole 009",
         "code": "HH-009",
         "status": "operational",
@@ -817,7 +817,7 @@
         ]
       },
       "properties": {
-        "id": 95,
+        "id": 97,
         "name": "Haram St — Giza Axis",
         "code": "FC-011",
         "status": "under_maintenance",
@@ -843,7 +843,7 @@
         ]
       },
       "properties": {
-        "id": 6,
+        "id": 11,
         "name": "Haram Street POP",
         "code": "SITE-HRM-001",
         "status": "under_maintenance",
@@ -883,7 +883,7 @@
         ]
       },
       "properties": {
-        "id": 91,
+        "id": 87,
         "name": "Industrial Hub — OCT Exchange Link",
         "code": "FC-012",
         "status": "operational",
@@ -909,7 +909,7 @@
         ]
       },
       "properties": {
-        "id": 8,
+        "id": 4,
         "name": "Juhayna Square Hub",
         "code": "SITE-JUH-001",
         "status": "degraded",
@@ -953,7 +953,7 @@
         ]
       },
       "properties": {
-        "id": 89,
+        "id": 90,
         "name": "Juhayna — Shooting Club Trunk",
         "code": "FC-004",
         "status": "operational",
@@ -1004,7 +1004,7 @@
         ]
       },
       "properties": {
-        "id": 50,
+        "id": 22,
         "name": "Manhole 002",
         "code": "MH-002",
         "status": "operational",
@@ -1029,7 +1029,7 @@
         ]
       },
       "properties": {
-        "id": 44,
+        "id": 28,
         "name": "Manhole 003",
         "code": "MH-003",
         "status": "operational",
@@ -1054,7 +1054,7 @@
         ]
       },
       "properties": {
-        "id": 35,
+        "id": 29,
         "name": "Manhole 004",
         "code": "MH-004",
         "status": "degraded",
@@ -1079,7 +1079,7 @@
         ]
       },
       "properties": {
-        "id": 22,
+        "id": 48,
         "name": "Manhole 005",
         "code": "MH-005",
         "status": "operational",
@@ -1104,7 +1104,7 @@
         ]
       },
       "properties": {
-        "id": 23,
+        "id": 41,
         "name": "Manhole 006",
         "code": "MH-006",
         "status": "operational",
@@ -1129,7 +1129,7 @@
         ]
       },
       "properties": {
-        "id": 25,
+        "id": 42,
         "name": "Manhole 007",
         "code": "MH-007",
         "status": "under_maintenance",
@@ -1154,7 +1154,7 @@
         ]
       },
       "properties": {
-        "id": 36,
+        "id": 40,
         "name": "Manhole 008",
         "code": "MH-008",
         "status": "operational",
@@ -1179,7 +1179,7 @@
         ]
       },
       "properties": {
-        "id": 38,
+        "id": 44,
         "name": "Manhole 009",
         "code": "MH-009",
         "status": "operational",
@@ -1204,7 +1204,7 @@
         ]
       },
       "properties": {
-        "id": 40,
+        "id": 45,
         "name": "Manhole 010",
         "code": "MH-010",
         "status": "operational",
@@ -1254,7 +1254,7 @@
         ]
       },
       "properties": {
-        "id": 46,
+        "id": 23,
         "name": "Manhole 012",
         "code": "MH-012",
         "status": "operational",
@@ -1279,7 +1279,7 @@
         ]
       },
       "properties": {
-        "id": 48,
+        "id": 24,
         "name": "Manhole 013",
         "code": "MH-013",
         "status": "operational",
@@ -1304,7 +1304,7 @@
         ]
       },
       "properties": {
-        "id": 24,
+        "id": 25,
         "name": "Manhole 014",
         "code": "MH-014",
         "status": "degraded",
@@ -1379,7 +1379,7 @@
         ]
       },
       "properties": {
-        "id": 29,
+        "id": 50,
         "name": "Manhole 017",
         "code": "MH-017",
         "status": "under_maintenance",
@@ -1404,7 +1404,7 @@
         ]
       },
       "properties": {
-        "id": 31,
+        "id": 39,
         "name": "Manhole 018",
         "code": "MH-018",
         "status": "operational",
@@ -1429,7 +1429,7 @@
         ]
       },
       "properties": {
-        "id": 33,
+        "id": 43,
         "name": "Manhole 019",
         "code": "MH-019",
         "status": "operational",
@@ -1454,7 +1454,7 @@
         ]
       },
       "properties": {
-        "id": 28,
+        "id": 46,
         "name": "Manhole 020",
         "code": "MH-020",
         "status": "operational",
@@ -1479,7 +1479,7 @@
         ]
       },
       "properties": {
-        "id": 30,
+        "id": 36,
         "name": "Manhole 021",
         "code": "MH-021",
         "status": "operational",
@@ -1504,7 +1504,7 @@
         ]
       },
       "properties": {
-        "id": 32,
+        "id": 37,
         "name": "Manhole 022",
         "code": "MH-022",
         "status": "operational",
@@ -1529,7 +1529,7 @@
         ]
       },
       "properties": {
-        "id": 34,
+        "id": 38,
         "name": "Manhole 023",
         "code": "MH-023",
         "status": "operational",
@@ -1554,7 +1554,7 @@
         ]
       },
       "properties": {
-        "id": 49,
+        "id": 30,
         "name": "Manhole 024",
         "code": "MH-024",
         "status": "degraded",
@@ -1579,7 +1579,7 @@
         ]
       },
       "properties": {
-        "id": 45,
+        "id": 31,
         "name": "Manhole 025",
         "code": "MH-025",
         "status": "operational",
@@ -1604,7 +1604,7 @@
         ]
       },
       "properties": {
-        "id": 37,
+        "id": 32,
         "name": "Manhole 026",
         "code": "MH-026",
         "status": "operational",
@@ -1629,7 +1629,7 @@
         ]
       },
       "properties": {
-        "id": 39,
+        "id": 33,
         "name": "Manhole 027",
         "code": "MH-027",
         "status": "under_maintenance",
@@ -1654,7 +1654,7 @@
         ]
       },
       "properties": {
-        "id": 41,
+        "id": 34,
         "name": "Manhole 028",
         "code": "MH-028",
         "status": "operational",
@@ -1679,7 +1679,7 @@
         ]
       },
       "properties": {
-        "id": 42,
+        "id": 35,
         "name": "Manhole 029",
         "code": "MH-029",
         "status": "operational",
@@ -1704,7 +1704,7 @@
         ]
       },
       "properties": {
-        "id": 43,
+        "id": 49,
         "name": "Manhole 030",
         "code": "MH-030",
         "status": "operational",
@@ -1743,7 +1743,7 @@
         ]
       },
       "properties": {
-        "id": 92,
+        "id": 89,
         "name": "Media City — Smart Village Spur",
         "code": "FC-013",
         "status": "degraded",
@@ -1769,7 +1769,7 @@
         ]
       },
       "properties": {
-        "id": 9,
+        "id": 7,
         "name": "Media Production City POP",
         "code": "SITE-MPC-001",
         "status": "degraded",
@@ -1795,7 +1795,7 @@
         ]
       },
       "properties": {
-        "id": 12,
+        "id": 8,
         "name": "Mohandeseen Hub",
         "code": "SITE-MOH-001",
         "status": "operational",
@@ -1831,7 +1831,7 @@
         ]
       },
       "properties": {
-        "id": 86,
+        "id": 91,
         "name": "Mohandeseen — Agouza Link",
         "code": "FC-007",
         "status": "operational",
@@ -1867,7 +1867,7 @@
         ]
       },
       "properties": {
-        "id": 83,
+        "id": 84,
         "name": "OCT Exchange — Smart Village Ring",
         "code": "FC-001",
         "status": "operational",
@@ -1911,7 +1911,7 @@
         ]
       },
       "properties": {
-        "id": 93,
+        "id": 95,
         "name": "OCT Ring — South Loop",
         "code": "FC-014",
         "status": "operational",
@@ -1951,7 +1951,7 @@
         ]
       },
       "properties": {
-        "id": 97,
+        "id": 83,
         "name": "OCT — Juhayna Corridor",
         "code": "FC-002",
         "status": "operational",
@@ -1977,7 +1977,7 @@
         ]
       },
       "properties": {
-        "id": 1,
+        "id": 2,
         "name": "October City Exchange",
         "code": "SITE-OCT-001",
         "status": "operational",
@@ -2003,7 +2003,7 @@
         ]
       },
       "properties": {
-        "id": 70,
+        "id": 72,
         "name": "Pole 001",
         "code": "POLE-001",
         "status": "operational",
@@ -2028,7 +2028,7 @@
         ]
       },
       "properties": {
-        "id": 69,
+        "id": 78,
         "name": "Pole 002",
         "code": "POLE-002",
         "status": "operational",
@@ -2053,7 +2053,7 @@
         ]
       },
       "properties": {
-        "id": 72,
+        "id": 69,
         "name": "Pole 003",
         "code": "POLE-003",
         "status": "operational",
@@ -2078,7 +2078,7 @@
         ]
       },
       "properties": {
-        "id": 75,
+        "id": 71,
         "name": "Pole 004",
         "code": "POLE-004",
         "status": "operational",
@@ -2103,7 +2103,7 @@
         ]
       },
       "properties": {
-        "id": 78,
+        "id": 77,
         "name": "Pole 005",
         "code": "POLE-005",
         "status": "operational",
@@ -2128,7 +2128,7 @@
         ]
       },
       "properties": {
-        "id": 74,
+        "id": 70,
         "name": "Pole 006",
         "code": "POLE-006",
         "status": "under_maintenance",
@@ -2153,7 +2153,7 @@
         ]
       },
       "properties": {
-        "id": 77,
+        "id": 75,
         "name": "Pole 007",
         "code": "POLE-007",
         "status": "operational",
@@ -2178,7 +2178,7 @@
         ]
       },
       "properties": {
-        "id": 71,
+        "id": 73,
         "name": "Pole 008",
         "code": "POLE-008",
         "status": "operational",
@@ -2203,7 +2203,7 @@
         ]
       },
       "properties": {
-        "id": 76,
+        "id": 74,
         "name": "Pole 009",
         "code": "POLE-009",
         "status": "operational",
@@ -2228,7 +2228,7 @@
         ]
       },
       "properties": {
-        "id": 73,
+        "id": 76,
         "name": "Pole 010",
         "code": "POLE-010",
         "status": "operational",
@@ -2253,7 +2253,7 @@
         ]
       },
       "properties": {
-        "id": 10,
+        "id": 5,
         "name": "Shooting Club POP",
         "code": "SITE-SC-001",
         "status": "operational",
@@ -2297,7 +2297,7 @@
         ]
       },
       "properties": {
-        "id": 96,
+        "id": 86,
         "name": "Shooting Club — Dokki Trunk",
         "code": "FC-005",
         "status": "operational",
@@ -2341,7 +2341,7 @@
         ]
       },
       "properties": {
-        "id": 94,
+        "id": 92,
         "name": "Shooting Club — Mohandeseen Direct",
         "code": "FC-015",
         "status": "operational",
@@ -2367,7 +2367,7 @@
         ]
       },
       "properties": {
-        "id": 4,
+        "id": 1,
         "name": "Smart Village POP",
         "code": "SITE-SV-001",
         "status": "operational",
@@ -2407,7 +2407,7 @@
         ]
       },
       "properties": {
-        "id": 90,
+        "id": 93,
         "name": "Smart Village — Juhayna Link",
         "code": "FC-003",
         "status": "degraded",
@@ -2433,7 +2433,7 @@
         ]
       },
       "properties": {
-        "id": 66,
+        "id": 68,
         "name": "Splice Closure SC-001",
         "code": "SC-001",
         "status": "operational",
@@ -2458,7 +2458,7 @@
         ]
       },
       "properties": {
-        "id": 68,
+        "id": 61,
         "name": "Splice Closure SC-002",
         "code": "SC-002",
         "status": "operational",
@@ -2483,7 +2483,7 @@
         ]
       },
       "properties": {
-        "id": 61,
+        "id": 65,
         "name": "Splice Closure SC-003",
         "code": "SC-003",
         "status": "operational",
@@ -2508,7 +2508,7 @@
         ]
       },
       "properties": {
-        "id": 64,
+        "id": 66,
         "name": "Splice Closure SC-004",
         "code": "SC-004",
         "status": "operational",
@@ -2533,7 +2533,7 @@
         ]
       },
       "properties": {
-        "id": 63,
+        "id": 67,
         "name": "Splice Closure SC-005",
         "code": "SC-005",
         "status": "operational",
@@ -2583,7 +2583,7 @@
         ]
       },
       "properties": {
-        "id": 65,
+        "id": 63,
         "name": "Splice Closure SC-007",
         "code": "SC-007",
         "status": "operational",
@@ -2608,7 +2608,7 @@
         ]
       },
       "properties": {
-        "id": 67,
+        "id": 64,
         "name": "Splice Closure SC-008",
         "code": "SC-008",
         "status": "operational",
@@ -2633,7 +2633,7 @@
         ]
       },
       "properties": {
-        "id": 7,
+        "id": 10,
         "name": "Zamalek Exchange",
         "code": "SITE-ZAM-001",
         "status": "operational",

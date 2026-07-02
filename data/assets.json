@@ -1,7 +1,7 @@
 [
   {
-    "id": 11,
-    "assetTypeId": 1,
+    "id": 6,
+    "assetTypeId": 6,
     "name": "6 October Industrial Hub",
     "code": "SITE-IND-001",
     "status": "operational",
@@ -19,10 +19,10 @@
       "power_backup": true
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.417Z",
-    "updatedAt": "2026-07-01T05:57:09.417Z",
+    "createdAt": "2026-07-02T06:18:39.657Z",
+    "updatedAt": "2026-07-02T06:18:39.657Z",
     "assetType": {
-      "id": 1,
+      "id": 6,
       "key": "site",
       "label": "Site / POP",
       "geometryKind": "point",
@@ -60,12 +60,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 3,
-    "assetTypeId": 1,
+    "id": 9,
+    "assetTypeId": 6,
     "name": "Agouza POP",
     "code": "SITE-AGZ-001",
     "status": "down",
@@ -83,10 +83,10 @@
       "power_backup": false
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.411Z",
-    "updatedAt": "2026-07-01T05:57:09.411Z",
+    "createdAt": "2026-07-02T06:18:39.660Z",
+    "updatedAt": "2026-07-02T06:18:39.660Z",
     "assetType": {
-      "id": 1,
+      "id": 6,
       "key": "site",
       "label": "Site / POP",
       "geometryKind": "point",
@@ -124,12 +124,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 88,
-    "assetTypeId": 7,
+    "id": 85,
+    "assetTypeId": 9,
     "name": "Agouza — Zamalek Ring",
     "code": "FC-008",
     "status": "down",
@@ -157,10 +157,10 @@
       "installation_date": "2021-08-05"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.603Z",
-    "updatedAt": "2026-07-01T05:57:09.603Z",
+    "createdAt": "2026-07-02T06:18:39.853Z",
+    "updatedAt": "2026-07-02T06:18:39.853Z",
     "assetType": {
-      "id": 7,
+      "id": 9,
       "key": "fiber_cable",
       "label": "Fiber Cable",
       "geometryKind": "line",
@@ -198,12 +198,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 13,
-    "assetTypeId": 8,
+    "id": 15,
+    "assetTypeId": 1,
     "name": "BTS Giza West",
     "code": "BTS-GIZ-W",
     "status": "degraded",
@@ -220,10 +220,10 @@
       "technology": "4G"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.433Z",
-    "updatedAt": "2026-07-01T05:57:09.433Z",
+    "createdAt": "2026-07-02T06:18:39.672Z",
+    "updatedAt": "2026-07-02T06:18:39.672Z",
     "assetType": {
-      "id": 8,
+      "id": 1,
       "key": "bts",
       "label": "BTS Site",
       "geometryKind": "point",
@@ -255,12 +255,12 @@
           ]
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 15,
-    "assetTypeId": 8,
+    "id": 13,
+    "assetTypeId": 1,
     "name": "BTS October North",
     "code": "BTS-OCT-N",
     "status": "operational",
@@ -277,10 +277,10 @@
       "technology": "4G"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.433Z",
-    "updatedAt": "2026-07-01T05:57:09.433Z",
+    "createdAt": "2026-07-02T06:18:39.672Z",
+    "updatedAt": "2026-07-02T06:18:39.672Z",
     "assetType": {
-      "id": 8,
+      "id": 1,
       "key": "bts",
       "label": "BTS Site",
       "geometryKind": "point",
@@ -312,12 +312,12 @@
           ]
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
     "id": 14,
-    "assetTypeId": 8,
+    "assetTypeId": 1,
     "name": "BTS Smart Village",
     "code": "BTS-SV-01",
     "status": "operational",
@@ -334,10 +334,10 @@
       "technology": "5G"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.433Z",
-    "updatedAt": "2026-07-01T05:57:09.433Z",
+    "createdAt": "2026-07-02T06:18:39.672Z",
+    "updatedAt": "2026-07-02T06:18:39.672Z",
     "assetType": {
-      "id": 8,
+      "id": 1,
       "key": "bts",
       "label": "BTS Site",
       "geometryKind": "point",
@@ -369,12 +369,12 @@
           ]
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
     "id": 18,
-    "assetTypeId": 6,
+    "assetTypeId": 8,
     "name": "Cabinet DOK-01",
     "code": "CAB-DOK-001",
     "status": "degraded",
@@ -391,10 +391,10 @@
       "address": "Dokki St, Giza"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.445Z",
-    "updatedAt": "2026-07-01T05:57:09.445Z",
+    "createdAt": "2026-07-02T06:18:39.678Z",
+    "updatedAt": "2026-07-02T06:18:39.678Z",
     "assetType": {
-      "id": 6,
+      "id": 8,
       "key": "cabinet",
       "label": "Street Cabinet",
       "geometryKind": "point",
@@ -426,12 +426,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.395Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 16,
-    "assetTypeId": 6,
+    "id": 20,
+    "assetTypeId": 8,
     "name": "Cabinet GIZ-01",
     "code": "CAB-GIZ-001",
     "status": "under_maintenance",
@@ -448,10 +448,10 @@
       "address": "Faisal St, Giza"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.443Z",
-    "updatedAt": "2026-07-01T05:57:09.443Z",
+    "createdAt": "2026-07-02T06:18:39.677Z",
+    "updatedAt": "2026-07-02T06:18:39.677Z",
     "assetType": {
-      "id": 6,
+      "id": 8,
       "key": "cabinet",
       "label": "Street Cabinet",
       "geometryKind": "point",
@@ -483,12 +483,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.395Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
     "id": 19,
-    "assetTypeId": 6,
+    "assetTypeId": 8,
     "name": "Cabinet MOH-01",
     "code": "CAB-MOH-001",
     "status": "operational",
@@ -505,10 +505,10 @@
       "address": "Mohandeseen, Giza"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.444Z",
-    "updatedAt": "2026-07-01T05:57:09.444Z",
+    "createdAt": "2026-07-02T06:18:39.677Z",
+    "updatedAt": "2026-07-02T06:18:39.677Z",
     "assetType": {
-      "id": 6,
+      "id": 8,
       "key": "cabinet",
       "label": "Street Cabinet",
       "geometryKind": "point",
@@ -540,12 +540,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.395Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 20,
-    "assetTypeId": 6,
+    "id": 16,
+    "assetTypeId": 8,
     "name": "Cabinet OCT-01",
     "code": "CAB-OCT-001",
     "status": "operational",
@@ -562,10 +562,10 @@
       "address": "26 July Corridor, 6th Oct"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.443Z",
-    "updatedAt": "2026-07-01T05:57:09.443Z",
+    "createdAt": "2026-07-02T06:18:39.677Z",
+    "updatedAt": "2026-07-02T06:18:39.677Z",
     "assetType": {
-      "id": 6,
+      "id": 8,
       "key": "cabinet",
       "label": "Street Cabinet",
       "geometryKind": "point",
@@ -597,12 +597,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.395Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
     "id": 17,
-    "assetTypeId": 6,
+    "assetTypeId": 8,
     "name": "Cabinet OCT-02",
     "code": "CAB-OCT-002",
     "status": "operational",
@@ -619,10 +619,10 @@
       "address": "Central Axis, 6th Oct"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.443Z",
-    "updatedAt": "2026-07-01T05:57:09.443Z",
+    "createdAt": "2026-07-02T06:18:39.677Z",
+    "updatedAt": "2026-07-02T06:18:39.677Z",
     "assetType": {
-      "id": 6,
+      "id": 8,
       "key": "cabinet",
       "label": "Street Cabinet",
       "geometryKind": "point",
@@ -654,12 +654,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.395Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 2,
-    "assetTypeId": 1,
+    "id": 12,
+    "assetTypeId": 6,
     "name": "Dokki Exchange",
     "code": "SITE-DOK-001",
     "status": "operational",
@@ -677,10 +677,10 @@
       "power_backup": true
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.410Z",
-    "updatedAt": "2026-07-01T05:57:09.410Z",
+    "createdAt": "2026-07-02T06:18:39.651Z",
+    "updatedAt": "2026-07-02T06:18:39.651Z",
     "assetType": {
-      "id": 1,
+      "id": 6,
       "key": "site",
       "label": "Site / POP",
       "geometryKind": "point",
@@ -718,12 +718,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 84,
-    "assetTypeId": 7,
+    "id": 88,
+    "assetTypeId": 9,
     "name": "Dokki — Mohandeseen Feeder",
     "code": "FC-006",
     "status": "operational",
@@ -751,10 +751,10 @@
       "installation_date": "2022-02-28"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.598Z",
-    "updatedAt": "2026-07-01T05:57:09.598Z",
+    "createdAt": "2026-07-02T06:18:39.858Z",
+    "updatedAt": "2026-07-02T06:18:39.858Z",
     "assetType": {
-      "id": 7,
+      "id": 9,
       "key": "fiber_cable",
       "label": "Fiber Cable",
       "geometryKind": "line",
@@ -792,12 +792,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 82,
-    "assetTypeId": 4,
+    "id": 80,
+    "assetTypeId": 5,
     "name": "FDH Dokki-01",
     "code": "FDH-DOK-001",
     "status": "degraded",
@@ -814,10 +814,10 @@
       "address": "Tahrir Sq Access, Dokki"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.585Z",
-    "updatedAt": "2026-07-01T05:57:09.585Z",
+    "createdAt": "2026-07-02T06:18:39.841Z",
+    "updatedAt": "2026-07-02T06:18:39.841Z",
     "assetType": {
-      "id": 4,
+      "id": 5,
       "key": "fdh",
       "label": "FDH Cabinet",
       "geometryKind": "point",
@@ -849,12 +849,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.391Z"
+      "createdAt": "2026-07-02T06:18:39.634Z"
     }
   },
   {
-    "id": 80,
-    "assetTypeId": 4,
+    "id": 81,
+    "assetTypeId": 5,
     "name": "FDH Giza-01",
     "code": "FDH-GIZ-001",
     "status": "operational",
@@ -871,10 +871,10 @@
       "address": "Faisal/Pyramids Rd, Giza"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.585Z",
-    "updatedAt": "2026-07-01T05:57:09.585Z",
+    "createdAt": "2026-07-02T06:18:39.841Z",
+    "updatedAt": "2026-07-02T06:18:39.841Z",
     "assetType": {
-      "id": 4,
+      "id": 5,
       "key": "fdh",
       "label": "FDH Cabinet",
       "geometryKind": "point",
@@ -906,12 +906,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.391Z"
+      "createdAt": "2026-07-02T06:18:39.634Z"
     }
   },
   {
-    "id": 81,
-    "assetTypeId": 4,
+    "id": 79,
+    "assetTypeId": 5,
     "name": "FDH October-01",
     "code": "FDH-OCT-001",
     "status": "operational",
@@ -928,10 +928,10 @@
       "address": "Al Hayy Al Mutamayez, 6th Oct"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.585Z",
-    "updatedAt": "2026-07-01T05:57:09.585Z",
+    "createdAt": "2026-07-02T06:18:39.841Z",
+    "updatedAt": "2026-07-02T06:18:39.841Z",
     "assetType": {
-      "id": 4,
+      "id": 5,
       "key": "fdh",
       "label": "FDH Cabinet",
       "geometryKind": "point",
@@ -963,12 +963,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.391Z"
+      "createdAt": "2026-07-02T06:18:39.634Z"
     }
   },
   {
-    "id": 79,
-    "assetTypeId": 4,
+    "id": 82,
+    "assetTypeId": 5,
     "name": "FDH October-02",
     "code": "FDH-OCT-002",
     "status": "operational",
@@ -985,10 +985,10 @@
       "address": "Al Andalus St, 6th Oct"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.585Z",
-    "updatedAt": "2026-07-01T05:57:09.585Z",
+    "createdAt": "2026-07-02T06:18:39.841Z",
+    "updatedAt": "2026-07-02T06:18:39.841Z",
     "assetType": {
-      "id": 4,
+      "id": 5,
       "key": "fdh",
       "label": "FDH Cabinet",
       "geometryKind": "point",
@@ -1020,12 +1020,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.391Z"
+      "createdAt": "2026-07-02T06:18:39.634Z"
     }
   },
   {
-    "id": 85,
-    "assetTypeId": 7,
+    "id": 96,
+    "assetTypeId": 9,
     "name": "Giza DC — Dokki Backbone",
     "code": "FC-009",
     "status": "operational",
@@ -1057,10 +1057,10 @@
       "installation_date": "2019-01-20"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.600Z",
-    "updatedAt": "2026-07-01T05:57:09.600Z",
+    "createdAt": "2026-07-02T06:18:39.854Z",
+    "updatedAt": "2026-07-02T06:18:39.854Z",
     "assetType": {
-      "id": 7,
+      "id": 9,
       "key": "fiber_cable",
       "label": "Fiber Cable",
       "geometryKind": "line",
@@ -1098,12 +1098,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 87,
-    "assetTypeId": 7,
+    "id": 94,
+    "assetTypeId": 9,
     "name": "Giza DC — Haram St Feeder",
     "code": "FC-010",
     "status": "operational",
@@ -1135,10 +1135,10 @@
       "installation_date": "2020-07-15"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.602Z",
-    "updatedAt": "2026-07-01T05:57:09.602Z",
+    "createdAt": "2026-07-02T06:18:39.865Z",
+    "updatedAt": "2026-07-02T06:18:39.865Z",
     "assetType": {
-      "id": 7,
+      "id": 9,
       "key": "fiber_cable",
       "label": "Fiber Cable",
       "geometryKind": "line",
@@ -1176,12 +1176,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 5,
-    "assetTypeId": 1,
+    "id": 3,
+    "assetTypeId": 6,
     "name": "Giza Data Center",
     "code": "SITE-GIZ-DC",
     "status": "operational",
@@ -1199,10 +1199,10 @@
       "power_backup": true
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.415Z",
-    "updatedAt": "2026-07-01T05:57:09.415Z",
+    "createdAt": "2026-07-02T06:18:39.654Z",
+    "updatedAt": "2026-07-02T06:18:39.654Z",
     "assetType": {
-      "id": 1,
+      "id": 6,
       "key": "site",
       "label": "Site / POP",
       "geometryKind": "point",
@@ -1240,12 +1240,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 51,
-    "assetTypeId": 9,
+    "id": 52,
+    "assetTypeId": 2,
     "name": "Handhole 001",
     "code": "HH-001",
     "status": "operational",
@@ -1261,10 +1261,10 @@
       "material": "Concrete"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.511Z",
-    "updatedAt": "2026-07-01T05:57:09.511Z",
+    "createdAt": "2026-07-02T06:18:39.747Z",
+    "updatedAt": "2026-07-02T06:18:39.747Z",
     "assetType": {
-      "id": 9,
+      "id": 2,
       "key": "handhole",
       "label": "Handhole",
       "geometryKind": "point",
@@ -1289,12 +1289,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.385Z"
+      "createdAt": "2026-07-02T06:18:39.630Z"
     }
   },
   {
-    "id": 58,
-    "assetTypeId": 9,
+    "id": 59,
+    "assetTypeId": 2,
     "name": "Handhole 002",
     "code": "HH-002",
     "status": "operational",
@@ -1310,10 +1310,10 @@
       "material": "HDPE"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.511Z",
-    "updatedAt": "2026-07-01T05:57:09.511Z",
+    "createdAt": "2026-07-02T06:18:39.747Z",
+    "updatedAt": "2026-07-02T06:18:39.747Z",
     "assetType": {
-      "id": 9,
+      "id": 2,
       "key": "handhole",
       "label": "Handhole",
       "geometryKind": "point",
@@ -1338,12 +1338,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.385Z"
+      "createdAt": "2026-07-02T06:18:39.630Z"
     }
   },
   {
-    "id": 57,
-    "assetTypeId": 9,
+    "id": 51,
+    "assetTypeId": 2,
     "name": "Handhole 003",
     "code": "HH-003",
     "status": "operational",
@@ -1359,10 +1359,10 @@
       "material": "Concrete"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.518Z",
-    "updatedAt": "2026-07-01T05:57:09.518Z",
+    "createdAt": "2026-07-02T06:18:39.747Z",
+    "updatedAt": "2026-07-02T06:18:39.747Z",
     "assetType": {
-      "id": 9,
+      "id": 2,
       "key": "handhole",
       "label": "Handhole",
       "geometryKind": "point",
@@ -1387,12 +1387,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.385Z"
+      "createdAt": "2026-07-02T06:18:39.630Z"
     }
   },
   {
-    "id": 52,
-    "assetTypeId": 9,
+    "id": 56,
+    "assetTypeId": 2,
     "name": "Handhole 004",
     "code": "HH-004",
     "status": "degraded",
@@ -1408,10 +1408,10 @@
       "material": "HDPE"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.511Z",
-    "updatedAt": "2026-07-01T05:57:09.511Z",
+    "createdAt": "2026-07-02T06:18:39.753Z",
+    "updatedAt": "2026-07-02T06:18:39.753Z",
     "assetType": {
-      "id": 9,
+      "id": 2,
       "key": "handhole",
       "label": "Handhole",
       "geometryKind": "point",
@@ -1436,12 +1436,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.385Z"
+      "createdAt": "2026-07-02T06:18:39.630Z"
     }
   },
   {
     "id": 60,
-    "assetTypeId": 9,
+    "assetTypeId": 2,
     "name": "Handhole 005",
     "code": "HH-005",
     "status": "operational",
@@ -1457,10 +1457,10 @@
       "material": "Concrete"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.517Z",
-    "updatedAt": "2026-07-01T05:57:09.517Z",
+    "createdAt": "2026-07-02T06:18:39.747Z",
+    "updatedAt": "2026-07-02T06:18:39.747Z",
     "assetType": {
-      "id": 9,
+      "id": 2,
       "key": "handhole",
       "label": "Handhole",
       "geometryKind": "point",
@@ -1485,12 +1485,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.385Z"
+      "createdAt": "2026-07-02T06:18:39.630Z"
     }
   },
   {
-    "id": 54,
-    "assetTypeId": 9,
+    "id": 57,
+    "assetTypeId": 2,
     "name": "Handhole 006",
     "code": "HH-006",
     "status": "operational",
@@ -1506,10 +1506,10 @@
       "material": "HDPE"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.511Z",
-    "updatedAt": "2026-07-01T05:57:09.511Z",
+    "createdAt": "2026-07-02T06:18:39.755Z",
+    "updatedAt": "2026-07-02T06:18:39.755Z",
     "assetType": {
-      "id": 9,
+      "id": 2,
       "key": "handhole",
       "label": "Handhole",
       "geometryKind": "point",
@@ -1534,12 +1534,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.385Z"
+      "createdAt": "2026-07-02T06:18:39.630Z"
     }
   },
   {
-    "id": 56,
-    "assetTypeId": 9,
+    "id": 53,
+    "assetTypeId": 2,
     "name": "Handhole 007",
     "code": "HH-007",
     "status": "operational",
@@ -1555,10 +1555,10 @@
       "material": "Concrete"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.516Z",
-    "updatedAt": "2026-07-01T05:57:09.516Z",
+    "createdAt": "2026-07-02T06:18:39.748Z",
+    "updatedAt": "2026-07-02T06:18:39.748Z",
     "assetType": {
-      "id": 9,
+      "id": 2,
       "key": "handhole",
       "label": "Handhole",
       "geometryKind": "point",
@@ -1583,12 +1583,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.385Z"
+      "createdAt": "2026-07-02T06:18:39.630Z"
     }
   },
   {
-    "id": 53,
-    "assetTypeId": 9,
+    "id": 54,
+    "assetTypeId": 2,
     "name": "Handhole 008",
     "code": "HH-008",
     "status": "operational",
@@ -1604,10 +1604,10 @@
       "material": "HDPE"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.513Z",
-    "updatedAt": "2026-07-01T05:57:09.513Z",
+    "createdAt": "2026-07-02T06:18:39.750Z",
+    "updatedAt": "2026-07-02T06:18:39.750Z",
     "assetType": {
-      "id": 9,
+      "id": 2,
       "key": "handhole",
       "label": "Handhole",
       "geometryKind": "point",
@@ -1632,12 +1632,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.385Z"
+      "createdAt": "2026-07-02T06:18:39.630Z"
     }
   },
   {
-    "id": 59,
-    "assetTypeId": 9,
+    "id": 58,
+    "assetTypeId": 2,
     "name": "Handhole 009",
     "code": "HH-009",
     "status": "operational",
@@ -1653,10 +1653,10 @@
       "material": "Concrete"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.514Z",
-    "updatedAt": "2026-07-01T05:57:09.514Z",
+    "createdAt": "2026-07-02T06:18:39.751Z",
+    "updatedAt": "2026-07-02T06:18:39.751Z",
     "assetType": {
-      "id": 9,
+      "id": 2,
       "key": "handhole",
       "label": "Handhole",
       "geometryKind": "point",
@@ -1681,12 +1681,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.385Z"
+      "createdAt": "2026-07-02T06:18:39.630Z"
     }
   },
   {
     "id": 55,
-    "assetTypeId": 9,
+    "assetTypeId": 2,
     "name": "Handhole 010",
     "code": "HH-010",
     "status": "operational",
@@ -1702,10 +1702,10 @@
       "material": "HDPE"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.515Z",
-    "updatedAt": "2026-07-01T05:57:09.515Z",
+    "createdAt": "2026-07-02T06:18:39.752Z",
+    "updatedAt": "2026-07-02T06:18:39.752Z",
     "assetType": {
-      "id": 9,
+      "id": 2,
       "key": "handhole",
       "label": "Handhole",
       "geometryKind": "point",
@@ -1730,12 +1730,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.385Z"
+      "createdAt": "2026-07-02T06:18:39.630Z"
     }
   },
   {
-    "id": 95,
-    "assetTypeId": 7,
+    "id": 97,
+    "assetTypeId": 9,
     "name": "Haram St — Giza Axis",
     "code": "FC-011",
     "status": "under_maintenance",
@@ -1763,10 +1763,10 @@
       "installation_date": "2020-03-22"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.604Z",
-    "updatedAt": "2026-07-01T05:57:09.604Z",
+    "createdAt": "2026-07-02T06:18:39.856Z",
+    "updatedAt": "2026-07-02T06:18:39.856Z",
     "assetType": {
-      "id": 7,
+      "id": 9,
       "key": "fiber_cable",
       "label": "Fiber Cable",
       "geometryKind": "line",
@@ -1804,12 +1804,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 6,
-    "assetTypeId": 1,
+    "id": 11,
+    "assetTypeId": 6,
     "name": "Haram Street POP",
     "code": "SITE-HRM-001",
     "status": "under_maintenance",
@@ -1827,10 +1827,10 @@
       "power_backup": false
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.416Z",
-    "updatedAt": "2026-07-01T05:57:09.416Z",
+    "createdAt": "2026-07-02T06:18:39.655Z",
+    "updatedAt": "2026-07-02T06:18:39.655Z",
     "assetType": {
-      "id": 1,
+      "id": 6,
       "key": "site",
       "label": "Site / POP",
       "geometryKind": "point",
@@ -1868,12 +1868,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 91,
-    "assetTypeId": 7,
+    "id": 87,
+    "assetTypeId": 9,
     "name": "Industrial Hub — OCT Exchange Link",
     "code": "FC-012",
     "status": "operational",
@@ -1905,10 +1905,10 @@
       "installation_date": "2022-09-01"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.607Z",
-    "updatedAt": "2026-07-01T05:57:09.607Z",
+    "createdAt": "2026-07-02T06:18:39.856Z",
+    "updatedAt": "2026-07-02T06:18:39.856Z",
     "assetType": {
-      "id": 7,
+      "id": 9,
       "key": "fiber_cable",
       "label": "Fiber Cable",
       "geometryKind": "line",
@@ -1946,12 +1946,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 8,
-    "assetTypeId": 1,
+    "id": 4,
+    "assetTypeId": 6,
     "name": "Juhayna Square Hub",
     "code": "SITE-JUH-001",
     "status": "degraded",
@@ -1969,10 +1969,10 @@
       "power_backup": false
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.410Z",
-    "updatedAt": "2026-07-01T05:57:09.410Z",
+    "createdAt": "2026-07-02T06:18:39.651Z",
+    "updatedAt": "2026-07-02T06:18:39.651Z",
     "assetType": {
-      "id": 1,
+      "id": 6,
       "key": "site",
       "label": "Site / POP",
       "geometryKind": "point",
@@ -2010,12 +2010,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 89,
-    "assetTypeId": 7,
+    "id": 90,
+    "assetTypeId": 9,
     "name": "Juhayna — Shooting Club Trunk",
     "code": "FC-004",
     "status": "operational",
@@ -2051,10 +2051,10 @@
       "installation_date": "2020-06-01"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.596Z",
-    "updatedAt": "2026-07-01T05:57:09.596Z",
+    "createdAt": "2026-07-02T06:18:39.852Z",
+    "updatedAt": "2026-07-02T06:18:39.852Z",
     "assetType": {
-      "id": 7,
+      "id": 9,
       "key": "fiber_cable",
       "label": "Fiber Cable",
       "geometryKind": "line",
@@ -2092,12 +2092,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
     "id": 21,
-    "assetTypeId": 5,
+    "assetTypeId": 7,
     "name": "Manhole 001",
     "code": "MH-001",
     "status": "operational",
@@ -2114,10 +2114,10 @@
       "duct_count": 2
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.455Z",
-    "updatedAt": "2026-07-01T05:57:09.455Z",
+    "createdAt": "2026-07-02T06:18:39.689Z",
+    "updatedAt": "2026-07-02T06:18:39.689Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -2148,12 +2148,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 50,
-    "assetTypeId": 5,
+    "id": 22,
+    "assetTypeId": 7,
     "name": "Manhole 002",
     "code": "MH-002",
     "status": "operational",
@@ -2170,10 +2170,10 @@
       "duct_count": 3
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.455Z",
-    "updatedAt": "2026-07-01T05:57:09.455Z",
+    "createdAt": "2026-07-02T06:18:39.689Z",
+    "updatedAt": "2026-07-02T06:18:39.689Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -2204,12 +2204,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 44,
-    "assetTypeId": 5,
+    "id": 28,
+    "assetTypeId": 7,
     "name": "Manhole 003",
     "code": "MH-003",
     "status": "operational",
@@ -2226,10 +2226,10 @@
       "duct_count": 4
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.485Z",
-    "updatedAt": "2026-07-01T05:57:09.485Z",
+    "createdAt": "2026-07-02T06:18:39.689Z",
+    "updatedAt": "2026-07-02T06:18:39.689Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -2260,12 +2260,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 35,
-    "assetTypeId": 5,
+    "id": 29,
+    "assetTypeId": 7,
     "name": "Manhole 004",
     "code": "MH-004",
     "status": "degraded",
@@ -2282,10 +2282,10 @@
       "duct_count": 5
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.455Z",
-    "updatedAt": "2026-07-01T05:57:09.455Z",
+    "createdAt": "2026-07-02T06:18:39.698Z",
+    "updatedAt": "2026-07-02T06:18:39.698Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -2316,12 +2316,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 22,
-    "assetTypeId": 5,
+    "id": 48,
+    "assetTypeId": 7,
     "name": "Manhole 005",
     "code": "MH-005",
     "status": "operational",
@@ -2338,10 +2338,10 @@
       "duct_count": 2
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.455Z",
-    "updatedAt": "2026-07-01T05:57:09.455Z",
+    "createdAt": "2026-07-02T06:18:39.689Z",
+    "updatedAt": "2026-07-02T06:18:39.689Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -2372,12 +2372,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 23,
-    "assetTypeId": 5,
+    "id": 41,
+    "assetTypeId": 7,
     "name": "Manhole 006",
     "code": "MH-006",
     "status": "operational",
@@ -2394,10 +2394,10 @@
       "duct_count": 3
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.459Z",
-    "updatedAt": "2026-07-01T05:57:09.459Z",
+    "createdAt": "2026-07-02T06:18:39.712Z",
+    "updatedAt": "2026-07-02T06:18:39.712Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -2428,12 +2428,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 25,
-    "assetTypeId": 5,
+    "id": 42,
+    "assetTypeId": 7,
     "name": "Manhole 007",
     "code": "MH-007",
     "status": "under_maintenance",
@@ -2450,10 +2450,10 @@
       "duct_count": 4
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.461Z",
-    "updatedAt": "2026-07-01T05:57:09.461Z",
+    "createdAt": "2026-07-02T06:18:39.713Z",
+    "updatedAt": "2026-07-02T06:18:39.713Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -2484,12 +2484,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 36,
-    "assetTypeId": 5,
+    "id": 40,
+    "assetTypeId": 7,
     "name": "Manhole 008",
     "code": "MH-008",
     "status": "operational",
@@ -2506,10 +2506,10 @@
       "duct_count": 5
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.456Z",
-    "updatedAt": "2026-07-01T05:57:09.456Z",
+    "createdAt": "2026-07-02T06:18:39.711Z",
+    "updatedAt": "2026-07-02T06:18:39.711Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -2540,12 +2540,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 38,
-    "assetTypeId": 5,
+    "id": 44,
+    "assetTypeId": 7,
     "name": "Manhole 009",
     "code": "MH-009",
     "status": "operational",
@@ -2562,10 +2562,10 @@
       "duct_count": 2
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.476Z",
-    "updatedAt": "2026-07-01T05:57:09.476Z",
+    "createdAt": "2026-07-02T06:18:39.715Z",
+    "updatedAt": "2026-07-02T06:18:39.715Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -2596,12 +2596,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 40,
-    "assetTypeId": 5,
+    "id": 45,
+    "assetTypeId": 7,
     "name": "Manhole 010",
     "code": "MH-010",
     "status": "operational",
@@ -2618,10 +2618,10 @@
       "duct_count": 3
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.478Z",
-    "updatedAt": "2026-07-01T05:57:09.478Z",
+    "createdAt": "2026-07-02T06:18:39.717Z",
+    "updatedAt": "2026-07-02T06:18:39.717Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -2652,12 +2652,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
     "id": 47,
-    "assetTypeId": 5,
+    "assetTypeId": 7,
     "name": "Manhole 011",
     "code": "MH-011",
     "status": "operational",
@@ -2674,10 +2674,10 @@
       "duct_count": 4
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.481Z",
-    "updatedAt": "2026-07-01T05:57:09.481Z",
+    "createdAt": "2026-07-02T06:18:39.719Z",
+    "updatedAt": "2026-07-02T06:18:39.719Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -2708,12 +2708,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 46,
-    "assetTypeId": 5,
+    "id": 23,
+    "assetTypeId": 7,
     "name": "Manhole 012",
     "code": "MH-012",
     "status": "operational",
@@ -2730,10 +2730,10 @@
       "duct_count": 5
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.488Z",
-    "updatedAt": "2026-07-01T05:57:09.488Z",
+    "createdAt": "2026-07-02T06:18:39.690Z",
+    "updatedAt": "2026-07-02T06:18:39.690Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -2764,12 +2764,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 48,
-    "assetTypeId": 5,
+    "id": 24,
+    "assetTypeId": 7,
     "name": "Manhole 013",
     "code": "MH-013",
     "status": "operational",
@@ -2786,10 +2786,10 @@
       "duct_count": 2
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.489Z",
-    "updatedAt": "2026-07-01T05:57:09.489Z",
+    "createdAt": "2026-07-02T06:18:39.693Z",
+    "updatedAt": "2026-07-02T06:18:39.693Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -2820,12 +2820,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 24,
-    "assetTypeId": 5,
+    "id": 25,
+    "assetTypeId": 7,
     "name": "Manhole 014",
     "code": "MH-014",
     "status": "degraded",
@@ -2842,10 +2842,10 @@
       "duct_count": 3
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.460Z",
-    "updatedAt": "2026-07-01T05:57:09.460Z",
+    "createdAt": "2026-07-02T06:18:39.694Z",
+    "updatedAt": "2026-07-02T06:18:39.694Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -2876,12 +2876,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
     "id": 26,
-    "assetTypeId": 5,
+    "assetTypeId": 7,
     "name": "Manhole 015",
     "code": "MH-015",
     "status": "operational",
@@ -2898,10 +2898,10 @@
       "duct_count": 4
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.463Z",
-    "updatedAt": "2026-07-01T05:57:09.463Z",
+    "createdAt": "2026-07-02T06:18:39.695Z",
+    "updatedAt": "2026-07-02T06:18:39.695Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -2932,12 +2932,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
     "id": 27,
-    "assetTypeId": 5,
+    "assetTypeId": 7,
     "name": "Manhole 016",
     "code": "MH-016",
     "status": "operational",
@@ -2954,10 +2954,10 @@
       "duct_count": 5
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.464Z",
-    "updatedAt": "2026-07-01T05:57:09.464Z",
+    "createdAt": "2026-07-02T06:18:39.696Z",
+    "updatedAt": "2026-07-02T06:18:39.696Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -2988,12 +2988,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 29,
-    "assetTypeId": 5,
+    "id": 50,
+    "assetTypeId": 7,
     "name": "Manhole 017",
     "code": "MH-017",
     "status": "under_maintenance",
@@ -3010,10 +3010,10 @@
       "duct_count": 2
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.466Z",
-    "updatedAt": "2026-07-01T05:57:09.466Z",
+    "createdAt": "2026-07-02T06:18:39.691Z",
+    "updatedAt": "2026-07-02T06:18:39.691Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -3044,12 +3044,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 31,
-    "assetTypeId": 5,
+    "id": 39,
+    "assetTypeId": 7,
     "name": "Manhole 018",
     "code": "MH-018",
     "status": "operational",
@@ -3066,10 +3066,10 @@
       "duct_count": 3
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.469Z",
-    "updatedAt": "2026-07-01T05:57:09.469Z",
+    "createdAt": "2026-07-02T06:18:39.710Z",
+    "updatedAt": "2026-07-02T06:18:39.710Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -3100,12 +3100,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 33,
-    "assetTypeId": 5,
+    "id": 43,
+    "assetTypeId": 7,
     "name": "Manhole 019",
     "code": "MH-019",
     "status": "operational",
@@ -3122,10 +3122,10 @@
       "duct_count": 4
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.471Z",
-    "updatedAt": "2026-07-01T05:57:09.471Z",
+    "createdAt": "2026-07-02T06:18:39.714Z",
+    "updatedAt": "2026-07-02T06:18:39.714Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -3156,12 +3156,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 28,
-    "assetTypeId": 5,
+    "id": 46,
+    "assetTypeId": 7,
     "name": "Manhole 020",
     "code": "MH-020",
     "status": "operational",
@@ -3178,10 +3178,10 @@
       "duct_count": 5
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.465Z",
-    "updatedAt": "2026-07-01T05:57:09.465Z",
+    "createdAt": "2026-07-02T06:18:39.717Z",
+    "updatedAt": "2026-07-02T06:18:39.717Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -3212,12 +3212,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 30,
-    "assetTypeId": 5,
+    "id": 36,
+    "assetTypeId": 7,
     "name": "Manhole 021",
     "code": "MH-021",
     "status": "operational",
@@ -3234,10 +3234,10 @@
       "duct_count": 2
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.468Z",
-    "updatedAt": "2026-07-01T05:57:09.468Z",
+    "createdAt": "2026-07-02T06:18:39.697Z",
+    "updatedAt": "2026-07-02T06:18:39.697Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -3268,12 +3268,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 32,
-    "assetTypeId": 5,
+    "id": 37,
+    "assetTypeId": 7,
     "name": "Manhole 022",
     "code": "MH-022",
     "status": "operational",
@@ -3290,10 +3290,10 @@
       "duct_count": 3
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.470Z",
-    "updatedAt": "2026-07-01T05:57:09.470Z",
+    "createdAt": "2026-07-02T06:18:39.708Z",
+    "updatedAt": "2026-07-02T06:18:39.708Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -3324,12 +3324,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 34,
-    "assetTypeId": 5,
+    "id": 38,
+    "assetTypeId": 7,
     "name": "Manhole 023",
     "code": "MH-023",
     "status": "operational",
@@ -3346,10 +3346,10 @@
       "duct_count": 4
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.472Z",
-    "updatedAt": "2026-07-01T05:57:09.472Z",
+    "createdAt": "2026-07-02T06:18:39.709Z",
+    "updatedAt": "2026-07-02T06:18:39.709Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -3380,12 +3380,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 49,
-    "assetTypeId": 5,
+    "id": 30,
+    "assetTypeId": 7,
     "name": "Manhole 024",
     "code": "MH-024",
     "status": "degraded",
@@ -3402,10 +3402,10 @@
       "duct_count": 5
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.474Z",
-    "updatedAt": "2026-07-01T05:57:09.474Z",
+    "createdAt": "2026-07-02T06:18:39.699Z",
+    "updatedAt": "2026-07-02T06:18:39.699Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -3436,12 +3436,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 45,
-    "assetTypeId": 5,
+    "id": 31,
+    "assetTypeId": 7,
     "name": "Manhole 025",
     "code": "MH-025",
     "status": "operational",
@@ -3458,10 +3458,10 @@
       "duct_count": 2
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.487Z",
-    "updatedAt": "2026-07-01T05:57:09.487Z",
+    "createdAt": "2026-07-02T06:18:39.700Z",
+    "updatedAt": "2026-07-02T06:18:39.700Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -3492,12 +3492,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 37,
-    "assetTypeId": 5,
+    "id": 32,
+    "assetTypeId": 7,
     "name": "Manhole 026",
     "code": "MH-026",
     "status": "operational",
@@ -3514,10 +3514,10 @@
       "duct_count": 3
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.475Z",
-    "updatedAt": "2026-07-01T05:57:09.475Z",
+    "createdAt": "2026-07-02T06:18:39.701Z",
+    "updatedAt": "2026-07-02T06:18:39.701Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -3548,12 +3548,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 39,
-    "assetTypeId": 5,
+    "id": 33,
+    "assetTypeId": 7,
     "name": "Manhole 027",
     "code": "MH-027",
     "status": "under_maintenance",
@@ -3570,10 +3570,10 @@
       "duct_count": 4
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.477Z",
-    "updatedAt": "2026-07-01T05:57:09.477Z",
+    "createdAt": "2026-07-02T06:18:39.702Z",
+    "updatedAt": "2026-07-02T06:18:39.702Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -3604,12 +3604,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 41,
-    "assetTypeId": 5,
+    "id": 34,
+    "assetTypeId": 7,
     "name": "Manhole 028",
     "code": "MH-028",
     "status": "operational",
@@ -3626,10 +3626,10 @@
       "duct_count": 5
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.480Z",
-    "updatedAt": "2026-07-01T05:57:09.480Z",
+    "createdAt": "2026-07-02T06:18:39.703Z",
+    "updatedAt": "2026-07-02T06:18:39.703Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -3660,12 +3660,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 42,
-    "assetTypeId": 5,
+    "id": 35,
+    "assetTypeId": 7,
     "name": "Manhole 029",
     "code": "MH-029",
     "status": "operational",
@@ -3682,10 +3682,10 @@
       "duct_count": 2
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.483Z",
-    "updatedAt": "2026-07-01T05:57:09.483Z",
+    "createdAt": "2026-07-02T06:18:39.705Z",
+    "updatedAt": "2026-07-02T06:18:39.705Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -3716,12 +3716,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 43,
-    "assetTypeId": 5,
+    "id": 49,
+    "assetTypeId": 7,
     "name": "Manhole 030",
     "code": "MH-030",
     "status": "operational",
@@ -3738,10 +3738,10 @@
       "duct_count": 3
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.484Z",
-    "updatedAt": "2026-07-01T05:57:09.484Z",
+    "createdAt": "2026-07-02T06:18:39.706Z",
+    "updatedAt": "2026-07-02T06:18:39.706Z",
     "assetType": {
-      "id": 5,
+      "id": 7,
       "key": "manhole",
       "label": "Manhole",
       "geometryKind": "point",
@@ -3772,12 +3772,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.394Z"
+      "createdAt": "2026-07-02T06:18:39.635Z"
     }
   },
   {
-    "id": 92,
-    "assetTypeId": 7,
+    "id": 89,
+    "assetTypeId": 9,
     "name": "Media City — Smart Village Spur",
     "code": "FC-013",
     "status": "degraded",
@@ -3809,10 +3809,10 @@
       "installation_date": "2021-12-05"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.608Z",
-    "updatedAt": "2026-07-01T05:57:09.608Z",
+    "createdAt": "2026-07-02T06:18:39.859Z",
+    "updatedAt": "2026-07-02T06:18:39.859Z",
     "assetType": {
-      "id": 7,
+      "id": 9,
       "key": "fiber_cable",
       "label": "Fiber Cable",
       "geometryKind": "line",
@@ -3850,12 +3850,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 9,
-    "assetTypeId": 1,
+    "id": 7,
+    "assetTypeId": 6,
     "name": "Media Production City POP",
     "code": "SITE-MPC-001",
     "status": "degraded",
@@ -3873,10 +3873,10 @@
       "power_backup": true
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.418Z",
-    "updatedAt": "2026-07-01T05:57:09.418Z",
+    "createdAt": "2026-07-02T06:18:39.658Z",
+    "updatedAt": "2026-07-02T06:18:39.658Z",
     "assetType": {
-      "id": 1,
+      "id": 6,
       "key": "site",
       "label": "Site / POP",
       "geometryKind": "point",
@@ -3914,12 +3914,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 12,
-    "assetTypeId": 1,
+    "id": 8,
+    "assetTypeId": 6,
     "name": "Mohandeseen Hub",
     "code": "SITE-MOH-001",
     "status": "operational",
@@ -3937,10 +3937,10 @@
       "power_backup": true
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.413Z",
-    "updatedAt": "2026-07-01T05:57:09.413Z",
+    "createdAt": "2026-07-02T06:18:39.659Z",
+    "updatedAt": "2026-07-02T06:18:39.659Z",
     "assetType": {
-      "id": 1,
+      "id": 6,
       "key": "site",
       "label": "Site / POP",
       "geometryKind": "point",
@@ -3978,12 +3978,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 86,
-    "assetTypeId": 7,
+    "id": 91,
+    "assetTypeId": 9,
     "name": "Mohandeseen — Agouza Link",
     "code": "FC-007",
     "status": "operational",
@@ -4011,10 +4011,10 @@
       "installation_date": "2022-04-10"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.601Z",
-    "updatedAt": "2026-07-01T05:57:09.601Z",
+    "createdAt": "2026-07-02T06:18:39.860Z",
+    "updatedAt": "2026-07-02T06:18:39.860Z",
     "assetType": {
-      "id": 7,
+      "id": 9,
       "key": "fiber_cable",
       "label": "Fiber Cable",
       "geometryKind": "line",
@@ -4052,12 +4052,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 83,
-    "assetTypeId": 7,
+    "id": 84,
+    "assetTypeId": 9,
     "name": "OCT Exchange — Smart Village Ring",
     "code": "FC-001",
     "status": "operational",
@@ -4085,10 +4085,10 @@
       "installation_date": "2021-03-15"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.596Z",
-    "updatedAt": "2026-07-01T05:57:09.596Z",
+    "createdAt": "2026-07-02T06:18:39.852Z",
+    "updatedAt": "2026-07-02T06:18:39.852Z",
     "assetType": {
-      "id": 7,
+      "id": 9,
       "key": "fiber_cable",
       "label": "Fiber Cable",
       "geometryKind": "line",
@@ -4126,12 +4126,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 93,
-    "assetTypeId": 7,
+    "id": 95,
+    "assetTypeId": 9,
     "name": "OCT Ring — South Loop",
     "code": "FC-014",
     "status": "operational",
@@ -4167,10 +4167,10 @@
       "installation_date": "2023-01-18"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.609Z",
-    "updatedAt": "2026-07-01T05:57:09.609Z",
+    "createdAt": "2026-07-02T06:18:39.862Z",
+    "updatedAt": "2026-07-02T06:18:39.862Z",
     "assetType": {
-      "id": 7,
+      "id": 9,
       "key": "fiber_cable",
       "label": "Fiber Cable",
       "geometryKind": "line",
@@ -4208,12 +4208,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 97,
-    "assetTypeId": 7,
+    "id": 83,
+    "assetTypeId": 9,
     "name": "OCT — Juhayna Corridor",
     "code": "FC-002",
     "status": "operational",
@@ -4245,10 +4245,10 @@
       "installation_date": "2021-05-20"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.596Z",
-    "updatedAt": "2026-07-01T05:57:09.596Z",
+    "createdAt": "2026-07-02T06:18:39.852Z",
+    "updatedAt": "2026-07-02T06:18:39.852Z",
     "assetType": {
-      "id": 7,
+      "id": 9,
       "key": "fiber_cable",
       "label": "Fiber Cable",
       "geometryKind": "line",
@@ -4286,12 +4286,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 1,
-    "assetTypeId": 1,
+    "id": 2,
+    "assetTypeId": 6,
     "name": "October City Exchange",
     "code": "SITE-OCT-001",
     "status": "operational",
@@ -4309,10 +4309,10 @@
       "power_backup": true
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.410Z",
-    "updatedAt": "2026-07-01T05:57:09.410Z",
+    "createdAt": "2026-07-02T06:18:39.651Z",
+    "updatedAt": "2026-07-02T06:18:39.651Z",
     "assetType": {
-      "id": 1,
+      "id": 6,
       "key": "site",
       "label": "Site / POP",
       "geometryKind": "point",
@@ -4350,12 +4350,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 70,
-    "assetTypeId": 3,
+    "id": 72,
+    "assetTypeId": 4,
     "name": "Pole 001",
     "code": "POLE-001",
     "status": "operational",
@@ -4372,10 +4372,10 @@
       "condition": "Good"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.549Z",
-    "updatedAt": "2026-07-01T05:57:09.549Z",
+    "createdAt": "2026-07-02T06:18:39.805Z",
+    "updatedAt": "2026-07-02T06:18:39.805Z",
     "assetType": {
-      "id": 3,
+      "id": 4,
       "key": "pole",
       "label": "Pole",
       "geometryKind": "point",
@@ -4411,12 +4411,12 @@
           ]
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.390Z"
+      "createdAt": "2026-07-02T06:18:39.633Z"
     }
   },
   {
-    "id": 69,
-    "assetTypeId": 3,
+    "id": 78,
+    "assetTypeId": 4,
     "name": "Pole 002",
     "code": "POLE-002",
     "status": "operational",
@@ -4433,10 +4433,10 @@
       "condition": "Good"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.549Z",
-    "updatedAt": "2026-07-01T05:57:09.549Z",
+    "createdAt": "2026-07-02T06:18:39.805Z",
+    "updatedAt": "2026-07-02T06:18:39.805Z",
     "assetType": {
-      "id": 3,
+      "id": 4,
       "key": "pole",
       "label": "Pole",
       "geometryKind": "point",
@@ -4472,12 +4472,12 @@
           ]
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.390Z"
+      "createdAt": "2026-07-02T06:18:39.633Z"
     }
   },
   {
-    "id": 72,
-    "assetTypeId": 3,
+    "id": 69,
+    "assetTypeId": 4,
     "name": "Pole 003",
     "code": "POLE-003",
     "status": "operational",
@@ -4494,10 +4494,10 @@
       "condition": "Good"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.555Z",
-    "updatedAt": "2026-07-01T05:57:09.555Z",
+    "createdAt": "2026-07-02T06:18:39.805Z",
+    "updatedAt": "2026-07-02T06:18:39.805Z",
     "assetType": {
-      "id": 3,
+      "id": 4,
       "key": "pole",
       "label": "Pole",
       "geometryKind": "point",
@@ -4533,12 +4533,12 @@
           ]
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.390Z"
+      "createdAt": "2026-07-02T06:18:39.633Z"
     }
   },
   {
-    "id": 75,
-    "assetTypeId": 3,
+    "id": 71,
+    "assetTypeId": 4,
     "name": "Pole 004",
     "code": "POLE-004",
     "status": "operational",
@@ -4555,10 +4555,10 @@
       "condition": "Good"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.560Z",
-    "updatedAt": "2026-07-01T05:57:09.560Z",
+    "createdAt": "2026-07-02T06:18:39.807Z",
+    "updatedAt": "2026-07-02T06:18:39.807Z",
     "assetType": {
-      "id": 3,
+      "id": 4,
       "key": "pole",
       "label": "Pole",
       "geometryKind": "point",
@@ -4594,12 +4594,12 @@
           ]
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.390Z"
+      "createdAt": "2026-07-02T06:18:39.633Z"
     }
   },
   {
-    "id": 78,
-    "assetTypeId": 3,
+    "id": 77,
+    "assetTypeId": 4,
     "name": "Pole 005",
     "code": "POLE-005",
     "status": "operational",
@@ -4616,10 +4616,10 @@
       "condition": "Good"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.549Z",
-    "updatedAt": "2026-07-01T05:57:09.549Z",
+    "createdAt": "2026-07-02T06:18:39.805Z",
+    "updatedAt": "2026-07-02T06:18:39.805Z",
     "assetType": {
-      "id": 3,
+      "id": 4,
       "key": "pole",
       "label": "Pole",
       "geometryKind": "point",
@@ -4655,12 +4655,12 @@
           ]
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.390Z"
+      "createdAt": "2026-07-02T06:18:39.633Z"
     }
   },
   {
-    "id": 74,
-    "assetTypeId": 3,
+    "id": 70,
+    "assetTypeId": 4,
     "name": "Pole 006",
     "code": "POLE-006",
     "status": "under_maintenance",
@@ -4677,10 +4677,10 @@
       "condition": "Good"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.559Z",
-    "updatedAt": "2026-07-01T05:57:09.559Z",
+    "createdAt": "2026-07-02T06:18:39.806Z",
+    "updatedAt": "2026-07-02T06:18:39.806Z",
     "assetType": {
-      "id": 3,
+      "id": 4,
       "key": "pole",
       "label": "Pole",
       "geometryKind": "point",
@@ -4716,12 +4716,12 @@
           ]
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.390Z"
+      "createdAt": "2026-07-02T06:18:39.633Z"
     }
   },
   {
-    "id": 77,
-    "assetTypeId": 3,
+    "id": 75,
+    "assetTypeId": 4,
     "name": "Pole 007",
     "code": "POLE-007",
     "status": "operational",
@@ -4738,10 +4738,10 @@
       "condition": "Good"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.549Z",
-    "updatedAt": "2026-07-01T05:57:09.549Z",
+    "createdAt": "2026-07-02T06:18:39.808Z",
+    "updatedAt": "2026-07-02T06:18:39.808Z",
     "assetType": {
-      "id": 3,
+      "id": 4,
       "key": "pole",
       "label": "Pole",
       "geometryKind": "point",
@@ -4777,12 +4777,12 @@
           ]
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.390Z"
+      "createdAt": "2026-07-02T06:18:39.633Z"
     }
   },
   {
-    "id": 71,
-    "assetTypeId": 3,
+    "id": 73,
+    "assetTypeId": 4,
     "name": "Pole 008",
     "code": "POLE-008",
     "status": "operational",
@@ -4799,10 +4799,10 @@
       "condition": "Fair"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.552Z",
-    "updatedAt": "2026-07-01T05:57:09.552Z",
+    "createdAt": "2026-07-02T06:18:39.809Z",
+    "updatedAt": "2026-07-02T06:18:39.809Z",
     "assetType": {
-      "id": 3,
+      "id": 4,
       "key": "pole",
       "label": "Pole",
       "geometryKind": "point",
@@ -4838,12 +4838,12 @@
           ]
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.390Z"
+      "createdAt": "2026-07-02T06:18:39.633Z"
     }
   },
   {
-    "id": 76,
-    "assetTypeId": 3,
+    "id": 74,
+    "assetTypeId": 4,
     "name": "Pole 009",
     "code": "POLE-009",
     "status": "operational",
@@ -4860,10 +4860,10 @@
       "condition": "Fair"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.554Z",
-    "updatedAt": "2026-07-01T05:57:09.554Z",
+    "createdAt": "2026-07-02T06:18:39.810Z",
+    "updatedAt": "2026-07-02T06:18:39.810Z",
     "assetType": {
-      "id": 3,
+      "id": 4,
       "key": "pole",
       "label": "Pole",
       "geometryKind": "point",
@@ -4899,12 +4899,12 @@
           ]
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.390Z"
+      "createdAt": "2026-07-02T06:18:39.633Z"
     }
   },
   {
-    "id": 73,
-    "assetTypeId": 3,
+    "id": 76,
+    "assetTypeId": 4,
     "name": "Pole 010",
     "code": "POLE-010",
     "status": "operational",
@@ -4921,10 +4921,10 @@
       "condition": "Fair"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.557Z",
-    "updatedAt": "2026-07-01T05:57:09.557Z",
+    "createdAt": "2026-07-02T06:18:39.812Z",
+    "updatedAt": "2026-07-02T06:18:39.812Z",
     "assetType": {
-      "id": 3,
+      "id": 4,
       "key": "pole",
       "label": "Pole",
       "geometryKind": "point",
@@ -4960,12 +4960,12 @@
           ]
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.390Z"
+      "createdAt": "2026-07-02T06:18:39.633Z"
     }
   },
   {
-    "id": 10,
-    "assetTypeId": 1,
+    "id": 5,
+    "assetTypeId": 6,
     "name": "Shooting Club POP",
     "code": "SITE-SC-001",
     "status": "operational",
@@ -4983,10 +4983,10 @@
       "power_backup": true
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.419Z",
-    "updatedAt": "2026-07-01T05:57:09.419Z",
+    "createdAt": "2026-07-02T06:18:39.656Z",
+    "updatedAt": "2026-07-02T06:18:39.656Z",
     "assetType": {
-      "id": 1,
+      "id": 6,
       "key": "site",
       "label": "Site / POP",
       "geometryKind": "point",
@@ -5024,12 +5024,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 96,
-    "assetTypeId": 7,
+    "id": 86,
+    "assetTypeId": 9,
     "name": "Shooting Club — Dokki Trunk",
     "code": "FC-005",
     "status": "operational",
@@ -5065,10 +5065,10 @@
       "installation_date": "2019-09-14"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.596Z",
-    "updatedAt": "2026-07-01T05:57:09.596Z",
+    "createdAt": "2026-07-02T06:18:39.852Z",
+    "updatedAt": "2026-07-02T06:18:39.852Z",
     "assetType": {
-      "id": 7,
+      "id": 9,
       "key": "fiber_cable",
       "label": "Fiber Cable",
       "geometryKind": "line",
@@ -5106,12 +5106,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 94,
-    "assetTypeId": 7,
+    "id": 92,
+    "assetTypeId": 9,
     "name": "Shooting Club — Mohandeseen Direct",
     "code": "FC-015",
     "status": "operational",
@@ -5147,10 +5147,10 @@
       "installation_date": "2022-06-30"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.610Z",
-    "updatedAt": "2026-07-01T05:57:09.610Z",
+    "createdAt": "2026-07-02T06:18:39.863Z",
+    "updatedAt": "2026-07-02T06:18:39.863Z",
     "assetType": {
-      "id": 7,
+      "id": 9,
       "key": "fiber_cable",
       "label": "Fiber Cable",
       "geometryKind": "line",
@@ -5188,12 +5188,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 4,
-    "assetTypeId": 1,
+    "id": 1,
+    "assetTypeId": 6,
     "name": "Smart Village POP",
     "code": "SITE-SV-001",
     "status": "operational",
@@ -5211,10 +5211,10 @@
       "power_backup": true
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.410Z",
-    "updatedAt": "2026-07-01T05:57:09.410Z",
+    "createdAt": "2026-07-02T06:18:39.651Z",
+    "updatedAt": "2026-07-02T06:18:39.651Z",
     "assetType": {
-      "id": 1,
+      "id": 6,
       "key": "site",
       "label": "Site / POP",
       "geometryKind": "point",
@@ -5252,12 +5252,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 90,
-    "assetTypeId": 7,
+    "id": 93,
+    "assetTypeId": 9,
     "name": "Smart Village — Juhayna Link",
     "code": "FC-003",
     "status": "degraded",
@@ -5289,10 +5289,10 @@
       "installation_date": "2020-11-10"
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.605Z",
-    "updatedAt": "2026-07-01T05:57:09.605Z",
+    "createdAt": "2026-07-02T06:18:39.864Z",
+    "updatedAt": "2026-07-02T06:18:39.864Z",
     "assetType": {
-      "id": 7,
+      "id": 9,
       "key": "fiber_cable",
       "label": "Fiber Cable",
       "geometryKind": "line",
@@ -5330,12 +5330,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   },
   {
-    "id": 66,
-    "assetTypeId": 2,
+    "id": 68,
+    "assetTypeId": 3,
     "name": "Splice Closure SC-001",
     "code": "SC-001",
     "status": "operational",
@@ -5351,11 +5351,11 @@
       "splice_count": 48,
       "capacity": 96
     },
-    "parentId": 44,
-    "createdAt": "2026-07-01T05:57:09.528Z",
-    "updatedAt": "2026-07-01T05:57:09.528Z",
+    "parentId": 28,
+    "createdAt": "2026-07-02T06:18:39.783Z",
+    "updatedAt": "2026-07-02T06:18:39.783Z",
     "assetType": {
-      "id": 2,
+      "id": 3,
       "key": "splice_closure",
       "label": "Splice Closure",
       "geometryKind": "point",
@@ -5386,12 +5386,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.388Z"
+      "createdAt": "2026-07-02T06:18:39.632Z"
     }
   },
   {
-    "id": 68,
-    "assetTypeId": 2,
+    "id": 61,
+    "assetTypeId": 3,
     "name": "Splice Closure SC-002",
     "code": "SC-002",
     "status": "operational",
@@ -5407,11 +5407,11 @@
       "splice_count": 96,
       "capacity": 192
     },
-    "parentId": 36,
-    "createdAt": "2026-07-01T05:57:09.528Z",
-    "updatedAt": "2026-07-01T05:57:09.528Z",
+    "parentId": 40,
+    "createdAt": "2026-07-02T06:18:39.783Z",
+    "updatedAt": "2026-07-02T06:18:39.783Z",
     "assetType": {
-      "id": 2,
+      "id": 3,
       "key": "splice_closure",
       "label": "Splice Closure",
       "geometryKind": "point",
@@ -5442,12 +5442,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.388Z"
+      "createdAt": "2026-07-02T06:18:39.632Z"
     }
   },
   {
-    "id": 61,
-    "assetTypeId": 2,
+    "id": 65,
+    "assetTypeId": 3,
     "name": "Splice Closure SC-003",
     "code": "SC-003",
     "status": "operational",
@@ -5463,11 +5463,11 @@
       "splice_count": 48,
       "capacity": 96
     },
-    "parentId": 48,
-    "createdAt": "2026-07-01T05:57:09.528Z",
-    "updatedAt": "2026-07-01T05:57:09.528Z",
+    "parentId": 24,
+    "createdAt": "2026-07-02T06:18:39.785Z",
+    "updatedAt": "2026-07-02T06:18:39.785Z",
     "assetType": {
-      "id": 2,
+      "id": 3,
       "key": "splice_closure",
       "label": "Splice Closure",
       "geometryKind": "point",
@@ -5498,12 +5498,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.388Z"
+      "createdAt": "2026-07-02T06:18:39.632Z"
     }
   },
   {
-    "id": 64,
-    "assetTypeId": 2,
+    "id": 66,
+    "assetTypeId": 3,
     "name": "Splice Closure SC-004",
     "code": "SC-004",
     "status": "operational",
@@ -5519,11 +5519,11 @@
       "splice_count": 24,
       "capacity": 48
     },
-    "parentId": 31,
-    "createdAt": "2026-07-01T05:57:09.531Z",
-    "updatedAt": "2026-07-01T05:57:09.531Z",
+    "parentId": 39,
+    "createdAt": "2026-07-02T06:18:39.789Z",
+    "updatedAt": "2026-07-02T06:18:39.789Z",
     "assetType": {
-      "id": 2,
+      "id": 3,
       "key": "splice_closure",
       "label": "Splice Closure",
       "geometryKind": "point",
@@ -5554,12 +5554,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.388Z"
+      "createdAt": "2026-07-02T06:18:39.632Z"
     }
   },
   {
-    "id": 63,
-    "assetTypeId": 2,
+    "id": 67,
+    "assetTypeId": 3,
     "name": "Splice Closure SC-005",
     "code": "SC-005",
     "status": "operational",
@@ -5575,11 +5575,11 @@
       "splice_count": 96,
       "capacity": 192
     },
-    "parentId": 30,
-    "createdAt": "2026-07-01T05:57:09.528Z",
-    "updatedAt": "2026-07-01T05:57:09.528Z",
+    "parentId": 36,
+    "createdAt": "2026-07-02T06:18:39.783Z",
+    "updatedAt": "2026-07-02T06:18:39.783Z",
     "assetType": {
-      "id": 2,
+      "id": 3,
       "key": "splice_closure",
       "label": "Splice Closure",
       "geometryKind": "point",
@@ -5610,12 +5610,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.388Z"
+      "createdAt": "2026-07-02T06:18:39.632Z"
     }
   },
   {
     "id": 62,
-    "assetTypeId": 2,
+    "assetTypeId": 3,
     "name": "Splice Closure SC-006",
     "code": "SC-006",
     "status": "degraded",
@@ -5631,11 +5631,11 @@
       "splice_count": 48,
       "capacity": 96
     },
-    "parentId": 45,
-    "createdAt": "2026-07-01T05:57:09.530Z",
-    "updatedAt": "2026-07-01T05:57:09.530Z",
+    "parentId": 31,
+    "createdAt": "2026-07-02T06:18:39.784Z",
+    "updatedAt": "2026-07-02T06:18:39.784Z",
     "assetType": {
-      "id": 2,
+      "id": 3,
       "key": "splice_closure",
       "label": "Splice Closure",
       "geometryKind": "point",
@@ -5666,12 +5666,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.388Z"
+      "createdAt": "2026-07-02T06:18:39.632Z"
     }
   },
   {
-    "id": 65,
-    "assetTypeId": 2,
+    "id": 63,
+    "assetTypeId": 3,
     "name": "Splice Closure SC-007",
     "code": "SC-007",
     "status": "operational",
@@ -5687,11 +5687,11 @@
       "splice_count": 144,
       "capacity": 288
     },
-    "parentId": 41,
-    "createdAt": "2026-07-01T05:57:09.533Z",
-    "updatedAt": "2026-07-01T05:57:09.533Z",
+    "parentId": 34,
+    "createdAt": "2026-07-02T06:18:39.786Z",
+    "updatedAt": "2026-07-02T06:18:39.786Z",
     "assetType": {
-      "id": 2,
+      "id": 3,
       "key": "splice_closure",
       "label": "Splice Closure",
       "geometryKind": "point",
@@ -5722,12 +5722,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.388Z"
+      "createdAt": "2026-07-02T06:18:39.632Z"
     }
   },
   {
-    "id": 67,
-    "assetTypeId": 2,
+    "id": 64,
+    "assetTypeId": 3,
     "name": "Splice Closure SC-008",
     "code": "SC-008",
     "status": "operational",
@@ -5743,11 +5743,11 @@
       "splice_count": 48,
       "capacity": 96
     },
-    "parentId": 43,
-    "createdAt": "2026-07-01T05:57:09.534Z",
-    "updatedAt": "2026-07-01T05:57:09.534Z",
+    "parentId": 49,
+    "createdAt": "2026-07-02T06:18:39.787Z",
+    "updatedAt": "2026-07-02T06:18:39.787Z",
     "assetType": {
-      "id": 2,
+      "id": 3,
       "key": "splice_closure",
       "label": "Splice Closure",
       "geometryKind": "point",
@@ -5778,12 +5778,12 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.388Z"
+      "createdAt": "2026-07-02T06:18:39.632Z"
     }
   },
   {
-    "id": 7,
-    "assetTypeId": 1,
+    "id": 10,
+    "assetTypeId": 6,
     "name": "Zamalek Exchange",
     "code": "SITE-ZAM-001",
     "status": "operational",
@@ -5801,10 +5801,10 @@
       "power_backup": true
     },
     "parentId": null,
-    "createdAt": "2026-07-01T05:57:09.414Z",
-    "updatedAt": "2026-07-01T05:57:09.414Z",
+    "createdAt": "2026-07-02T06:18:39.653Z",
+    "updatedAt": "2026-07-02T06:18:39.653Z",
     "assetType": {
-      "id": 1,
+      "id": 6,
       "key": "site",
       "label": "Site / POP",
       "geometryKind": "point",
@@ -5842,7 +5842,7 @@
           "required": false
         }
       ],
-      "createdAt": "2026-07-01T05:57:09.384Z"
+      "createdAt": "2026-07-02T06:18:39.626Z"
     }
   }
 ]
