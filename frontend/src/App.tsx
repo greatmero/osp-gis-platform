@@ -8,6 +8,7 @@ import { DashboardPage } from './pages/DashboardPage';
 import { AssetsPage } from './pages/AssetsPage';
 import { AssetTypesPage } from './pages/AssetTypesPage';
 import { IncidentsPage } from './pages/IncidentsPage';
+import { AssetCountPage } from './pages/AssetCountPage';
 
 export function App() {
   return (
@@ -18,6 +19,7 @@ export function App() {
           <Route element={<Layout />}>
             <Route index element={<MapPage />} />
             <Route path="dashboard" element={<DashboardPage />} />
+            <Route path="asset-count" element={<AssetCountPage />} />
             <Route path="assets" element={<AssetsPage />} />
             <Route path="asset-types" element={<AssetTypesPage />} />
             <Route path="incidents" element={<IncidentsPage />} />
